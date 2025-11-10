@@ -7,6 +7,7 @@ NO CAN bus isolation issues!
 import time
 import json
 import threading
+import random
 
 # Charger state
 state = {
@@ -39,38 +40,68 @@ def tx_loop():
 
 def anomaly_loop():
     """
-    Anomaly simulation: Cycle through 0A → 32A → 0A
+    Anomaly simulation: Realistic diverse anomaly scenarios
+    Includes: normal charging, sudden drops, overloads, fluctuations, shutdowns
     """
-    print("🎭 Starting anomaly cycle...")
+    print("🎭 Starting realistic anomaly cycle...")
     time.sleep(2)  # Let tx_loop start first
+    
+    # Define diverse anomaly scenarios
+    scenarios = [
+        # (start, end, duration, description)
+        (0, 32, 10, "Normal charging start"),
+        (32, 0, 5, "Sudden shutdown"),
+        (15, 80, 8, "Power surge - overload!"),
+        (50, 10, 6, "Connection loss - rapid drop"),
+        (20, 35, 7, "Minor fluctuation"),
+        (35, 25, 4, "Voltage sag"),
+        (25, 60, 9, "Medium load increase"),
+        (60, 45, 5, "Controlled reduction"),
+        (45, 90, 10, "Maximum load"),
+        (90, 0, 3, "Emergency shutdown!"),
+        (10, 55, 8, "Gradual ramp-up"),
+        (55, 40, 6, "Load balancing"),
+        (40, 75, 9, "High demand"),
+        (75, 20, 7, "System recovery"),
+        (30, 48, 6, "Standard operation"),
+    ]
     
     cycle = 1
     while True:
-        print(f"\n{'='*60}")
-        print(f"🔄 ANOMALY CYCLE #{cycle}")
-        print(f"{'='*60}\n")
+        # Randomly select a scenario
+        start_current, end_current, duration, description = random.choice(scenarios)
         
-        # Phase 1: Limit to 0A but START
-        print("📉 Phase 1: Limit 0A + START")
-        state["limit"] = 0
+        print(f"\n{'='*70}")
+        print(f"🔄 ANOMALY CYCLE #{cycle}: {description}")
+        print(f"{'='*70}\n")
+        
+        # Phase 1: Set initial current
+        print(f"📉 Phase 1: Setting current to {start_current}A")
+        state["limit"] = start_current
         state["running"] = True
-        state["target"] = 0
-        print("⏱️  10 seconds...")
-        time.sleep(10)
+        state["target"] = start_current
+        wait_time = random.uniform(3, 6)
+        print(f"⏱️  {wait_time:.1f} seconds...")
+        time.sleep(wait_time)
         
-        # Phase 2: Increase to 32A
-        print("\n📈 Phase 2: Limit 32A")
-        state["limit"] = 32
-        state["target"] = 32
-        print("⏱️  10 seconds...")
-        time.sleep(10)
+        # Phase 2: Transition to end current
+        print(f"\n📈 Phase 2: Changing current to {end_current}A")
+        state["limit"] = end_current
+        state["target"] = end_current
+        print(f"⏱️  {duration} seconds...")
+        time.sleep(duration)
         
-        # Phase 3: STOP
-        print("\n🛑 Phase 3: STOP")
-        state["running"] = False
-        state["target"] = 0
-        print("⏱️  5 seconds...")
-        time.sleep(5)
+        # Phase 3: Randomly decide whether to STOP
+        if random.random() > 0.6:  # 40% chance of stopping
+            print("\n🛑 Phase 3: STOP command")
+            state["running"] = False
+            state["target"] = 0
+            stop_time = random.uniform(2, 5)
+            print(f"⏱️  {stop_time:.1f} seconds...")
+            time.sleep(stop_time)
+        else:
+            print("\n✅ Continuing to next cycle...")
+            time.sleep(1)
         
         cycle += 1
 
