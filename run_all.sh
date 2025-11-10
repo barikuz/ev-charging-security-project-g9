@@ -50,19 +50,10 @@ echo "🔧 Launching components in separate Terminal tabs..."
 echo ""
 
 # Start components in order with delays for proper initialization
-run_in_new_tab "1️⃣  Charger Module" "charger_module.py" "blue"
+run_in_new_tab "1️⃣  Charging Simulator" "all_in_one.py" "blue"
 sleep 2
 
-run_in_new_tab "2️⃣  CAN Bridge" "current_bridge.py" "cyan"
-sleep 1
-
-run_in_new_tab "3️⃣  CSMS Server" "csms.py" "green"
-sleep 2
-
-run_in_new_tab "4️⃣  Charge Point" "cp.py" "yellow"
-sleep 2
-
-run_in_new_tab "5️⃣  Current Plotter" "plot_current.py" "purple"
+run_in_new_tab "2️⃣  Real-time Plotter" "plot_current.py" "green"
 
 echo ""
 echo "✅ All components launched!"
@@ -70,16 +61,14 @@ echo ""
 echo "=============================================="
 echo "📊 System Overview:"
 echo "=============================================="
-echo "1️⃣  Charger Module  → Virtual CAN device (publishes 0x300)"
-echo "2️⃣  CAN Bridge      → Reads CAN, writes to /tmp/ev_current.json"
-echo "3️⃣  CSMS Server     → OCPP 1.6 server (ws://127.0.0.1:9000)"
-echo "4️⃣  Charge Point    → OCPP client + CAN commander"
-echo "5️⃣  Current Plotter → Real-time visualization from file"
+echo "1️⃣  Charging Simulator → Anomaly cycle (0A ↔ 32A)"
+echo "2️⃣  Real-time Plotter  → Live current visualization"
 echo ""
 echo "🎭 The simulation will now:"
 echo "   • Generate repeated current fluctuations"
+echo "   • Cycle: 0A → 32A → 0A (every 25 seconds)"
 echo "   • Display live charging current graph"
-echo "   • Demonstrate 0A ↔ 100A anomaly pattern"
+echo "   • Demonstrate repeated anomaly pattern"
 echo ""
 echo "🛑 To stop: Close each Terminal tab manually"
 echo "   or press Ctrl+C in each tab"
