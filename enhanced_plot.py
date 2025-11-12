@@ -9,10 +9,19 @@ from collections import deque
 import time
 import json
 import numpy as np
+from datetime import datetime
+import os
 
 # Data files
 DATA_FILE = "/tmp/ev_current.json"
 PREDICTIONS_FILE = "/tmp/ev_predictions.json"
+
+# Log files
+LOG_DIR = "/Users/enisuzun/Desktop/ev-anomaly-sim/logs"
+os.makedirs(LOG_DIR, exist_ok=True)
+SESSION_ID = datetime.now().strftime("%Y%m%d_%H%M%S")
+DETAIL_LOG_FILE = f"{LOG_DIR}/ev_session_{SESSION_ID}.log"
+JSON_LOG_FILE = f"{LOG_DIR}/ev_session_{SESSION_ID}.json"
 
 # Data storage (keep last 60 seconds)
 max_points = 600  # 60 seconds * 10 samples/sec
@@ -28,6 +37,11 @@ current_action = "NO_ACTION"
 last_action_change_time = 0
 action_log = []  # List of (start_time, end_time, action_name, severity)
 action_start_time = None
+
+# Logging state
+log_entries = []  # Store all log entries for JSON export
+last_logged_action = None
+event_counter = 0
 
 # Physical signal parameters
 DT = 0.1  # seconds - sampling interval
@@ -71,6 +85,96 @@ def get_nominal_current():
         window_data = list(currents)[-NOMINAL_WINDOW_SIZE:]
         return np.median(window_data)
 
+def write_log_header():
+    """Write detailed log header with session information"""
+    with open(DETAIL_LOG_FILE, 'w', encoding='utf-8') as f:
+        f.write("=" * 80 + "\n")
+        f.write("🔋 EV ŞARJ ANOMALİ TESPİT SİSTEMİ - DETAYLI LOG\n")
+        f.write("=" * 80 + "\n")
+        f.write(f"📅 Oturum Başlangıcı: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+        f.write(f"📁 Oturum ID: {SESSION_ID}\n")
+        f.write(f"⚙️  Örnekleme Hızı: {SAMPLES_PER_SECOND} Hz ({DT}s)\n")
+        f.write(f"📊 Risk Eşikleri:\n")
+        f.write(f"   - Yüksek Eğim: {SLOPE_HIGH} A/s\n")
+        f.write(f"   - Orta Eğim: {SLOPE_MODERATE} A/s\n")
+        f.write(f"   - Yüksek Sapma: {DEVIATION_HIGH} A\n")
+        f.write(f"   - Orta Sapma: {DEVIATION_MODERATE} A\n")
+        f.write("=" * 80 + "\n\n")
+    
+    print(f"📝 Log dosyası oluşturuldu: {DETAIL_LOG_FILE}")
+    print(f"📝 JSON log dosyası: {JSON_LOG_FILE}")
+
+def log_measurement(timestamp, current, risk_level, risk_name, action, 
+                   slope, deviation, nominal, is_predicted):
+    """Log measurement data - only log significant events or action changes"""
+    global last_logged_action, event_counter
+    
+    # Log if action changed or risk is not STABLE
+    should_log = (action != last_logged_action) or (risk_level > 0)
+    
+    if should_log:
+        event_counter += 1
+        
+        # Create log entry
+        log_entry = {
+            "event_id": event_counter,
+            "timestamp": timestamp,
+            "datetime": datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3],
+            "current": round(current, 2),
+            "nominal": round(nominal, 2),
+            "deviation": round(deviation, 2),
+            "slope": round(slope, 2),
+            "risk_level": risk_level,
+            "risk_name": risk_name,
+            "action": action,
+            "is_predicted": is_predicted
+        }
+        
+        log_entries.append(log_entry)
+        
+        # Write detailed text log
+        with open(DETAIL_LOG_FILE, 'a', encoding='utf-8') as f:
+            if action != last_logged_action:
+                f.write("\n" + "─" * 80 + "\n")
+                f.write(f"⚠️  AKSİYON DEĞİŞİKLİĞİ #{event_counter}\n")
+                f.write("─" * 80 + "\n")
+            else:
+                f.write(f"\n🔍 OLAY #{event_counter}\n")
+            
+            f.write(f"🕐 Zaman: {log_entry['datetime']} (t={timestamp:.1f}s)\n")
+            f.write(f"⚡ Akım: {current:.2f} A (Nominal: {nominal:.2f} A, Sapma: {deviation:.2f} A)\n")
+            f.write(f"📈 Eğim: {slope:.2f} A/s {'📍 (Tahminsel)' if is_predicted else ''}\n")
+            f.write(f"🚦 Risk: {risk_name} (Seviye: {risk_level})\n")
+            f.write(f"🎯 Aksiyon: {action}\n")
+            
+            if action != last_logged_action:
+                f.write(f"   └─ Önceki: {last_logged_action} → Yeni: {action}\n")
+        
+        last_logged_action = action
+
+def save_json_log():
+    """Save all log entries to JSON file"""
+    summary = {
+        "session_id": SESSION_ID,
+        "start_time": datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+        "total_events": event_counter,
+        "configuration": {
+            "sampling_rate_hz": SAMPLES_PER_SECOND,
+            "dt_seconds": DT,
+            "slope_high": SLOPE_HIGH,
+            "slope_moderate": SLOPE_MODERATE,
+            "deviation_high": DEVIATION_HIGH,
+            "deviation_moderate": DEVIATION_MODERATE
+        },
+        "events": log_entries
+    }
+    
+    with open(JSON_LOG_FILE, 'w', encoding='utf-8') as f:
+        json.dump(summary, f, indent=2, ensure_ascii=False)
+    
+    print(f"\n💾 JSON log kaydedildi: {JSON_LOG_FILE}")
+    print(f"📊 Toplam {event_counter} olay kaydedildi")
+
 def smooth_risk(risk_array, window_size):
     """
     Apply rolling mode filter to smooth risk state transitions.
@@ -107,7 +211,9 @@ def smooth_risk(risk_array, window_size):
 
 def classify_risk():
     """
-    Rule-based risk classifier using slope and deviation thresholds.
+    Proactive rule-based risk classifier using:
+    - Real-time slope and deviation thresholds
+    - Short-term predictive slope (3 samples ahead)
     
     Returns: (risk_level, risk_name, severity_for_logging)
         risk_level: 0 (STABLE), 1 (MODERATE), 2 (HIGH)
@@ -123,7 +229,8 @@ def classify_risk():
     # Convert to lists for easier indexing
     curr_list = list(currents)
     
-    # 1. Calculate SLOPE: rate of change (A/s)
+    # ========== REAL-TIME RISK ==========
+    # 1. Calculate instantaneous SLOPE: rate of change (A/s)
     slope = abs(curr_list[-1] - curr_list[-2]) / DT
     
     # 2. Calculate DEVIATION: distance from nominal current
@@ -131,19 +238,46 @@ def classify_risk():
     
     # 3. Apply rule-based priority classifier
     if slope > SLOPE_HIGH or deviation > DEVIATION_HIGH:
-        risk_level = 2
-        risk_name = "HIGH"
-        severity = 0.9  # For logging/display
+        real_time_risk = 2  # HIGH
     elif slope > SLOPE_MODERATE or deviation > DEVIATION_MODERATE:
-        risk_level = 1
-        risk_name = "MODERATE"
-        severity = 0.6  # For logging/display
+        real_time_risk = 1  # MODERATE
     else:
-        risk_level = 0
-        risk_name = "STABLE"
-        severity = 0.2  # For logging/display
+        real_time_risk = 0  # STABLE
     
-    return risk_level, risk_name, severity
+    # ========== PREDICTIVE RISK (Proactive Control) ==========
+    # Calculate short-term predicted slope using 3 samples
+    # predicted_slope = (I[t] - I[t-3]) / (3*dt)
+    predicted_risk = 0  # Default: STABLE
+    
+    if len(curr_list) >= 4:
+        # Use last 4 samples to predict next step
+        predicted_slope = abs(curr_list[-1] - curr_list[-4]) / (3 * DT)
+        
+        # Proactive classification: anticipate risk one step earlier
+        if predicted_slope > SLOPE_HIGH:
+            predicted_risk = 2  # HIGH
+        elif predicted_slope > SLOPE_MODERATE:
+            predicted_risk = 1  # MODERATE
+        else:
+            predicted_risk = 0  # STABLE
+    
+    # ========== COMBINED RISK ==========
+    # Take maximum risk between real-time and predictive
+    # This allows proactive response to developing situations
+    final_risk_level = max(real_time_risk, predicted_risk)
+    
+    # Map to risk name and severity
+    if final_risk_level == 2:
+        risk_name = "HIGH"
+        severity = 0.9
+    elif final_risk_level == 1:
+        risk_name = "MODERATE"
+        severity = 0.6
+    else:
+        risk_name = "STABLE"
+        severity = 0.2
+    
+    return final_risk_level, risk_name, severity
 
 def get_risk_color_and_action(risk_level):
     """
@@ -259,6 +393,21 @@ def animate(frame):
         # Store risk for timeline visualization
         risk_levels.append(risk_level)
         risk_names.append(risk_name)
+        
+        # Log the measurement if significant
+        if len(currents) >= 2:
+            nominal = get_nominal_current()
+            slope = abs(list(currents)[-1] - list(currents)[-2]) / DT
+            deviation = abs(current - nominal)
+            
+            # Check if this was predicted risk
+            is_predicted = False
+            if len(currents) >= 4:
+                predicted_slope = abs(list(currents)[-1] - list(currents)[-4]) / (3 * DT)
+                is_predicted = predicted_slope > SLOPE_HIGH or predicted_slope > SLOPE_MODERATE
+            
+            log_measurement(timestamp, current, risk_level, risk_name, action,
+                          slope, deviation, nominal, is_predicted)
         
         # Clear and redraw both subplots
         ax1.clear()
@@ -499,6 +648,9 @@ def main():
     print("🎯 Close the plot window to stop.")
     print()
     
+    # Initialize logging
+    write_log_header()
+    
     # Create figure with 2 subplots
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(16, 10), 
                                      gridspec_kw={'height_ratios': [3, 1]})
@@ -517,6 +669,16 @@ def main():
         if action_start_time is not None and current_action != "NO_ACTION":
             action_log.append((action_start_time, time.time() - start_time, 
                              current_action, last_severity))
+        
+        # Save JSON log
+        save_json_log()
+        
+        # Write session end to detail log
+        with open(DETAIL_LOG_FILE, 'a', encoding='utf-8') as f:
+            f.write("\n" + "=" * 80 + "\n")
+            f.write(f"🏁 Oturum Sonu: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+            f.write(f"📊 Toplam Olay: {event_counter}\n")
+            f.write("=" * 80 + "\n")
         
         # Print action summary
         print("\n" + "=" * 60)
