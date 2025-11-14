@@ -1,0 +1,29 @@
+# OCPP Configuration
+ocpp:
+  version: "1.6"  # OCPP version (1.6 or 2.0)
+  charge_point_model: "SimulatedCP-v1"
+  charge_point_vendor: "EVChargingSimulator"
+  serial_number: "SIM-00001"
+  firmware_version: "1.0.0"
+
+# Server configuration
+server:
+  url: "ws://localhost:8000"
+  port: 8000
+  ssl_enabled: false
+  ssl_cert: null
+  ssl_key: null
+
+# Client configuration
+client:
+  heartbeat_interval: 30
+  message_timeout: 30
+  max_retries: 3
+
+# Message handlers
+handlers:
+  boot_notification: true
+  heartbeat: true
+  meter_values: true
+  start_transaction: true
+  stop_transaction: true
