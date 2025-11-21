@@ -3,6 +3,8 @@
 Charge Point (OCPP Client)
 Connects to CSMS and translates OCPP messages to CAN commands.
 Maps RemoteStart/Stop and SetChargingProfile to CAN bus messages.
+
+🧠 Enhanced with MemoryBank: Records CAN messages and OCPP transactions
 """
 import asyncio
 import datetime
@@ -22,6 +24,10 @@ from ocpp.v16.enums import (
     RemoteStartStopStatus,
     ChargingProfileStatus
 )
+from memory_bank import MemoryBank
+
+# Initialize MemoryBank
+memory = MemoryBank("ev_charging_memory.db")
 
 class ChargePoint(CP):
     def __init__(self, id, ws, bus):
@@ -47,6 +53,14 @@ class ChargePoint(CP):
         """
         print(f"🚀 RemoteStartTransaction received (idTag={id_tag}, connector={connector_id})")
         
+        # Log to MemoryBank
+        memory.log_event(
+            "OCPP_REMOTE_START",
+            "CP",
+            f"RemoteStartTransaction received",
+            {"id_tag": id_tag, "connector_id": connector_id}
+        )
+        
         # Send START command via CAN
         msg = can.Message(
             arbitration_id=0x200,
@@ -56,7 +70,18 @@ class ChargePoint(CP):
         self.bus.send(msg)
         print("📤 CAN: Sent START command (0x200)")
         
+        # Log CAN message
+        memory.log_event(
+            "CAN_TX",
+            "CP",
+            "START command sent to charger",
+            {"can_id": "0x200", "data": []}
+        )
+        
         self.transaction_id = 1  # Simplified transaction ID
+        
+        # Start session in MemoryBank
+        memory.start_session(f"TXN_{self.transaction_id}")
         
         return call_result.RemoteStartTransactionPayload(
             status=RemoteStartStopStatus.accepted
@@ -70,6 +95,14 @@ class ChargePoint(CP):
         """
         print(f"🛑 RemoteStopTransaction received (transactionId={transaction_id})")
         
+        # Log to MemoryBank
+        memory.log_event(
+            "OCPP_REMOTE_STOP",
+            "CP",
+            f"RemoteStopTransaction received",
+            {"transaction_id": transaction_id}
+        )
+        
         # Send STOP command via CAN
         msg = can.Message(
             arbitration_id=0x201,
@@ -78,6 +111,18 @@ class ChargePoint(CP):
         )
         self.bus.send(msg)
         print("📤 CAN: Sent STOP command (0x201)")
+        
+        # Log CAN message
+        memory.log_event(
+            "CAN_TX",
+            "CP",
+            "STOP command sent to charger",
+            {"can_id": "0x201", "data": []}
+        )
+        
+        # End session in MemoryBank
+        if self.transaction_id:
+            memory.end_session(f"TXN_{self.transaction_id}")
         
         self.transaction_id = None
         
@@ -102,6 +147,14 @@ class ChargePoint(CP):
                 limit = int(periods[0]['limit'])
                 print(f"   → Current limit: {limit}A")
                 
+                # Log to MemoryBank
+                memory.log_event(
+                    "OCPP_SET_PROFILE",
+                    "CP",
+                    f"SetChargingProfile: limit={limit}A",
+                    {"connector_id": connector_id, "limit": limit}
+                )
+                
                 # Send SET LIMIT command via CAN
                 msg = can.Message(
                     arbitration_id=0x210,
@@ -110,6 +163,14 @@ class ChargePoint(CP):
                 )
                 self.bus.send(msg)
                 print(f"📤 CAN: Sent SET_LIMIT command (0x210) with value {limit}A")
+                
+                # Log CAN message
+                memory.log_event(
+                    "CAN_TX",
+                    "CP",
+                    f"SET_LIMIT command sent: {limit}A",
+                    {"can_id": "0x210", "limit": limit}
+                )
             
             return call_result.SetChargingProfilePayload(
                 status=ChargingProfileStatus.accepted
@@ -139,6 +200,15 @@ class ChargePoint(CP):
                     # Write to shared file for plotter
                     with open(DATA_FILE, 'w') as f:
                         json.dump({"timestamp": time.time(), "current": current}, f)
+                    
+                    # Log CAN RX and record metric to MemoryBank
+                    memory.log_event(
+                        "CAN_RX",
+                        "CP",
+                        f"Current reading: {current}A",
+                        {"can_id": "0x300", "current": current}
+                    )
+                    memory.record_metric("current", float(current), "A")
                     
                     # Send MeterValues to CSMS
                     await self.call(call.MeterValuesPayload(

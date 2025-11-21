@@ -3,6 +3,8 @@
 Central System Management System (CSMS)
 OCPP 1.6 WebSocket server that orchestrates charging anomaly scenarios.
 Periodically sends SetChargingProfile commands to simulate current fluctuations.
+
+🧠 Enhanced with MemoryBank: Records all OCPP events and anomaly patterns
 """
 import asyncio
 import datetime
@@ -11,9 +13,13 @@ from ocpp.v16 import ChargePoint as CP
 from ocpp.v16 import call, call_result
 from ocpp.routing import on
 from ocpp.v16.enums import RegistrationStatus, Action
+from memory_bank import MemoryBank
 
 # Store connected charge points
 CPs = {}
+
+# Initialize MemoryBank
+memory = MemoryBank("ev_charging_memory.db")
 
 class CentralSystem(CP):
     @on(Action.BootNotification)
@@ -25,6 +31,18 @@ class CentralSystem(CP):
         
         # Store the charge point connection
         CPs[self.id] = self
+        
+        # Log to MemoryBank
+        memory.log_event(
+            "OCPP_BOOT",
+            "CSMS",
+            f"Charge point {self.id} connected",
+            {
+                "cp_id": self.id,
+                "model": charge_point_model,
+                "vendor": charge_point_vendor
+            }
+        )
         
         return call_result.BootNotificationPayload(
             current_time=datetime.datetime.utcnow().isoformat(),
@@ -42,6 +60,18 @@ class CentralSystem(CP):
                     measurand = sample.get("measurand", "unknown")
                     unit = sample.get("unit", "")
                     print(f"📊 MeterValues from {self.id}: {value}{unit} ({measurand})")
+                    
+                    # Record metric to MemoryBank
+                    try:
+                        numeric_value = float(value)
+                        memory.record_metric(
+                            measurand.lower(),
+                            numeric_value,
+                            unit,
+                            {"cp_id": self.id, "connector_id": connector_id}
+                        )
+                    except ValueError:
+                        pass
         except Exception as e:
             print(f"⚠️  Error parsing MeterValues: {e}")
         
@@ -53,6 +83,8 @@ async def send_anomaly():
     1. Wait for charge points to connect
     2. Cycle through: Set limit to 0A → Set limit to 100A → Start → Stop
     3. This creates repeated current fluctuations
+    
+    🧠 Records all anomaly patterns to MemoryBank
     """
     print("⏳ Waiting 3 seconds for charge points to connect...")
     await asyncio.sleep(3)
@@ -74,6 +106,14 @@ async def send_anomaly():
         print(f"🔄 Anomaly Cycle #{cycle}")
         print("-" * 60)
         
+        # Record anomaly cycle start
+        memory.log_event(
+            "ANOMALY_CYCLE_START",
+            "CSMS",
+            f"Starting anomaly cycle #{cycle}",
+            {"cycle": cycle, "connected_cps": list(CPs.keys())}
+        )
+        
         for cp_id, cp in list(CPs.items()):
             try:
                 # Step 1: Set charging profile to 0A (restrict current)
@@ -91,6 +131,13 @@ async def send_anomaly():
                         }
                     }
                 ))
+                
+                memory.log_event(
+                    "OCPP_COMMAND",
+                    "CSMS",
+                    f"SetChargingProfile(0A) sent to {cp_id}",
+                    {"cp_id": cp_id, "limit": 0, "unit": "A"}
+                )
                 
                 await asyncio.sleep(2)
                 
@@ -110,6 +157,29 @@ async def send_anomaly():
                     }
                 ))
                 
+                memory.log_event(
+                    "OCPP_COMMAND",
+                    "CSMS",
+                    f"SetChargingProfile(100A) sent to {cp_id}",
+                    {"cp_id": cp_id, "limit": 100, "unit": "A"}
+                )
+                
+                # Record anomaly pattern: rapid limit change
+                memory.record_anomaly(
+                    "CURRENT_LIMIT_FLUCTUATION",
+                    "HIGH",
+                    f"Rapid charging limit change: 0A → 100A in cycle {cycle}",
+                    {
+                        "cycle": cycle,
+                        "cp_id": cp_id,
+                        "min_limit": 0,
+                        "max_limit": 100,
+                        "change_rate": "instant"
+                    },
+                    current_value=100.0,
+                    expected_value=32.0
+                )
+                
                 await asyncio.sleep(1)
                 
                 # Step 3: Start transaction
@@ -119,6 +189,13 @@ async def send_anomaly():
                     connector_id=1
                 ))
                 
+                memory.log_event(
+                    "OCPP_COMMAND",
+                    "CSMS",
+                    f"RemoteStartTransaction sent to {cp_id}",
+                    {"cp_id": cp_id, "id_tag": "ANOM_TEST"}
+                )
+                
                 await asyncio.sleep(2)
                 
                 # Step 4: Stop transaction
@@ -127,10 +204,35 @@ async def send_anomaly():
                     transaction_id=1
                 ))
                 
+                memory.log_event(
+                    "OCPP_COMMAND",
+                    "CSMS",
+                    f"RemoteStopTransaction sent to {cp_id}",
+                    {"cp_id": cp_id, "transaction_id": 1}
+                )
+                
                 print()
                 
             except Exception as e:
                 print(f"❌ Error sending commands to {cp_id}: {e}")
+                memory.log_event(
+                    "ERROR",
+                    "CSMS",
+                    f"Error in anomaly cycle for {cp_id}: {str(e)}",
+                    {"cp_id": cp_id, "cycle": cycle, "error": str(e)}
+                )
+        
+        # Record anomaly pattern in pattern learning
+        memory.record_pattern(
+            "ANOMALY_CYCLE",
+            {
+                "type": "current_fluctuation",
+                "sequence": ["0A", "100A", "START", "STOP"],
+                "cycle_time": 8,
+                "severity": "HIGH"
+            },
+            confidence=1.0
+        )
         
         # Wait before next cycle
         await asyncio.sleep(3)
@@ -154,7 +256,16 @@ async def handler(ws, path):
 async def main():
     print("=" * 60)
     print("🏢 Central System Management System (CSMS) Starting...")
+    print("🧠 MemoryBank: ev_charging_memory.db")
     print("=" * 60)
+    print()
+    
+    # Show memory statistics
+    summary = memory.get_dashboard_summary()
+    print(f"📊 MemoryBank Statistics:")
+    print(f"   Total Events: {summary['total_events']}")
+    print(f"   Total Anomalies: {summary['total_anomalies']}")
+    print(f"   Total Sessions: {summary['total_sessions']}")
     print()
     
     # Start WebSocket server

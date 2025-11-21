@@ -1,6 +1,6 @@
 # ⚡ EV Charging Anomaly Simulator
 
-A complete, runnable simulation of **"Repeated Current Fluctuation During Charging"** anomaly in Electric Vehicle charging stations.
+A complete, runnable simulation of **"Repeated Current Fluctuation During Charging"** anomaly in Electric Vehicle charging stations with **🧠 MemoryBank** - a persistent memory system for event logging and anomaly learning.
 
 ## 🎯 Overview
 
@@ -9,6 +9,7 @@ This project simulates an OCPP 1.6 charging infrastructure with:
 - **Charge Point** - OCPP client that bridges OCPP messages to CAN bus
 - **Virtual Charger Module** - CAN device simulating power electronics
 - **Live Plotter** - Real-time visualization of charging current
+- **🧠 MemoryBank** - SQLite-based persistent memory for events, anomalies, and patterns
 
 ## 🏗️ Architecture
 
@@ -35,11 +36,12 @@ This project simulates an OCPP 1.6 charging infrastructure with:
 
 - **OS**: macOS (tested on M2)
 - **Python**: 3.11
-- **Dependencies**: 
+- **Dependencies**:
   - matplotlib==3.8.2
   - python-can==4.4.2
   - ocpp==0.20.0
   - websockets==12.0
+  - tabulate==0.9.0 (for MemoryBank viewer)
 
 ## 🚀 Quick Start
 
@@ -77,9 +79,11 @@ This will open 4 Terminal tabs:
 | File | Description |
 |------|-------------|
 | `charger_module.py` | Virtual CAN device that publishes current readings (0x300) and responds to control commands (0x200, 0x201, 0x210) |
-| `csms.py` | OCPP 1.6 WebSocket server that orchestrates the anomaly by cycling SetChargingProfile, RemoteStart/Stop |
-| `cp.py` | OCPP client that translates OCPP messages to CAN commands and reports MeterValues |
-| `plot_current.py` | Real-time matplotlib visualization of charging current |
+| `csms.py` | OCPP 1.6 WebSocket server that orchestrates the anomaly by cycling SetChargingProfile, RemoteStart/Stop (🧠 MemoryBank enabled) |
+| `cp.py` | OCPP client that translates OCPP messages to CAN commands and reports MeterValues (🧠 MemoryBank enabled) |
+| `plot_current.py` | Real-time matplotlib visualization of charging current (🧠 shows historical anomalies) |
+| `memory_bank.py` | SQLite-based persistent memory system for events, anomalies, sessions, and patterns |
+| `memory_viewer.py` | Interactive tool to view and analyze MemoryBank data |
 | `run_all.sh` | Launcher script that starts all components in separate Terminal tabs |
 
 ### Configuration Files
@@ -194,9 +198,54 @@ pip install -r requirements.txt
 When running correctly, you should see:
 
 1. **Charger Module**: Current values ramping up/down
-2. **CSMS**: Sending OCPP commands in cycles
-3. **Charge Point**: Receiving OCPP, sending CAN, reporting MeterValues
-4. **Plotter**: Live graph showing 0A ↔ 100A fluctuations with anomaly indicator
+2. **CSMS**: Sending OCPP commands in cycles (🧠 recording to MemoryBank)
+3. **Charge Point**: Receiving OCPP, sending CAN, reporting MeterValues (🧠 logging events)
+4. **Plotter**: Live graph showing 0A ↔ 100A fluctuations with anomaly indicator and statistics
+
+## 🧠 MemoryBank Features
+
+The MemoryBank system provides persistent memory and learning capabilities:
+
+### What MemoryBank Records
+
+- **Events**: All OCPP messages, CAN communications, system events
+- **Anomalies**: Detected anomalies with severity, patterns, and deviations
+- **Sessions**: Charging session metadata (start/end time, energy, statistics)
+- **Metrics**: Current, voltage, power measurements over time
+- **Patterns**: Learned behavior patterns for anomaly detection
+
+### Using MemoryBank Viewer
+
+View and analyze collected data:
+
+```bash
+# Interactive menu
+python3 memory_viewer.py
+
+# Quick summary
+python3 memory_viewer.py --summary
+
+# View recent events
+python3 memory_viewer.py --events 50
+
+# View anomalies
+python3 memory_viewer.py --anomalies 20
+
+# View sessions
+python3 memory_viewer.py --sessions 10
+
+# Export data to JSON
+python3 memory_viewer.py --export data_export.json
+
+# Show statistics
+python3 memory_viewer.py --stats
+```
+
+### Database Location
+
+All data is stored in: `ev_charging_memory.db` (SQLite database)
+
+You can view this database with any SQLite viewer or use the provided `memory_viewer.py` tool.
 
 ## 🔒 Technical Notes
 
@@ -205,6 +254,7 @@ When running correctly, you should see:
 - **Thread-safe**: CAN bus operations are thread-safe across processes
 - **Asyncio**: OCPP components use asyncio for concurrent operations
 - **Real-time**: All components update at 1-second intervals
+- **🧠 Persistent Memory**: SQLite database for event history and learning
 
 ## 📝 License
 
