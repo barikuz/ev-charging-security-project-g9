@@ -1,0 +1,4029 @@
+================================================================================
+🔋 EV ŞARJ ANOMALİ TESPİT SİSTEMİ - DETAYLI LOG
+================================================================================
+📅 Oturum Başlangıcı: 2025-11-12 11:06:30
+📁 Oturum ID: 20251112_110630
+⚙️  Örnekleme Hızı: 10 Hz (0.1s)
+📊 Risk Eşikleri:
+   - Yüksek Eğim: 8.0 A/s
+   - Orta Eğim: 1.5 A/s
+   - Yüksek Sapma: 18.0 A
+   - Orta Sapma: 6.0 A
+================================================================================
+
+
+────────────────────────────────────────────────────────────────────────────────
+⚠️  AKSİYON DEĞİŞİKLİĞİ #1
+────────────────────────────────────────────────────────────────────────────────
+🕐 Zaman: 2025-11-12 11:06:30.896 (t=0.4s)
+⚡ Akım: 46.00 A (Nominal: 46.00 A, Sapma: 0.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: STABLE (Seviye: 0)
+🎯 Aksiyon: SMOOTH_CURRENT
+   └─ Önceki: None → Yeni: SMOOTH_CURRENT
+
+────────────────────────────────────────────────────────────────────────────────
+⚠️  AKSİYON DEĞİŞİKLİĞİ #2
+────────────────────────────────────────────────────────────────────────────────
+🕐 Zaman: 2025-11-12 11:06:30.996 (t=0.5s)
+⚡ Akım: 45.00 A (Nominal: 46.00 A, Sapma: 1.00 A)
+📈 Eğim: 10.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+   └─ Önceki: SMOOTH_CURRENT → Yeni: SAFE_STOP
+
+🔍 OLAY #3
+🕐 Zaman: 2025-11-12 11:06:31.096 (t=0.6s)
+⚡ Akım: 45.00 A (Nominal: 45.50 A, Sapma: 0.50 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #4
+🕐 Zaman: 2025-11-12 11:06:31.196 (t=0.7s)
+⚡ Akım: 45.00 A (Nominal: 45.00 A, Sapma: 0.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #5
+🕐 Zaman: 2025-11-12 11:06:35.496 (t=5.0s)
+⚡ Akım: 39.00 A (Nominal: 45.00 A, Sapma: 6.00 A)
+📈 Eğim: 60.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #6
+🕐 Zaman: 2025-11-12 11:06:35.596 (t=5.1s)
+⚡ Akım: 34.00 A (Nominal: 45.00 A, Sapma: 11.00 A)
+📈 Eğim: 50.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #7
+🕐 Zaman: 2025-11-12 11:06:35.696 (t=5.2s)
+⚡ Akım: 30.00 A (Nominal: 45.00 A, Sapma: 15.00 A)
+📈 Eğim: 40.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #8
+🕐 Zaman: 2025-11-12 11:06:35.796 (t=5.3s)
+⚡ Akım: 27.00 A (Nominal: 45.00 A, Sapma: 18.00 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #9
+🕐 Zaman: 2025-11-12 11:06:35.896 (t=5.4s)
+⚡ Akım: 25.00 A (Nominal: 45.00 A, Sapma: 20.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #10
+🕐 Zaman: 2025-11-12 11:06:35.996 (t=5.5s)
+⚡ Akım: 23.00 A (Nominal: 45.00 A, Sapma: 22.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #11
+🕐 Zaman: 2025-11-12 11:06:36.096 (t=5.6s)
+⚡ Akım: 21.00 A (Nominal: 45.00 A, Sapma: 24.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #12
+🕐 Zaman: 2025-11-12 11:06:36.196 (t=5.7s)
+⚡ Akım: 20.00 A (Nominal: 45.00 A, Sapma: 25.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #13
+🕐 Zaman: 2025-11-12 11:06:36.296 (t=5.8s)
+⚡ Akım: 19.00 A (Nominal: 45.00 A, Sapma: 26.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #14
+🕐 Zaman: 2025-11-12 11:06:36.396 (t=5.9s)
+⚡ Akım: 18.00 A (Nominal: 45.00 A, Sapma: 27.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #15
+🕐 Zaman: 2025-11-12 11:06:36.496 (t=6.0s)
+⚡ Akım: 18.00 A (Nominal: 45.00 A, Sapma: 27.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #16
+🕐 Zaman: 2025-11-12 11:06:36.595 (t=6.1s)
+⚡ Akım: 17.00 A (Nominal: 45.00 A, Sapma: 28.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #17
+🕐 Zaman: 2025-11-12 11:06:36.696 (t=6.2s)
+⚡ Akım: 17.00 A (Nominal: 45.00 A, Sapma: 28.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #18
+🕐 Zaman: 2025-11-12 11:06:36.796 (t=6.3s)
+⚡ Akım: 16.00 A (Nominal: 45.00 A, Sapma: 29.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #19
+🕐 Zaman: 2025-11-12 11:06:36.896 (t=6.4s)
+⚡ Akım: 16.00 A (Nominal: 45.00 A, Sapma: 29.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #20
+🕐 Zaman: 2025-11-12 11:06:36.996 (t=6.5s)
+⚡ Akım: 16.00 A (Nominal: 45.00 A, Sapma: 29.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #21
+🕐 Zaman: 2025-11-12 11:06:37.095 (t=6.6s)
+⚡ Akım: 16.00 A (Nominal: 45.00 A, Sapma: 29.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #22
+🕐 Zaman: 2025-11-12 11:06:37.195 (t=6.7s)
+⚡ Akım: 16.00 A (Nominal: 45.00 A, Sapma: 29.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #23
+🕐 Zaman: 2025-11-12 11:06:37.296 (t=6.8s)
+⚡ Akım: 15.00 A (Nominal: 45.00 A, Sapma: 30.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #24
+🕐 Zaman: 2025-11-12 11:06:37.395 (t=6.9s)
+⚡ Akım: 15.00 A (Nominal: 42.00 A, Sapma: 27.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #25
+🕐 Zaman: 2025-11-12 11:06:37.495 (t=7.0s)
+⚡ Akım: 15.00 A (Nominal: 36.50 A, Sapma: 21.50 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #26
+🕐 Zaman: 2025-11-12 11:06:37.595 (t=7.1s)
+⚡ Akım: 15.00 A (Nominal: 32.00 A, Sapma: 17.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #27
+🕐 Zaman: 2025-11-12 11:06:37.695 (t=7.2s)
+⚡ Akım: 15.00 A (Nominal: 28.50 A, Sapma: 13.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #28
+🕐 Zaman: 2025-11-12 11:06:37.795 (t=7.3s)
+⚡ Akım: 15.00 A (Nominal: 26.00 A, Sapma: 11.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #29
+🕐 Zaman: 2025-11-12 11:06:37.896 (t=7.4s)
+⚡ Akım: 15.00 A (Nominal: 24.00 A, Sapma: 9.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #30
+🕐 Zaman: 2025-11-12 11:06:37.996 (t=7.5s)
+⚡ Akım: 15.00 A (Nominal: 22.00 A, Sapma: 7.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #31
+🕐 Zaman: 2025-11-12 11:06:38.796 (t=8.3s)
+⚡ Akım: 28.00 A (Nominal: 16.50 A, Sapma: 11.50 A)
+📈 Eğim: 130.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #32
+🕐 Zaman: 2025-11-12 11:06:38.896 (t=8.4s)
+⚡ Akım: 38.00 A (Nominal: 16.50 A, Sapma: 21.50 A)
+📈 Eğim: 100.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #33
+🕐 Zaman: 2025-11-12 11:06:38.996 (t=8.5s)
+⚡ Akım: 47.00 A (Nominal: 16.50 A, Sapma: 30.50 A)
+📈 Eğim: 90.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #34
+🕐 Zaman: 2025-11-12 11:06:39.096 (t=8.6s)
+⚡ Akım: 53.00 A (Nominal: 16.50 A, Sapma: 36.50 A)
+📈 Eğim: 60.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #35
+🕐 Zaman: 2025-11-12 11:06:39.196 (t=8.7s)
+⚡ Akım: 59.00 A (Nominal: 16.50 A, Sapma: 42.50 A)
+📈 Eğim: 60.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #36
+🕐 Zaman: 2025-11-12 11:06:39.296 (t=8.8s)
+⚡ Akım: 63.00 A (Nominal: 16.50 A, Sapma: 46.50 A)
+📈 Eğim: 40.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #37
+🕐 Zaman: 2025-11-12 11:06:39.396 (t=8.9s)
+⚡ Akım: 66.00 A (Nominal: 16.50 A, Sapma: 49.50 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #38
+🕐 Zaman: 2025-11-12 11:06:39.596 (t=9.1s)
+⚡ Akım: 69.00 A (Nominal: 16.50 A, Sapma: 52.50 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #39
+🕐 Zaman: 2025-11-12 11:06:39.696 (t=9.2s)
+⚡ Akım: 71.00 A (Nominal: 16.50 A, Sapma: 54.50 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #40
+🕐 Zaman: 2025-11-12 11:06:39.796 (t=9.3s)
+⚡ Akım: 73.00 A (Nominal: 16.50 A, Sapma: 56.50 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #41
+🕐 Zaman: 2025-11-12 11:06:39.895 (t=9.4s)
+⚡ Akım: 74.00 A (Nominal: 16.50 A, Sapma: 57.50 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #42
+🕐 Zaman: 2025-11-12 11:06:39.996 (t=9.5s)
+⚡ Akım: 76.00 A (Nominal: 16.50 A, Sapma: 59.50 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #43
+🕐 Zaman: 2025-11-12 11:06:40.096 (t=9.6s)
+⚡ Akım: 76.00 A (Nominal: 16.50 A, Sapma: 59.50 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #44
+🕐 Zaman: 2025-11-12 11:06:40.196 (t=9.7s)
+⚡ Akım: 77.00 A (Nominal: 16.50 A, Sapma: 60.50 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #45
+🕐 Zaman: 2025-11-12 11:06:40.296 (t=9.8s)
+⚡ Akım: 78.00 A (Nominal: 16.50 A, Sapma: 61.50 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #46
+🕐 Zaman: 2025-11-12 11:06:40.396 (t=9.9s)
+⚡ Akım: 78.00 A (Nominal: 16.50 A, Sapma: 61.50 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #47
+🕐 Zaman: 2025-11-12 11:06:40.496 (t=10.0s)
+⚡ Akım: 79.00 A (Nominal: 16.50 A, Sapma: 62.50 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #48
+🕐 Zaman: 2025-11-12 11:06:40.596 (t=10.1s)
+⚡ Akım: 79.00 A (Nominal: 16.50 A, Sapma: 62.50 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #49
+🕐 Zaman: 2025-11-12 11:06:40.696 (t=10.2s)
+⚡ Akım: 79.00 A (Nominal: 16.50 A, Sapma: 62.50 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #50
+🕐 Zaman: 2025-11-12 11:06:40.796 (t=10.3s)
+⚡ Akım: 79.00 A (Nominal: 22.00 A, Sapma: 57.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #51
+🕐 Zaman: 2025-11-12 11:06:40.896 (t=10.4s)
+⚡ Akım: 79.00 A (Nominal: 33.00 A, Sapma: 46.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #52
+🕐 Zaman: 2025-11-12 11:06:40.996 (t=10.5s)
+⚡ Akım: 80.00 A (Nominal: 42.50 A, Sapma: 37.50 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #53
+🕐 Zaman: 2025-11-12 11:06:41.096 (t=10.6s)
+⚡ Akım: 80.00 A (Nominal: 50.00 A, Sapma: 30.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #54
+🕐 Zaman: 2025-11-12 11:06:41.195 (t=10.7s)
+⚡ Akım: 80.00 A (Nominal: 56.00 A, Sapma: 24.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #55
+🕐 Zaman: 2025-11-12 11:06:41.295 (t=10.8s)
+⚡ Akım: 80.00 A (Nominal: 61.00 A, Sapma: 19.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+────────────────────────────────────────────────────────────────────────────────
+⚠️  AKSİYON DEĞİŞİKLİĞİ #56
+────────────────────────────────────────────────────────────────────────────────
+🕐 Zaman: 2025-11-12 11:06:41.396 (t=10.9s)
+⚡ Akım: 80.00 A (Nominal: 64.50 A, Sapma: 15.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+   └─ Önceki: SAFE_STOP → Yeni: LIMIT_CURRENT
+
+🔍 OLAY #57
+🕐 Zaman: 2025-11-12 11:06:41.496 (t=11.0s)
+⚡ Akım: 80.00 A (Nominal: 67.50 A, Sapma: 12.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+
+🔍 OLAY #58
+🕐 Zaman: 2025-11-12 11:06:41.596 (t=11.1s)
+⚡ Akım: 80.00 A (Nominal: 70.00 A, Sapma: 10.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+
+🔍 OLAY #59
+🕐 Zaman: 2025-11-12 11:06:41.696 (t=11.2s)
+⚡ Akım: 80.00 A (Nominal: 72.00 A, Sapma: 8.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+
+🔍 OLAY #60
+🕐 Zaman: 2025-11-12 11:06:41.795 (t=11.3s)
+⚡ Akım: 80.00 A (Nominal: 73.50 A, Sapma: 6.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+
+────────────────────────────────────────────────────────────────────────────────
+⚠️  AKSİYON DEĞİŞİKLİĞİ #61
+────────────────────────────────────────────────────────────────────────────────
+🕐 Zaman: 2025-11-12 11:06:46.895 (t=16.4s)
+⚡ Akım: 64.00 A (Nominal: 80.00 A, Sapma: 16.00 A)
+📈 Eğim: 160.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+   └─ Önceki: LIMIT_CURRENT → Yeni: SAFE_STOP
+
+🔍 OLAY #62
+🕐 Zaman: 2025-11-12 11:06:46.996 (t=16.5s)
+⚡ Akım: 51.00 A (Nominal: 80.00 A, Sapma: 29.00 A)
+📈 Eğim: 130.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #63
+🕐 Zaman: 2025-11-12 11:06:47.096 (t=16.6s)
+⚡ Akım: 41.00 A (Nominal: 80.00 A, Sapma: 39.00 A)
+📈 Eğim: 100.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #64
+🕐 Zaman: 2025-11-12 11:06:47.196 (t=16.7s)
+⚡ Akım: 33.00 A (Nominal: 80.00 A, Sapma: 47.00 A)
+📈 Eğim: 80.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #65
+🕐 Zaman: 2025-11-12 11:06:47.296 (t=16.8s)
+⚡ Akım: 26.00 A (Nominal: 80.00 A, Sapma: 54.00 A)
+📈 Eğim: 70.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #66
+🕐 Zaman: 2025-11-12 11:06:47.395 (t=16.9s)
+⚡ Akım: 21.00 A (Nominal: 80.00 A, Sapma: 59.00 A)
+📈 Eğim: 50.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #67
+🕐 Zaman: 2025-11-12 11:06:47.497 (t=17.0s)
+⚡ Akım: 17.00 A (Nominal: 80.00 A, Sapma: 63.00 A)
+📈 Eğim: 40.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #68
+🕐 Zaman: 2025-11-12 11:06:47.595 (t=17.1s)
+⚡ Akım: 13.00 A (Nominal: 80.00 A, Sapma: 67.00 A)
+📈 Eğim: 40.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #69
+🕐 Zaman: 2025-11-12 11:06:47.696 (t=17.2s)
+⚡ Akım: 13.00 A (Nominal: 80.00 A, Sapma: 67.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #70
+🕐 Zaman: 2025-11-12 11:06:47.795 (t=17.3s)
+⚡ Akım: 11.00 A (Nominal: 80.00 A, Sapma: 69.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #71
+🕐 Zaman: 2025-11-12 11:06:47.895 (t=17.4s)
+⚡ Akım: 9.00 A (Nominal: 80.00 A, Sapma: 71.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #72
+🕐 Zaman: 2025-11-12 11:06:47.995 (t=17.5s)
+⚡ Akım: 7.00 A (Nominal: 80.00 A, Sapma: 73.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #73
+🕐 Zaman: 2025-11-12 11:06:48.095 (t=17.6s)
+⚡ Akım: 5.00 A (Nominal: 80.00 A, Sapma: 75.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #74
+🕐 Zaman: 2025-11-12 11:06:48.195 (t=17.7s)
+⚡ Akım: 4.00 A (Nominal: 80.00 A, Sapma: 76.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #75
+🕐 Zaman: 2025-11-12 11:06:48.296 (t=17.8s)
+⚡ Akım: 4.00 A (Nominal: 80.00 A, Sapma: 76.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #76
+🕐 Zaman: 2025-11-12 11:06:48.396 (t=17.9s)
+⚡ Akım: 3.00 A (Nominal: 80.00 A, Sapma: 77.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #77
+🕐 Zaman: 2025-11-12 11:06:48.496 (t=18.0s)
+⚡ Akım: 2.00 A (Nominal: 80.00 A, Sapma: 78.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #78
+🕐 Zaman: 2025-11-12 11:06:48.596 (t=18.1s)
+⚡ Akım: 2.00 A (Nominal: 80.00 A, Sapma: 78.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #79
+🕐 Zaman: 2025-11-12 11:06:48.696 (t=18.2s)
+⚡ Akım: 1.00 A (Nominal: 80.00 A, Sapma: 79.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #80
+🕐 Zaman: 2025-11-12 11:06:48.796 (t=18.3s)
+⚡ Akım: 1.00 A (Nominal: 72.00 A, Sapma: 71.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #81
+🕐 Zaman: 2025-11-12 11:06:48.895 (t=18.4s)
+⚡ Akım: 1.00 A (Nominal: 57.50 A, Sapma: 56.50 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #82
+🕐 Zaman: 2025-11-12 11:06:48.995 (t=18.5s)
+⚡ Akım: 1.00 A (Nominal: 46.00 A, Sapma: 45.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #83
+🕐 Zaman: 2025-11-12 11:06:49.096 (t=18.6s)
+⚡ Akım: 1.00 A (Nominal: 37.00 A, Sapma: 36.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #84
+🕐 Zaman: 2025-11-12 11:06:49.196 (t=18.7s)
+⚡ Akım: 0.00 A (Nominal: 29.50 A, Sapma: 29.50 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #85
+🕐 Zaman: 2025-11-12 11:06:49.296 (t=18.8s)
+⚡ Akım: 0.00 A (Nominal: 23.50 A, Sapma: 23.50 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #86
+🕐 Zaman: 2025-11-12 11:06:49.396 (t=18.9s)
+⚡ Akım: 0.00 A (Nominal: 19.00 A, Sapma: 19.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #87
+🕐 Zaman: 2025-11-12 11:06:49.496 (t=19.0s)
+⚡ Akım: 0.00 A (Nominal: 15.00 A, Sapma: 15.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #88
+🕐 Zaman: 2025-11-12 11:06:49.595 (t=19.1s)
+⚡ Akım: 0.00 A (Nominal: 13.00 A, Sapma: 13.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #89
+🕐 Zaman: 2025-11-12 11:06:49.696 (t=19.2s)
+⚡ Akım: 0.00 A (Nominal: 12.00 A, Sapma: 12.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #90
+🕐 Zaman: 2025-11-12 11:06:49.796 (t=19.3s)
+⚡ Akım: 0.00 A (Nominal: 10.00 A, Sapma: 10.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #91
+🕐 Zaman: 2025-11-12 11:06:49.896 (t=19.4s)
+⚡ Akım: 0.00 A (Nominal: 8.00 A, Sapma: 8.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #92
+🕐 Zaman: 2025-11-12 11:06:51.396 (t=20.9s)
+⚡ Akım: 12.00 A (Nominal: 0.00 A, Sapma: 12.00 A)
+📈 Eğim: 120.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #93
+🕐 Zaman: 2025-11-12 11:06:51.495 (t=21.0s)
+⚡ Akım: 22.00 A (Nominal: 0.00 A, Sapma: 22.00 A)
+📈 Eğim: 100.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #94
+🕐 Zaman: 2025-11-12 11:06:51.596 (t=21.1s)
+⚡ Akım: 29.00 A (Nominal: 0.00 A, Sapma: 29.00 A)
+📈 Eğim: 70.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #95
+🕐 Zaman: 2025-11-12 11:06:51.695 (t=21.2s)
+⚡ Akım: 35.00 A (Nominal: 0.00 A, Sapma: 35.00 A)
+📈 Eğim: 60.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #96
+🕐 Zaman: 2025-11-12 11:06:51.796 (t=21.3s)
+⚡ Akım: 40.00 A (Nominal: 0.00 A, Sapma: 40.00 A)
+📈 Eğim: 50.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #97
+🕐 Zaman: 2025-11-12 11:06:51.895 (t=21.4s)
+⚡ Akım: 44.00 A (Nominal: 0.00 A, Sapma: 44.00 A)
+📈 Eğim: 40.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #98
+🕐 Zaman: 2025-11-12 11:06:51.996 (t=21.5s)
+⚡ Akım: 47.00 A (Nominal: 0.00 A, Sapma: 47.00 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #99
+🕐 Zaman: 2025-11-12 11:06:52.096 (t=21.6s)
+⚡ Akım: 50.00 A (Nominal: 0.00 A, Sapma: 50.00 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #100
+🕐 Zaman: 2025-11-12 11:06:52.195 (t=21.7s)
+⚡ Akım: 50.00 A (Nominal: 0.00 A, Sapma: 50.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #101
+🕐 Zaman: 2025-11-12 11:06:52.296 (t=21.8s)
+⚡ Akım: 52.00 A (Nominal: 0.00 A, Sapma: 52.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #102
+🕐 Zaman: 2025-11-12 11:06:52.395 (t=21.9s)
+⚡ Akım: 54.00 A (Nominal: 0.00 A, Sapma: 54.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #103
+🕐 Zaman: 2025-11-12 11:06:52.496 (t=22.0s)
+⚡ Akım: 55.00 A (Nominal: 0.00 A, Sapma: 55.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #104
+🕐 Zaman: 2025-11-12 11:06:52.596 (t=22.1s)
+⚡ Akım: 56.00 A (Nominal: 0.00 A, Sapma: 56.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #105
+🕐 Zaman: 2025-11-12 11:06:52.695 (t=22.2s)
+⚡ Akım: 57.00 A (Nominal: 0.00 A, Sapma: 57.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #106
+🕐 Zaman: 2025-11-12 11:06:52.796 (t=22.3s)
+⚡ Akım: 57.00 A (Nominal: 0.00 A, Sapma: 57.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #107
+🕐 Zaman: 2025-11-12 11:06:52.895 (t=22.4s)
+⚡ Akım: 58.00 A (Nominal: 0.00 A, Sapma: 58.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #108
+🕐 Zaman: 2025-11-12 11:06:52.996 (t=22.5s)
+⚡ Akım: 58.00 A (Nominal: 0.00 A, Sapma: 58.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #109
+🕐 Zaman: 2025-11-12 11:06:53.096 (t=22.6s)
+⚡ Akım: 59.00 A (Nominal: 0.00 A, Sapma: 59.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #110
+🕐 Zaman: 2025-11-12 11:06:53.195 (t=22.7s)
+⚡ Akım: 59.00 A (Nominal: 0.00 A, Sapma: 59.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #111
+🕐 Zaman: 2025-11-12 11:06:53.296 (t=22.8s)
+⚡ Akım: 59.00 A (Nominal: 6.00 A, Sapma: 53.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #112
+🕐 Zaman: 2025-11-12 11:06:53.396 (t=22.9s)
+⚡ Akım: 59.00 A (Nominal: 17.00 A, Sapma: 42.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #113
+🕐 Zaman: 2025-11-12 11:06:53.496 (t=23.0s)
+⚡ Akım: 59.00 A (Nominal: 25.50 A, Sapma: 33.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #114
+🕐 Zaman: 2025-11-12 11:06:53.596 (t=23.1s)
+⚡ Akım: 60.00 A (Nominal: 32.00 A, Sapma: 28.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #115
+🕐 Zaman: 2025-11-12 11:06:53.695 (t=23.2s)
+⚡ Akım: 60.00 A (Nominal: 37.50 A, Sapma: 22.50 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #116
+🕐 Zaman: 2025-11-12 11:06:53.795 (t=23.3s)
+⚡ Akım: 60.00 A (Nominal: 42.00 A, Sapma: 18.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #117
+🕐 Zaman: 2025-11-12 11:06:53.895 (t=23.4s)
+⚡ Akım: 60.00 A (Nominal: 45.50 A, Sapma: 14.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #118
+🕐 Zaman: 2025-11-12 11:06:53.996 (t=23.5s)
+⚡ Akım: 60.00 A (Nominal: 48.50 A, Sapma: 11.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #119
+🕐 Zaman: 2025-11-12 11:06:54.096 (t=23.6s)
+⚡ Akım: 60.00 A (Nominal: 50.00 A, Sapma: 10.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #120
+🕐 Zaman: 2025-11-12 11:06:54.295 (t=23.8s)
+⚡ Akım: 60.00 A (Nominal: 51.00 A, Sapma: 9.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #121
+🕐 Zaman: 2025-11-12 11:06:54.395 (t=23.9s)
+⚡ Akım: 60.00 A (Nominal: 53.00 A, Sapma: 7.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #122
+🕐 Zaman: 2025-11-12 11:06:56.895 (t=26.4s)
+⚡ Akım: 57.00 A (Nominal: 60.00 A, Sapma: 3.00 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #123
+🕐 Zaman: 2025-11-12 11:06:56.995 (t=26.5s)
+⚡ Akım: 55.00 A (Nominal: 60.00 A, Sapma: 5.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #124
+🕐 Zaman: 2025-11-12 11:06:57.095 (t=26.6s)
+⚡ Akım: 53.00 A (Nominal: 60.00 A, Sapma: 7.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #125
+🕐 Zaman: 2025-11-12 11:06:57.195 (t=26.7s)
+⚡ Akım: 51.00 A (Nominal: 60.00 A, Sapma: 9.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #126
+🕐 Zaman: 2025-11-12 11:06:57.295 (t=26.8s)
+⚡ Akım: 50.00 A (Nominal: 60.00 A, Sapma: 10.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #127
+🕐 Zaman: 2025-11-12 11:06:57.396 (t=26.9s)
+⚡ Akım: 49.00 A (Nominal: 60.00 A, Sapma: 11.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #128
+🕐 Zaman: 2025-11-12 11:06:57.496 (t=27.0s)
+⚡ Akım: 48.00 A (Nominal: 60.00 A, Sapma: 12.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+────────────────────────────────────────────────────────────────────────────────
+⚠️  AKSİYON DEĞİŞİKLİĞİ #129
+────────────────────────────────────────────────────────────────────────────────
+🕐 Zaman: 2025-11-12 11:06:57.595 (t=27.1s)
+⚡ Akım: 48.00 A (Nominal: 60.00 A, Sapma: 12.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+   └─ Önceki: SAFE_STOP → Yeni: LIMIT_CURRENT
+
+────────────────────────────────────────────────────────────────────────────────
+⚠️  AKSİYON DEĞİŞİKLİĞİ #130
+────────────────────────────────────────────────────────────────────────────────
+🕐 Zaman: 2025-11-12 11:06:57.696 (t=27.2s)
+⚡ Akım: 47.00 A (Nominal: 60.00 A, Sapma: 13.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+   └─ Önceki: LIMIT_CURRENT → Yeni: SAFE_STOP
+
+🔍 OLAY #131
+🕐 Zaman: 2025-11-12 11:06:57.795 (t=27.3s)
+⚡ Akım: 47.00 A (Nominal: 60.00 A, Sapma: 13.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #132
+🕐 Zaman: 2025-11-12 11:06:57.895 (t=27.4s)
+⚡ Akım: 46.00 A (Nominal: 60.00 A, Sapma: 14.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #133
+🕐 Zaman: 2025-11-12 11:06:57.995 (t=27.5s)
+⚡ Akım: 46.00 A (Nominal: 60.00 A, Sapma: 14.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #134
+🕐 Zaman: 2025-11-12 11:06:58.096 (t=27.6s)
+⚡ Akım: 46.00 A (Nominal: 60.00 A, Sapma: 14.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #135
+🕐 Zaman: 2025-11-12 11:06:58.196 (t=27.7s)
+⚡ Akım: 46.00 A (Nominal: 60.00 A, Sapma: 14.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #136
+🕐 Zaman: 2025-11-12 11:06:58.295 (t=27.8s)
+⚡ Akım: 46.00 A (Nominal: 60.00 A, Sapma: 14.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #137
+🕐 Zaman: 2025-11-12 11:06:58.395 (t=27.9s)
+⚡ Akım: 45.00 A (Nominal: 60.00 A, Sapma: 15.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #138
+🕐 Zaman: 2025-11-12 11:06:58.495 (t=28.0s)
+⚡ Akım: 45.00 A (Nominal: 60.00 A, Sapma: 15.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #139
+🕐 Zaman: 2025-11-12 11:06:58.595 (t=28.1s)
+⚡ Akım: 45.00 A (Nominal: 60.00 A, Sapma: 15.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #140
+🕐 Zaman: 2025-11-12 11:06:58.695 (t=28.2s)
+⚡ Akım: 45.00 A (Nominal: 60.00 A, Sapma: 15.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #141
+🕐 Zaman: 2025-11-12 11:06:58.795 (t=28.3s)
+⚡ Akım: 45.00 A (Nominal: 58.50 A, Sapma: 13.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #142
+🕐 Zaman: 2025-11-12 11:06:58.895 (t=28.4s)
+⚡ Akım: 45.00 A (Nominal: 56.00 A, Sapma: 11.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #143
+🕐 Zaman: 2025-11-12 11:06:58.995 (t=28.5s)
+⚡ Akım: 45.00 A (Nominal: 54.00 A, Sapma: 9.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #144
+🕐 Zaman: 2025-11-12 11:06:59.095 (t=28.6s)
+⚡ Akım: 45.00 A (Nominal: 52.00 A, Sapma: 7.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #145
+🕐 Zaman: 2025-11-12 11:07:06.095 (t=35.6s)
+⚡ Akım: 54.00 A (Nominal: 45.00 A, Sapma: 9.00 A)
+📈 Eğim: 90.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #146
+🕐 Zaman: 2025-11-12 11:07:06.195 (t=35.7s)
+⚡ Akım: 61.00 A (Nominal: 45.00 A, Sapma: 16.00 A)
+📈 Eğim: 70.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #147
+🕐 Zaman: 2025-11-12 11:07:06.296 (t=35.8s)
+⚡ Akım: 67.00 A (Nominal: 45.00 A, Sapma: 22.00 A)
+📈 Eğim: 60.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #148
+🕐 Zaman: 2025-11-12 11:07:06.396 (t=35.9s)
+⚡ Akım: 72.00 A (Nominal: 45.00 A, Sapma: 27.00 A)
+📈 Eğim: 50.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #149
+🕐 Zaman: 2025-11-12 11:07:06.499 (t=36.0s)
+⚡ Akım: 75.00 A (Nominal: 45.00 A, Sapma: 30.00 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #150
+🕐 Zaman: 2025-11-12 11:07:06.595 (t=36.1s)
+⚡ Akım: 78.00 A (Nominal: 45.00 A, Sapma: 33.00 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #151
+🕐 Zaman: 2025-11-12 11:07:06.695 (t=36.2s)
+⚡ Akım: 81.00 A (Nominal: 45.00 A, Sapma: 36.00 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #152
+🕐 Zaman: 2025-11-12 11:07:06.795 (t=36.3s)
+⚡ Akım: 82.00 A (Nominal: 45.00 A, Sapma: 37.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #153
+🕐 Zaman: 2025-11-12 11:07:06.895 (t=36.4s)
+⚡ Akım: 84.00 A (Nominal: 45.00 A, Sapma: 39.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #154
+🕐 Zaman: 2025-11-12 11:07:06.995 (t=36.5s)
+⚡ Akım: 85.00 A (Nominal: 45.00 A, Sapma: 40.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #155
+🕐 Zaman: 2025-11-12 11:07:07.095 (t=36.6s)
+⚡ Akım: 86.00 A (Nominal: 45.00 A, Sapma: 41.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #156
+🕐 Zaman: 2025-11-12 11:07:07.211 (t=36.7s)
+⚡ Akım: 87.00 A (Nominal: 45.00 A, Sapma: 42.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #157
+🕐 Zaman: 2025-11-12 11:07:07.301 (t=36.8s)
+⚡ Akım: 88.00 A (Nominal: 45.00 A, Sapma: 43.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #158
+🕐 Zaman: 2025-11-12 11:07:07.396 (t=36.9s)
+⚡ Akım: 88.00 A (Nominal: 45.00 A, Sapma: 43.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #159
+🕐 Zaman: 2025-11-12 11:07:07.496 (t=37.0s)
+⚡ Akım: 88.00 A (Nominal: 45.00 A, Sapma: 43.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #160
+🕐 Zaman: 2025-11-12 11:07:07.595 (t=37.1s)
+⚡ Akım: 89.00 A (Nominal: 45.00 A, Sapma: 44.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #161
+🕐 Zaman: 2025-11-12 11:07:07.695 (t=37.2s)
+⚡ Akım: 89.00 A (Nominal: 45.00 A, Sapma: 44.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #162
+🕐 Zaman: 2025-11-12 11:07:07.805 (t=37.3s)
+⚡ Akım: 89.00 A (Nominal: 45.00 A, Sapma: 44.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #163
+🕐 Zaman: 2025-11-12 11:07:07.897 (t=37.4s)
+⚡ Akım: 89.00 A (Nominal: 45.00 A, Sapma: 44.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #164
+🕐 Zaman: 2025-11-12 11:07:07.996 (t=37.5s)
+⚡ Akım: 89.00 A (Nominal: 49.50 A, Sapma: 39.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #165
+🕐 Zaman: 2025-11-12 11:07:08.095 (t=37.6s)
+⚡ Akım: 89.00 A (Nominal: 57.50 A, Sapma: 31.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #166
+🕐 Zaman: 2025-11-12 11:07:08.195 (t=37.7s)
+⚡ Akım: 90.00 A (Nominal: 64.00 A, Sapma: 26.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #167
+🕐 Zaman: 2025-11-12 11:07:08.305 (t=37.8s)
+⚡ Akım: 90.00 A (Nominal: 69.50 A, Sapma: 20.50 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+────────────────────────────────────────────────────────────────────────────────
+⚠️  AKSİYON DEĞİŞİKLİĞİ #168
+────────────────────────────────────────────────────────────────────────────────
+🕐 Zaman: 2025-11-12 11:07:08.398 (t=37.9s)
+⚡ Akım: 90.00 A (Nominal: 73.50 A, Sapma: 16.50 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+   └─ Önceki: SAFE_STOP → Yeni: LIMIT_CURRENT
+
+🔍 OLAY #169
+🕐 Zaman: 2025-11-12 11:07:08.495 (t=38.0s)
+⚡ Akım: 90.00 A (Nominal: 76.50 A, Sapma: 13.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+
+🔍 OLAY #170
+🕐 Zaman: 2025-11-12 11:07:08.595 (t=38.1s)
+⚡ Akım: 90.00 A (Nominal: 79.50 A, Sapma: 10.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+
+🔍 OLAY #171
+🕐 Zaman: 2025-11-12 11:07:08.695 (t=38.2s)
+⚡ Akım: 90.00 A (Nominal: 81.50 A, Sapma: 8.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+
+🔍 OLAY #172
+🕐 Zaman: 2025-11-12 11:07:08.795 (t=38.3s)
+⚡ Akım: 90.00 A (Nominal: 83.00 A, Sapma: 7.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+
+────────────────────────────────────────────────────────────────────────────────
+⚠️  AKSİYON DEĞİŞİKLİĞİ #173
+────────────────────────────────────────────────────────────────────────────────
+🕐 Zaman: 2025-11-12 11:07:17.121 (t=46.6s)
+⚡ Akım: 69.00 A (Nominal: 90.00 A, Sapma: 21.00 A)
+📈 Eğim: 210.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+   └─ Önceki: LIMIT_CURRENT → Yeni: SAFE_STOP
+
+🔍 OLAY #174
+🕐 Zaman: 2025-11-12 11:07:17.612 (t=47.1s)
+⚡ Akım: 47.00 A (Nominal: 90.00 A, Sapma: 43.00 A)
+📈 Eğim: 220.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #175
+🕐 Zaman: 2025-11-12 11:07:18.052 (t=47.5s)
+⚡ Akım: 37.00 A (Nominal: 90.00 A, Sapma: 53.00 A)
+📈 Eğim: 100.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #176
+🕐 Zaman: 2025-11-12 11:07:18.520 (t=48.0s)
+⚡ Akım: 34.00 A (Nominal: 90.00 A, Sapma: 56.00 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #177
+🕐 Zaman: 2025-11-12 11:07:18.984 (t=48.5s)
+⚡ Akım: 33.00 A (Nominal: 90.00 A, Sapma: 57.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #178
+🕐 Zaman: 2025-11-12 11:07:19.431 (t=48.9s)
+⚡ Akım: 32.00 A (Nominal: 90.00 A, Sapma: 58.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #179
+🕐 Zaman: 2025-11-12 11:07:20.170 (t=49.6s)
+⚡ Akım: 32.00 A (Nominal: 90.00 A, Sapma: 58.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #180
+🕐 Zaman: 2025-11-12 11:07:20.573 (t=50.0s)
+⚡ Akım: 21.00 A (Nominal: 90.00 A, Sapma: 69.00 A)
+📈 Eğim: 110.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #181
+🕐 Zaman: 2025-11-12 11:07:21.157 (t=50.6s)
+⚡ Akım: 7.00 A (Nominal: 90.00 A, Sapma: 83.00 A)
+📈 Eğim: 140.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #182
+🕐 Zaman: 2025-11-12 11:07:21.694 (t=51.2s)
+⚡ Akım: 2.00 A (Nominal: 90.00 A, Sapma: 88.00 A)
+📈 Eğim: 50.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #183
+🕐 Zaman: 2025-11-12 11:07:22.225 (t=51.7s)
+⚡ Akım: 1.00 A (Nominal: 90.00 A, Sapma: 89.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #184
+🕐 Zaman: 2025-11-12 11:07:22.572 (t=52.0s)
+⚡ Akım: 0.00 A (Nominal: 90.00 A, Sapma: 90.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #185
+🕐 Zaman: 2025-11-12 11:07:23.363 (t=52.8s)
+⚡ Akım: 0.00 A (Nominal: 90.00 A, Sapma: 90.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #186
+🕐 Zaman: 2025-11-12 11:07:23.985 (t=53.5s)
+⚡ Akım: 0.00 A (Nominal: 90.00 A, Sapma: 90.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #187
+🕐 Zaman: 2025-11-12 11:07:24.505 (t=54.0s)
+⚡ Akım: 0.00 A (Nominal: 90.00 A, Sapma: 90.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #188
+🕐 Zaman: 2025-11-12 11:07:24.844 (t=54.3s)
+⚡ Akım: 0.00 A (Nominal: 90.00 A, Sapma: 90.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #189
+🕐 Zaman: 2025-11-12 11:07:25.415 (t=54.9s)
+⚡ Akım: 0.00 A (Nominal: 90.00 A, Sapma: 90.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #190
+🕐 Zaman: 2025-11-12 11:07:25.825 (t=55.3s)
+⚡ Akım: 0.00 A (Nominal: 90.00 A, Sapma: 90.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #191
+🕐 Zaman: 2025-11-12 11:07:26.524 (t=56.0s)
+⚡ Akım: 5.00 A (Nominal: 90.00 A, Sapma: 85.00 A)
+📈 Eğim: 50.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #192
+🕐 Zaman: 2025-11-12 11:07:27.014 (t=56.5s)
+⚡ Akım: 11.00 A (Nominal: 79.50 A, Sapma: 68.50 A)
+📈 Eğim: 60.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #193
+🕐 Zaman: 2025-11-12 11:07:27.489 (t=57.0s)
+⚡ Akım: 14.00 A (Nominal: 58.00 A, Sapma: 44.00 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #194
+🕐 Zaman: 2025-11-12 11:07:28.023 (t=57.5s)
+⚡ Akım: 15.00 A (Nominal: 42.00 A, Sapma: 27.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #195
+🕐 Zaman: 2025-11-12 11:07:28.506 (t=58.0s)
+⚡ Akım: 15.00 A (Nominal: 35.50 A, Sapma: 20.50 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #196
+🕐 Zaman: 2025-11-12 11:07:28.984 (t=58.5s)
+⚡ Akım: 15.00 A (Nominal: 33.50 A, Sapma: 18.50 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+────────────────────────────────────────────────────────────────────────────────
+⚠️  AKSİYON DEĞİŞİKLİĞİ #197
+────────────────────────────────────────────────────────────────────────────────
+🕐 Zaman: 2025-11-12 11:07:29.384 (t=58.9s)
+⚡ Akım: 15.00 A (Nominal: 32.50 A, Sapma: 17.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+   └─ Önceki: SAFE_STOP → Yeni: LIMIT_CURRENT
+
+🔍 OLAY #198
+🕐 Zaman: 2025-11-12 11:07:29.848 (t=59.3s)
+⚡ Akım: 15.00 A (Nominal: 32.00 A, Sapma: 17.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+
+🔍 OLAY #199
+🕐 Zaman: 2025-11-12 11:07:30.244 (t=59.7s)
+⚡ Akım: 15.00 A (Nominal: 26.50 A, Sapma: 11.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+
+────────────────────────────────────────────────────────────────────────────────
+⚠️  AKSİYON DEĞİŞİKLİĞİ #200
+────────────────────────────────────────────────────────────────────────────────
+🕐 Zaman: 2025-11-12 11:07:32.205 (t=61.7s)
+⚡ Akım: 47.00 A (Nominal: 15.00 A, Sapma: 32.00 A)
+📈 Eğim: 320.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+   └─ Önceki: LIMIT_CURRENT → Yeni: SAFE_STOP
+
+🔍 OLAY #201
+🕐 Zaman: 2025-11-12 11:07:32.313 (t=61.8s)
+⚡ Akım: 53.00 A (Nominal: 15.00 A, Sapma: 38.00 A)
+📈 Eğim: 60.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #202
+🕐 Zaman: 2025-11-12 11:07:32.417 (t=61.9s)
+⚡ Akım: 59.00 A (Nominal: 15.00 A, Sapma: 44.00 A)
+📈 Eğim: 60.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #203
+🕐 Zaman: 2025-11-12 11:07:32.511 (t=62.0s)
+⚡ Akım: 63.00 A (Nominal: 15.00 A, Sapma: 48.00 A)
+📈 Eğim: 40.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #204
+🕐 Zaman: 2025-11-12 11:07:32.607 (t=62.1s)
+⚡ Akım: 66.00 A (Nominal: 15.00 A, Sapma: 51.00 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #205
+🕐 Zaman: 2025-11-12 11:07:32.713 (t=62.2s)
+⚡ Akım: 69.00 A (Nominal: 15.00 A, Sapma: 54.00 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #206
+🕐 Zaman: 2025-11-12 11:07:32.804 (t=62.3s)
+⚡ Akım: 71.00 A (Nominal: 15.00 A, Sapma: 56.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #207
+🕐 Zaman: 2025-11-12 11:07:32.897 (t=62.4s)
+⚡ Akım: 73.00 A (Nominal: 15.00 A, Sapma: 58.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #208
+🕐 Zaman: 2025-11-12 11:07:33.000 (t=62.5s)
+⚡ Akım: 74.00 A (Nominal: 15.00 A, Sapma: 59.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #209
+🕐 Zaman: 2025-11-12 11:07:33.095 (t=62.6s)
+⚡ Akım: 76.00 A (Nominal: 15.00 A, Sapma: 61.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #210
+🕐 Zaman: 2025-11-12 11:07:33.209 (t=62.7s)
+⚡ Akım: 76.00 A (Nominal: 15.00 A, Sapma: 61.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #211
+🕐 Zaman: 2025-11-12 11:07:33.298 (t=62.8s)
+⚡ Akım: 76.00 A (Nominal: 15.00 A, Sapma: 61.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #212
+🕐 Zaman: 2025-11-12 11:07:33.394 (t=62.9s)
+⚡ Akım: 77.00 A (Nominal: 15.00 A, Sapma: 62.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #213
+🕐 Zaman: 2025-11-12 11:07:33.495 (t=63.0s)
+⚡ Akım: 78.00 A (Nominal: 15.00 A, Sapma: 63.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #214
+🕐 Zaman: 2025-11-12 11:07:33.595 (t=63.1s)
+⚡ Akım: 78.00 A (Nominal: 15.00 A, Sapma: 63.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #215
+🕐 Zaman: 2025-11-12 11:07:33.711 (t=63.2s)
+⚡ Akım: 79.00 A (Nominal: 15.00 A, Sapma: 64.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #216
+🕐 Zaman: 2025-11-12 11:07:33.809 (t=63.3s)
+⚡ Akım: 79.00 A (Nominal: 15.00 A, Sapma: 64.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #217
+🕐 Zaman: 2025-11-12 11:07:33.909 (t=63.4s)
+⚡ Akım: 79.00 A (Nominal: 15.00 A, Sapma: 64.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #218
+🕐 Zaman: 2025-11-12 11:07:34.014 (t=63.5s)
+⚡ Akım: 79.00 A (Nominal: 15.00 A, Sapma: 64.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #219
+🕐 Zaman: 2025-11-12 11:07:34.148 (t=63.6s)
+⚡ Akım: 80.00 A (Nominal: 31.00 A, Sapma: 49.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #220
+🕐 Zaman: 2025-11-12 11:07:34.267 (t=63.7s)
+⚡ Akım: 80.00 A (Nominal: 50.00 A, Sapma: 30.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #221
+🕐 Zaman: 2025-11-12 11:07:34.394 (t=63.9s)
+⚡ Akım: 80.00 A (Nominal: 56.00 A, Sapma: 24.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #222
+🕐 Zaman: 2025-11-12 11:07:34.496 (t=64.0s)
+⚡ Akım: 80.00 A (Nominal: 61.00 A, Sapma: 19.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #223
+🕐 Zaman: 2025-11-12 11:07:34.598 (t=64.1s)
+⚡ Akım: 80.00 A (Nominal: 64.50 A, Sapma: 15.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #224
+🕐 Zaman: 2025-11-12 11:07:34.700 (t=64.2s)
+⚡ Akım: 80.00 A (Nominal: 67.50 A, Sapma: 12.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #225
+🕐 Zaman: 2025-11-12 11:07:34.817 (t=64.3s)
+⚡ Akım: 80.00 A (Nominal: 70.00 A, Sapma: 10.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #226
+🕐 Zaman: 2025-11-12 11:07:34.914 (t=64.4s)
+⚡ Akım: 80.00 A (Nominal: 72.00 A, Sapma: 8.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #227
+🕐 Zaman: 2025-11-12 11:07:35.012 (t=64.5s)
+⚡ Akım: 80.00 A (Nominal: 73.50 A, Sapma: 6.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #228
+🕐 Zaman: 2025-11-12 11:07:41.046 (t=70.5s)
+⚡ Akım: 69.00 A (Nominal: 80.00 A, Sapma: 11.00 A)
+📈 Eğim: 110.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #229
+🕐 Zaman: 2025-11-12 11:07:41.163 (t=70.6s)
+⚡ Akım: 65.00 A (Nominal: 80.00 A, Sapma: 15.00 A)
+📈 Eğim: 40.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #230
+🕐 Zaman: 2025-11-12 11:07:41.315 (t=70.8s)
+⚡ Akım: 62.00 A (Nominal: 80.00 A, Sapma: 18.00 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #231
+🕐 Zaman: 2025-11-12 11:07:41.431 (t=70.9s)
+⚡ Akım: 60.00 A (Nominal: 80.00 A, Sapma: 20.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #232
+🕐 Zaman: 2025-11-12 11:07:41.541 (t=71.0s)
+⚡ Akım: 58.00 A (Nominal: 80.00 A, Sapma: 22.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #233
+🕐 Zaman: 2025-11-12 11:07:41.652 (t=71.1s)
+⚡ Akım: 56.00 A (Nominal: 80.00 A, Sapma: 24.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #234
+🕐 Zaman: 2025-11-12 11:07:41.795 (t=71.3s)
+⚡ Akım: 54.00 A (Nominal: 80.00 A, Sapma: 26.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #235
+🕐 Zaman: 2025-11-12 11:07:41.922 (t=71.4s)
+⚡ Akım: 53.00 A (Nominal: 80.00 A, Sapma: 27.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #236
+🕐 Zaman: 2025-11-12 11:07:42.017 (t=71.5s)
+⚡ Akım: 53.00 A (Nominal: 80.00 A, Sapma: 27.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #237
+🕐 Zaman: 2025-11-12 11:07:42.129 (t=71.6s)
+⚡ Akım: 52.00 A (Nominal: 80.00 A, Sapma: 28.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #238
+🕐 Zaman: 2025-11-12 11:07:42.226 (t=71.7s)
+⚡ Akım: 52.00 A (Nominal: 80.00 A, Sapma: 28.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #239
+🕐 Zaman: 2025-11-12 11:07:42.337 (t=71.8s)
+⚡ Akım: 51.00 A (Nominal: 80.00 A, Sapma: 29.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #240
+🕐 Zaman: 2025-11-12 11:07:42.495 (t=72.0s)
+⚡ Akım: 51.00 A (Nominal: 80.00 A, Sapma: 29.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #241
+🕐 Zaman: 2025-11-12 11:07:42.600 (t=72.1s)
+⚡ Akım: 51.00 A (Nominal: 80.00 A, Sapma: 29.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #242
+🕐 Zaman: 2025-11-12 11:07:42.702 (t=72.2s)
+⚡ Akım: 51.00 A (Nominal: 80.00 A, Sapma: 29.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #243
+🕐 Zaman: 2025-11-12 11:07:42.797 (t=72.3s)
+⚡ Akım: 51.00 A (Nominal: 80.00 A, Sapma: 29.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #244
+🕐 Zaman: 2025-11-12 11:07:42.914 (t=72.4s)
+⚡ Akım: 50.00 A (Nominal: 80.00 A, Sapma: 30.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #245
+🕐 Zaman: 2025-11-12 11:07:43.018 (t=72.5s)
+⚡ Akım: 50.00 A (Nominal: 80.00 A, Sapma: 30.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #246
+🕐 Zaman: 2025-11-12 11:07:43.118 (t=72.6s)
+⚡ Akım: 50.00 A (Nominal: 80.00 A, Sapma: 30.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #247
+🕐 Zaman: 2025-11-12 11:07:43.218 (t=72.7s)
+⚡ Akım: 50.00 A (Nominal: 74.50 A, Sapma: 24.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+────────────────────────────────────────────────────────────────────────────────
+⚠️  AKSİYON DEĞİŞİKLİĞİ #248
+────────────────────────────────────────────────────────────────────────────────
+🕐 Zaman: 2025-11-12 11:07:43.312 (t=72.8s)
+⚡ Akım: 50.00 A (Nominal: 67.00 A, Sapma: 17.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+   └─ Önceki: SAFE_STOP → Yeni: LIMIT_CURRENT
+
+🔍 OLAY #249
+🕐 Zaman: 2025-11-12 11:07:43.440 (t=72.9s)
+⚡ Akım: 50.00 A (Nominal: 63.50 A, Sapma: 13.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+
+🔍 OLAY #250
+🕐 Zaman: 2025-11-12 11:07:43.542 (t=73.0s)
+⚡ Akım: 50.00 A (Nominal: 61.00 A, Sapma: 11.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+
+🔍 OLAY #251
+🕐 Zaman: 2025-11-12 11:07:43.643 (t=73.1s)
+⚡ Akım: 50.00 A (Nominal: 59.00 A, Sapma: 9.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+
+🔍 OLAY #252
+🕐 Zaman: 2025-11-12 11:07:43.742 (t=73.2s)
+⚡ Akım: 50.00 A (Nominal: 57.00 A, Sapma: 7.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+
+────────────────────────────────────────────────────────────────────────────────
+⚠️  AKSİYON DEĞİŞİKLİĞİ #253
+────────────────────────────────────────────────────────────────────────────────
+🕐 Zaman: 2025-11-12 11:07:46.734 (t=76.2s)
+⚡ Akım: 42.00 A (Nominal: 50.00 A, Sapma: 8.00 A)
+📈 Eğim: 80.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+   └─ Önceki: LIMIT_CURRENT → Yeni: SAFE_STOP
+
+🔍 OLAY #254
+🕐 Zaman: 2025-11-12 11:07:46.845 (t=76.3s)
+⚡ Akım: 36.00 A (Nominal: 50.00 A, Sapma: 14.00 A)
+📈 Eğim: 60.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #255
+🕐 Zaman: 2025-11-12 11:07:46.953 (t=76.4s)
+⚡ Akım: 30.00 A (Nominal: 50.00 A, Sapma: 20.00 A)
+📈 Eğim: 60.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #256
+🕐 Zaman: 2025-11-12 11:07:47.096 (t=76.6s)
+⚡ Akım: 26.00 A (Nominal: 50.00 A, Sapma: 24.00 A)
+📈 Eğim: 40.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #257
+🕐 Zaman: 2025-11-12 11:07:47.218 (t=76.7s)
+⚡ Akım: 23.00 A (Nominal: 50.00 A, Sapma: 27.00 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #258
+🕐 Zaman: 2025-11-12 11:07:47.337 (t=76.8s)
+⚡ Akım: 18.00 A (Nominal: 50.00 A, Sapma: 32.00 A)
+📈 Eğim: 50.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #259
+🕐 Zaman: 2025-11-12 11:07:47.451 (t=76.9s)
+⚡ Akım: 17.00 A (Nominal: 50.00 A, Sapma: 33.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #260
+🕐 Zaman: 2025-11-12 11:07:47.595 (t=77.1s)
+⚡ Akım: 15.00 A (Nominal: 50.00 A, Sapma: 35.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #261
+🕐 Zaman: 2025-11-12 11:07:47.721 (t=77.2s)
+⚡ Akım: 14.00 A (Nominal: 50.00 A, Sapma: 36.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #262
+🕐 Zaman: 2025-11-12 11:07:47.840 (t=77.3s)
+⚡ Akım: 13.00 A (Nominal: 50.00 A, Sapma: 37.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #263
+🕐 Zaman: 2025-11-12 11:07:47.948 (t=77.4s)
+⚡ Akım: 13.00 A (Nominal: 50.00 A, Sapma: 37.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #264
+🕐 Zaman: 2025-11-12 11:07:48.095 (t=77.6s)
+⚡ Akım: 12.00 A (Nominal: 50.00 A, Sapma: 38.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #265
+🕐 Zaman: 2025-11-12 11:07:48.226 (t=77.7s)
+⚡ Akım: 11.00 A (Nominal: 50.00 A, Sapma: 39.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #266
+🕐 Zaman: 2025-11-12 11:07:48.334 (t=77.8s)
+⚡ Akım: 11.00 A (Nominal: 50.00 A, Sapma: 39.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #267
+🕐 Zaman: 2025-11-12 11:07:48.442 (t=77.9s)
+⚡ Akım: 11.00 A (Nominal: 50.00 A, Sapma: 39.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #268
+🕐 Zaman: 2025-11-12 11:07:48.545 (t=78.0s)
+⚡ Akım: 11.00 A (Nominal: 50.00 A, Sapma: 39.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #269
+🕐 Zaman: 2025-11-12 11:07:48.651 (t=78.1s)
+⚡ Akım: 11.00 A (Nominal: 50.00 A, Sapma: 39.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #270
+🕐 Zaman: 2025-11-12 11:07:48.795 (t=78.3s)
+⚡ Akım: 10.00 A (Nominal: 50.00 A, Sapma: 40.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #271
+🕐 Zaman: 2025-11-12 11:07:48.899 (t=78.4s)
+⚡ Akım: 10.00 A (Nominal: 50.00 A, Sapma: 40.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #272
+🕐 Zaman: 2025-11-12 11:07:49.004 (t=78.5s)
+⚡ Akım: 10.00 A (Nominal: 46.00 A, Sapma: 36.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #273
+🕐 Zaman: 2025-11-12 11:07:49.108 (t=78.6s)
+⚡ Akım: 10.00 A (Nominal: 39.00 A, Sapma: 29.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #274
+🕐 Zaman: 2025-11-12 11:07:49.242 (t=78.7s)
+⚡ Akım: 10.00 A (Nominal: 33.00 A, Sapma: 23.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #275
+🕐 Zaman: 2025-11-12 11:07:49.346 (t=78.8s)
+⚡ Akım: 10.00 A (Nominal: 28.00 A, Sapma: 18.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #276
+🕐 Zaman: 2025-11-12 11:07:49.454 (t=78.9s)
+⚡ Akım: 10.00 A (Nominal: 24.50 A, Sapma: 14.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #277
+🕐 Zaman: 2025-11-12 11:07:49.595 (t=79.1s)
+⚡ Akım: 10.00 A (Nominal: 20.50 A, Sapma: 10.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #278
+🕐 Zaman: 2025-11-12 11:07:49.731 (t=79.2s)
+⚡ Akım: 10.00 A (Nominal: 17.50 A, Sapma: 7.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #279
+🕐 Zaman: 2025-11-12 11:07:53.807 (t=83.3s)
+⚡ Akım: 26.00 A (Nominal: 10.00 A, Sapma: 16.00 A)
+📈 Eğim: 160.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #280
+🕐 Zaman: 2025-11-12 11:07:53.913 (t=83.4s)
+⚡ Akım: 39.00 A (Nominal: 10.00 A, Sapma: 29.00 A)
+📈 Eğim: 130.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #281
+🕐 Zaman: 2025-11-12 11:07:54.050 (t=83.5s)
+⚡ Akım: 57.00 A (Nominal: 10.00 A, Sapma: 47.00 A)
+📈 Eğim: 180.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #282
+🕐 Zaman: 2025-11-12 11:07:54.195 (t=83.7s)
+⚡ Akım: 64.00 A (Nominal: 10.00 A, Sapma: 54.00 A)
+📈 Eğim: 70.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #283
+🕐 Zaman: 2025-11-12 11:07:54.308 (t=83.8s)
+⚡ Akım: 69.00 A (Nominal: 10.00 A, Sapma: 59.00 A)
+📈 Eğim: 50.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #284
+🕐 Zaman: 2025-11-12 11:07:54.422 (t=83.9s)
+⚡ Akım: 73.00 A (Nominal: 10.00 A, Sapma: 63.00 A)
+📈 Eğim: 40.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #285
+🕐 Zaman: 2025-11-12 11:07:54.556 (t=84.0s)
+⚡ Akım: 79.00 A (Nominal: 10.00 A, Sapma: 69.00 A)
+📈 Eğim: 60.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #286
+🕐 Zaman: 2025-11-12 11:07:54.695 (t=84.2s)
+⚡ Akım: 81.00 A (Nominal: 10.00 A, Sapma: 71.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #287
+🕐 Zaman: 2025-11-12 11:07:54.808 (t=84.3s)
+⚡ Akım: 83.00 A (Nominal: 10.00 A, Sapma: 73.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #288
+🕐 Zaman: 2025-11-12 11:07:54.926 (t=84.4s)
+⚡ Akım: 85.00 A (Nominal: 10.00 A, Sapma: 75.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #289
+🕐 Zaman: 2025-11-12 11:07:55.066 (t=84.5s)
+⚡ Akım: 86.00 A (Nominal: 10.00 A, Sapma: 76.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #290
+🕐 Zaman: 2025-11-12 11:07:55.195 (t=84.7s)
+⚡ Akım: 87.00 A (Nominal: 10.00 A, Sapma: 77.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #291
+🕐 Zaman: 2025-11-12 11:07:55.305 (t=84.8s)
+⚡ Akım: 88.00 A (Nominal: 10.00 A, Sapma: 78.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #292
+🕐 Zaman: 2025-11-12 11:07:55.408 (t=84.9s)
+⚡ Akım: 88.00 A (Nominal: 10.00 A, Sapma: 78.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #293
+🕐 Zaman: 2025-11-12 11:07:55.547 (t=85.0s)
+⚡ Akım: 89.00 A (Nominal: 10.00 A, Sapma: 79.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #294
+🕐 Zaman: 2025-11-12 11:07:55.694 (t=85.2s)
+⚡ Akım: 89.00 A (Nominal: 10.00 A, Sapma: 79.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #295
+🕐 Zaman: 2025-11-12 11:07:55.800 (t=85.3s)
+⚡ Akım: 89.00 A (Nominal: 10.00 A, Sapma: 79.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #296
+🕐 Zaman: 2025-11-12 11:07:55.913 (t=85.4s)
+⚡ Akım: 89.00 A (Nominal: 10.00 A, Sapma: 79.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #297
+🕐 Zaman: 2025-11-12 11:07:56.021 (t=85.5s)
+⚡ Akım: 90.00 A (Nominal: 10.00 A, Sapma: 80.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #298
+🕐 Zaman: 2025-11-12 11:07:56.194 (t=85.7s)
+⚡ Akım: 90.00 A (Nominal: 18.00 A, Sapma: 72.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #299
+🕐 Zaman: 2025-11-12 11:07:56.300 (t=85.8s)
+⚡ Akım: 90.00 A (Nominal: 32.50 A, Sapma: 57.50 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #300
+🕐 Zaman: 2025-11-12 11:07:56.408 (t=85.9s)
+⚡ Akım: 90.00 A (Nominal: 48.00 A, Sapma: 42.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #301
+🕐 Zaman: 2025-11-12 11:07:56.517 (t=86.0s)
+⚡ Akım: 90.00 A (Nominal: 60.50 A, Sapma: 29.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #302
+🕐 Zaman: 2025-11-12 11:07:56.651 (t=86.1s)
+⚡ Akım: 90.00 A (Nominal: 66.50 A, Sapma: 23.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #303
+🕐 Zaman: 2025-11-12 11:07:56.795 (t=86.3s)
+⚡ Akım: 90.00 A (Nominal: 71.00 A, Sapma: 19.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+────────────────────────────────────────────────────────────────────────────────
+⚠️  AKSİYON DEĞİŞİKLİĞİ #304
+────────────────────────────────────────────────────────────────────────────────
+🕐 Zaman: 2025-11-12 11:07:56.909 (t=86.4s)
+⚡ Akım: 90.00 A (Nominal: 76.00 A, Sapma: 14.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+   └─ Önceki: SAFE_STOP → Yeni: LIMIT_CURRENT
+
+🔍 OLAY #305
+🕐 Zaman: 2025-11-12 11:07:57.020 (t=86.5s)
+⚡ Akım: 90.00 A (Nominal: 80.00 A, Sapma: 10.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+
+────────────────────────────────────────────────────────────────────────────────
+⚠️  AKSİYON DEĞİŞİKLİĞİ #306
+────────────────────────────────────────────────────────────────────────────────
+🕐 Zaman: 2025-11-12 11:07:57.150 (t=86.6s)
+⚡ Akım: 72.00 A (Nominal: 80.00 A, Sapma: 8.00 A)
+📈 Eğim: 180.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+   └─ Önceki: LIMIT_CURRENT → Yeni: SAFE_STOP
+
+🔍 OLAY #307
+🕐 Zaman: 2025-11-12 11:07:57.294 (t=86.8s)
+⚡ Akım: 58.00 A (Nominal: 80.00 A, Sapma: 22.00 A)
+📈 Eğim: 140.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #308
+🕐 Zaman: 2025-11-12 11:07:57.409 (t=86.9s)
+⚡ Akım: 46.00 A (Nominal: 80.00 A, Sapma: 34.00 A)
+📈 Eğim: 120.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #309
+🕐 Zaman: 2025-11-12 11:07:57.522 (t=87.0s)
+⚡ Akım: 37.00 A (Nominal: 80.00 A, Sapma: 43.00 A)
+📈 Eğim: 90.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #310
+🕐 Zaman: 2025-11-12 11:07:57.658 (t=87.1s)
+⚡ Akım: 29.00 A (Nominal: 80.00 A, Sapma: 51.00 A)
+📈 Eğim: 80.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #311
+🕐 Zaman: 2025-11-12 11:07:57.794 (t=87.3s)
+⚡ Akım: 19.00 A (Nominal: 80.00 A, Sapma: 61.00 A)
+📈 Eğim: 100.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #312
+🕐 Zaman: 2025-11-12 11:07:57.900 (t=87.4s)
+⚡ Akım: 15.00 A (Nominal: 80.00 A, Sapma: 65.00 A)
+📈 Eğim: 40.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #313
+🕐 Zaman: 2025-11-12 11:07:58.016 (t=87.5s)
+⚡ Akım: 12.00 A (Nominal: 80.00 A, Sapma: 68.00 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #314
+🕐 Zaman: 2025-11-12 11:07:58.142 (t=87.6s)
+⚡ Akım: 10.00 A (Nominal: 80.00 A, Sapma: 70.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #315
+🕐 Zaman: 2025-11-12 11:07:58.250 (t=87.7s)
+⚡ Akım: 8.00 A (Nominal: 80.00 A, Sapma: 72.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #316
+🕐 Zaman: 2025-11-12 11:07:58.394 (t=87.9s)
+⚡ Akım: 6.00 A (Nominal: 80.00 A, Sapma: 74.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #317
+🕐 Zaman: 2025-11-12 11:07:58.504 (t=88.0s)
+⚡ Akım: 5.00 A (Nominal: 80.00 A, Sapma: 75.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #318
+🕐 Zaman: 2025-11-12 11:07:58.625 (t=88.1s)
+⚡ Akım: 3.00 A (Nominal: 80.00 A, Sapma: 77.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #319
+🕐 Zaman: 2025-11-12 11:07:58.737 (t=88.2s)
+⚡ Akım: 3.00 A (Nominal: 80.00 A, Sapma: 77.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #320
+🕐 Zaman: 2025-11-12 11:07:58.841 (t=88.3s)
+⚡ Akım: 2.00 A (Nominal: 80.00 A, Sapma: 78.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #321
+🕐 Zaman: 2025-11-12 11:07:58.950 (t=88.4s)
+⚡ Akım: 2.00 A (Nominal: 80.00 A, Sapma: 78.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #322
+🕐 Zaman: 2025-11-12 11:07:59.094 (t=88.6s)
+⚡ Akım: 1.00 A (Nominal: 80.00 A, Sapma: 79.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #323
+🕐 Zaman: 2025-11-12 11:07:59.203 (t=88.7s)
+⚡ Akım: 1.00 A (Nominal: 80.00 A, Sapma: 79.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #324
+🕐 Zaman: 2025-11-12 11:07:59.313 (t=88.8s)
+⚡ Akım: 1.00 A (Nominal: 80.00 A, Sapma: 79.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #325
+🕐 Zaman: 2025-11-12 11:07:59.422 (t=88.9s)
+⚡ Akım: 1.00 A (Nominal: 76.50 A, Sapma: 75.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #326
+🕐 Zaman: 2025-11-12 11:07:59.546 (t=89.0s)
+⚡ Akım: 1.00 A (Nominal: 65.00 A, Sapma: 64.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #327
+🕐 Zaman: 2025-11-12 11:07:59.695 (t=89.2s)
+⚡ Akım: 0.00 A (Nominal: 52.00 A, Sapma: 52.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #328
+🕐 Zaman: 2025-11-12 11:07:59.804 (t=89.3s)
+⚡ Akım: 0.00 A (Nominal: 41.50 A, Sapma: 41.50 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #329
+🕐 Zaman: 2025-11-12 11:07:59.921 (t=89.4s)
+⚡ Akım: 0.00 A (Nominal: 33.00 A, Sapma: 33.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #330
+🕐 Zaman: 2025-11-12 11:08:00.057 (t=89.5s)
+⚡ Akım: 0.00 A (Nominal: 24.00 A, Sapma: 24.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #331
+🕐 Zaman: 2025-11-12 11:08:00.202 (t=89.7s)
+⚡ Akım: 0.00 A (Nominal: 17.00 A, Sapma: 17.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #332
+🕐 Zaman: 2025-11-12 11:08:00.314 (t=89.8s)
+⚡ Akım: 0.00 A (Nominal: 13.50 A, Sapma: 13.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #333
+🕐 Zaman: 2025-11-12 11:08:00.426 (t=89.9s)
+⚡ Akım: 0.00 A (Nominal: 11.00 A, Sapma: 11.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #334
+🕐 Zaman: 2025-11-12 11:08:00.538 (t=90.0s)
+⚡ Akım: 0.00 A (Nominal: 9.00 A, Sapma: 9.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #335
+🕐 Zaman: 2025-11-12 11:08:00.695 (t=90.2s)
+⚡ Akım: 0.00 A (Nominal: 7.00 A, Sapma: 7.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #336
+🕐 Zaman: 2025-11-12 11:08:01.309 (t=90.8s)
+⚡ Akım: 12.00 A (Nominal: 2.50 A, Sapma: 9.50 A)
+📈 Eğim: 120.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #337
+🕐 Zaman: 2025-11-12 11:08:01.425 (t=90.9s)
+⚡ Akım: 22.00 A (Nominal: 2.50 A, Sapma: 19.50 A)
+📈 Eğim: 100.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #338
+🕐 Zaman: 2025-11-12 11:08:01.533 (t=91.0s)
+⚡ Akım: 29.00 A (Nominal: 2.50 A, Sapma: 26.50 A)
+📈 Eğim: 70.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #339
+🕐 Zaman: 2025-11-12 11:08:01.695 (t=91.2s)
+⚡ Akım: 40.00 A (Nominal: 2.50 A, Sapma: 37.50 A)
+📈 Eğim: 110.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #340
+🕐 Zaman: 2025-11-12 11:08:01.810 (t=91.3s)
+⚡ Akım: 44.00 A (Nominal: 2.50 A, Sapma: 41.50 A)
+📈 Eğim: 40.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #341
+🕐 Zaman: 2025-11-12 11:08:01.921 (t=91.4s)
+⚡ Akım: 47.00 A (Nominal: 2.50 A, Sapma: 44.50 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #342
+🕐 Zaman: 2025-11-12 11:08:02.029 (t=91.5s)
+⚡ Akım: 50.00 A (Nominal: 2.50 A, Sapma: 47.50 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #343
+🕐 Zaman: 2025-11-12 11:08:02.195 (t=91.7s)
+⚡ Akım: 54.00 A (Nominal: 2.50 A, Sapma: 51.50 A)
+📈 Eğim: 40.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #344
+🕐 Zaman: 2025-11-12 11:08:02.316 (t=91.8s)
+⚡ Akım: 55.00 A (Nominal: 2.50 A, Sapma: 52.50 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #345
+🕐 Zaman: 2025-11-12 11:08:02.434 (t=91.9s)
+⚡ Akım: 56.00 A (Nominal: 2.50 A, Sapma: 53.50 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #346
+🕐 Zaman: 2025-11-12 11:08:02.543 (t=92.0s)
+⚡ Akım: 57.00 A (Nominal: 2.50 A, Sapma: 54.50 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #347
+🕐 Zaman: 2025-11-12 11:08:02.695 (t=92.2s)
+⚡ Akım: 58.00 A (Nominal: 2.50 A, Sapma: 55.50 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #348
+🕐 Zaman: 2025-11-12 11:08:02.802 (t=92.3s)
+⚡ Akım: 58.00 A (Nominal: 2.50 A, Sapma: 55.50 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #349
+🕐 Zaman: 2025-11-12 11:08:02.909 (t=92.4s)
+⚡ Akım: 59.00 A (Nominal: 2.50 A, Sapma: 56.50 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #350
+🕐 Zaman: 2025-11-12 11:08:03.019 (t=92.5s)
+⚡ Akım: 59.00 A (Nominal: 2.50 A, Sapma: 56.50 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #351
+🕐 Zaman: 2025-11-12 11:08:03.159 (t=92.6s)
+⚡ Akım: 59.00 A (Nominal: 2.50 A, Sapma: 56.50 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #352
+🕐 Zaman: 2025-11-12 11:08:03.295 (t=92.8s)
+⚡ Akım: 59.00 A (Nominal: 2.50 A, Sapma: 56.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #353
+🕐 Zaman: 2025-11-12 11:08:03.403 (t=92.9s)
+⚡ Akım: 59.00 A (Nominal: 2.50 A, Sapma: 56.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #354
+🕐 Zaman: 2025-11-12 11:08:03.509 (t=93.0s)
+⚡ Akım: 60.00 A (Nominal: 2.50 A, Sapma: 57.50 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #355
+🕐 Zaman: 2025-11-12 11:08:03.635 (t=93.1s)
+⚡ Akım: 60.00 A (Nominal: 7.00 A, Sapma: 53.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #356
+🕐 Zaman: 2025-11-12 11:08:03.741 (t=93.2s)
+⚡ Akım: 60.00 A (Nominal: 17.00 A, Sapma: 43.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #357
+🕐 Zaman: 2025-11-12 11:08:03.848 (t=93.3s)
+⚡ Akım: 60.00 A (Nominal: 25.50 A, Sapma: 34.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #358
+🕐 Zaman: 2025-11-12 11:08:03.995 (t=93.5s)
+⚡ Akım: 60.00 A (Nominal: 34.50 A, Sapma: 25.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #359
+🕐 Zaman: 2025-11-12 11:08:04.096 (t=93.6s)
+⚡ Akım: 60.00 A (Nominal: 42.00 A, Sapma: 18.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #360
+🕐 Zaman: 2025-11-12 11:08:04.231 (t=93.7s)
+⚡ Akım: 60.00 A (Nominal: 45.50 A, Sapma: 14.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #361
+🕐 Zaman: 2025-11-12 11:08:04.346 (t=93.8s)
+⚡ Akım: 60.00 A (Nominal: 48.50 A, Sapma: 11.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #362
+🕐 Zaman: 2025-11-12 11:08:04.495 (t=94.0s)
+⚡ Akım: 60.00 A (Nominal: 52.00 A, Sapma: 8.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #363
+🕐 Zaman: 2025-11-12 11:08:04.894 (t=94.4s)
+⚡ Akım: 57.00 A (Nominal: 56.50 A, Sapma: 0.50 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #364
+🕐 Zaman: 2025-11-12 11:08:05.013 (t=94.5s)
+⚡ Akım: 55.00 A (Nominal: 56.50 A, Sapma: 1.50 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #365
+🕐 Zaman: 2025-11-12 11:08:05.130 (t=94.6s)
+⚡ Akım: 53.00 A (Nominal: 56.50 A, Sapma: 3.50 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #366
+🕐 Zaman: 2025-11-12 11:08:05.258 (t=94.7s)
+⚡ Akım: 51.00 A (Nominal: 56.50 A, Sapma: 5.50 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #367
+🕐 Zaman: 2025-11-12 11:08:05.395 (t=94.9s)
+⚡ Akım: 50.00 A (Nominal: 56.50 A, Sapma: 6.50 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #368
+🕐 Zaman: 2025-11-12 11:08:05.509 (t=95.0s)
+⚡ Akım: 49.00 A (Nominal: 56.50 A, Sapma: 7.50 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #369
+🕐 Zaman: 2025-11-12 11:08:05.618 (t=95.1s)
+⚡ Akım: 48.00 A (Nominal: 56.50 A, Sapma: 8.50 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #370
+🕐 Zaman: 2025-11-12 11:08:05.727 (t=95.2s)
+⚡ Akım: 47.00 A (Nominal: 56.50 A, Sapma: 9.50 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #371
+🕐 Zaman: 2025-11-12 11:08:05.895 (t=95.4s)
+⚡ Akım: 47.00 A (Nominal: 56.50 A, Sapma: 9.50 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #372
+🕐 Zaman: 2025-11-12 11:08:06.003 (t=95.5s)
+⚡ Akım: 46.00 A (Nominal: 56.50 A, Sapma: 10.50 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #373
+🕐 Zaman: 2025-11-12 11:08:06.113 (t=95.6s)
+⚡ Akım: 46.00 A (Nominal: 56.50 A, Sapma: 10.50 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #374
+🕐 Zaman: 2025-11-12 11:08:06.217 (t=95.7s)
+⚡ Akım: 46.00 A (Nominal: 56.50 A, Sapma: 10.50 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #375
+🕐 Zaman: 2025-11-12 11:08:06.351 (t=95.8s)
+⚡ Akım: 46.00 A (Nominal: 56.50 A, Sapma: 10.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #376
+🕐 Zaman: 2025-11-12 11:08:06.495 (t=96.0s)
+⚡ Akım: 45.00 A (Nominal: 56.50 A, Sapma: 11.50 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #377
+🕐 Zaman: 2025-11-12 11:08:06.603 (t=96.1s)
+⚡ Akım: 45.00 A (Nominal: 56.50 A, Sapma: 11.50 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #378
+🕐 Zaman: 2025-11-12 11:08:06.721 (t=96.2s)
+⚡ Akım: 45.00 A (Nominal: 56.50 A, Sapma: 11.50 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #379
+🕐 Zaman: 2025-11-12 11:08:06.854 (t=96.3s)
+⚡ Akım: 45.00 A (Nominal: 56.50 A, Sapma: 11.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #380
+🕐 Zaman: 2025-11-12 11:08:06.995 (t=96.5s)
+⚡ Akım: 45.00 A (Nominal: 56.50 A, Sapma: 11.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #381
+🕐 Zaman: 2025-11-12 11:08:07.111 (t=96.6s)
+⚡ Akım: 45.00 A (Nominal: 56.50 A, Sapma: 11.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+────────────────────────────────────────────────────────────────────────────────
+⚠️  AKSİYON DEĞİŞİKLİĞİ #382
+────────────────────────────────────────────────────────────────────────────────
+🕐 Zaman: 2025-11-12 11:08:07.217 (t=96.7s)
+⚡ Akım: 45.00 A (Nominal: 56.50 A, Sapma: 11.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+   └─ Önceki: SAFE_STOP → Yeni: LIMIT_CURRENT
+
+🔍 OLAY #383
+🕐 Zaman: 2025-11-12 11:08:07.354 (t=96.8s)
+⚡ Akım: 45.00 A (Nominal: 56.00 A, Sapma: 11.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+
+🔍 OLAY #384
+🕐 Zaman: 2025-11-12 11:08:07.495 (t=97.0s)
+⚡ Akım: 45.00 A (Nominal: 54.00 A, Sapma: 9.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+
+🔍 OLAY #385
+🕐 Zaman: 2025-11-12 11:08:07.608 (t=97.1s)
+⚡ Akım: 45.00 A (Nominal: 52.00 A, Sapma: 7.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+
+────────────────────────────────────────────────────────────────────────────────
+⚠️  AKSİYON DEĞİŞİKLİĞİ #386
+────────────────────────────────────────────────────────────────────────────────
+🕐 Zaman: 2025-11-12 11:08:14.421 (t=103.9s)
+⚡ Akım: 61.00 A (Nominal: 45.00 A, Sapma: 16.00 A)
+📈 Eğim: 160.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+   └─ Önceki: LIMIT_CURRENT → Yeni: SAFE_STOP
+
+🔍 OLAY #387
+🕐 Zaman: 2025-11-12 11:08:14.528 (t=104.0s)
+⚡ Akım: 67.00 A (Nominal: 45.00 A, Sapma: 22.00 A)
+📈 Eğim: 60.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #388
+🕐 Zaman: 2025-11-12 11:08:14.636 (t=104.1s)
+⚡ Akım: 72.00 A (Nominal: 45.00 A, Sapma: 27.00 A)
+📈 Eğim: 50.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #389
+🕐 Zaman: 2025-11-12 11:08:14.743 (t=104.2s)
+⚡ Akım: 75.00 A (Nominal: 45.00 A, Sapma: 30.00 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #390
+🕐 Zaman: 2025-11-12 11:08:14.871 (t=104.3s)
+⚡ Akım: 78.00 A (Nominal: 45.00 A, Sapma: 33.00 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #391
+🕐 Zaman: 2025-11-12 11:08:14.994 (t=104.5s)
+⚡ Akım: 81.00 A (Nominal: 45.00 A, Sapma: 36.00 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #392
+🕐 Zaman: 2025-11-12 11:08:15.102 (t=104.6s)
+⚡ Akım: 82.00 A (Nominal: 45.00 A, Sapma: 37.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #393
+🕐 Zaman: 2025-11-12 11:08:15.210 (t=104.7s)
+⚡ Akım: 84.00 A (Nominal: 45.00 A, Sapma: 39.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #394
+🕐 Zaman: 2025-11-12 11:08:15.320 (t=104.8s)
+⚡ Akım: 85.00 A (Nominal: 45.00 A, Sapma: 40.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #395
+🕐 Zaman: 2025-11-12 11:08:15.450 (t=104.9s)
+⚡ Akım: 86.00 A (Nominal: 45.00 A, Sapma: 41.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #396
+🕐 Zaman: 2025-11-12 11:08:15.594 (t=105.1s)
+⚡ Akım: 88.00 A (Nominal: 45.00 A, Sapma: 43.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #397
+🕐 Zaman: 2025-11-12 11:08:15.704 (t=105.2s)
+⚡ Akım: 88.00 A (Nominal: 45.00 A, Sapma: 43.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #398
+🕐 Zaman: 2025-11-12 11:08:15.812 (t=105.3s)
+⚡ Akım: 88.00 A (Nominal: 45.00 A, Sapma: 43.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #399
+🕐 Zaman: 2025-11-12 11:08:15.945 (t=105.4s)
+⚡ Akım: 89.00 A (Nominal: 45.00 A, Sapma: 44.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #400
+🕐 Zaman: 2025-11-12 11:08:16.094 (t=105.6s)
+⚡ Akım: 89.00 A (Nominal: 45.00 A, Sapma: 44.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #401
+🕐 Zaman: 2025-11-12 11:08:16.204 (t=105.7s)
+⚡ Akım: 89.00 A (Nominal: 45.00 A, Sapma: 44.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #402
+🕐 Zaman: 2025-11-12 11:08:16.311 (t=105.8s)
+⚡ Akım: 89.00 A (Nominal: 45.00 A, Sapma: 44.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #403
+🕐 Zaman: 2025-11-12 11:08:16.437 (t=105.9s)
+⚡ Akım: 90.00 A (Nominal: 45.00 A, Sapma: 45.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #404
+🕐 Zaman: 2025-11-12 11:08:16.543 (t=106.0s)
+⚡ Akım: 90.00 A (Nominal: 45.00 A, Sapma: 45.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #405
+🕐 Zaman: 2025-11-12 11:08:16.650 (t=106.1s)
+⚡ Akım: 90.00 A (Nominal: 53.00 A, Sapma: 37.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #406
+🕐 Zaman: 2025-11-12 11:08:16.794 (t=106.3s)
+⚡ Akım: 90.00 A (Nominal: 64.00 A, Sapma: 26.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #407
+🕐 Zaman: 2025-11-12 11:08:16.905 (t=106.4s)
+⚡ Akım: 90.00 A (Nominal: 69.50 A, Sapma: 20.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #408
+🕐 Zaman: 2025-11-12 11:08:17.034 (t=106.5s)
+⚡ Akım: 90.00 A (Nominal: 73.50 A, Sapma: 16.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #409
+🕐 Zaman: 2025-11-12 11:08:17.142 (t=106.6s)
+⚡ Akım: 90.00 A (Nominal: 76.50 A, Sapma: 13.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #410
+🕐 Zaman: 2025-11-12 11:08:17.251 (t=106.7s)
+⚡ Akım: 90.00 A (Nominal: 79.50 A, Sapma: 10.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #411
+🕐 Zaman: 2025-11-12 11:08:17.394 (t=106.9s)
+⚡ Akım: 90.00 A (Nominal: 81.50 A, Sapma: 8.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #412
+🕐 Zaman: 2025-11-12 11:08:17.518 (t=107.0s)
+⚡ Akım: 90.00 A (Nominal: 83.00 A, Sapma: 7.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+────────────────────────────────────────────────────────────────────────────────
+⚠️  AKSİYON DEĞİŞİKLİĞİ #413
+────────────────────────────────────────────────────────────────────────────────
+🕐 Zaman: 2025-11-12 11:08:24.494 (t=114.0s)
+⚡ Akım: 90.00 A (Nominal: 90.00 A, Sapma: 0.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: STABLE (Seviye: 0)
+🎯 Aksiyon: SMOOTH_CURRENT
+   └─ Önceki: SAFE_STOP → Yeni: SMOOTH_CURRENT
+
+────────────────────────────────────────────────────────────────────────────────
+⚠️  AKSİYON DEĞİŞİKLİĞİ #414
+────────────────────────────────────────────────────────────────────────────────
+🕐 Zaman: 2025-11-12 11:08:25.317 (t=114.8s)
+⚡ Akım: 78.00 A (Nominal: 90.00 A, Sapma: 12.00 A)
+📈 Eğim: 120.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+   └─ Önceki: SMOOTH_CURRENT → Yeni: SAFE_STOP
+
+🔍 OLAY #415
+🕐 Zaman: 2025-11-12 11:08:25.442 (t=114.9s)
+⚡ Akım: 69.00 A (Nominal: 90.00 A, Sapma: 21.00 A)
+📈 Eğim: 90.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #416
+🕐 Zaman: 2025-11-12 11:08:25.543 (t=115.0s)
+⚡ Akım: 62.00 A (Nominal: 90.00 A, Sapma: 28.00 A)
+📈 Eğim: 70.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #417
+🕐 Zaman: 2025-11-12 11:08:25.644 (t=115.1s)
+⚡ Akım: 56.00 A (Nominal: 90.00 A, Sapma: 34.00 A)
+📈 Eğim: 60.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #418
+🕐 Zaman: 2025-11-12 11:08:25.742 (t=115.2s)
+⚡ Akım: 51.00 A (Nominal: 90.00 A, Sapma: 39.00 A)
+📈 Eğim: 50.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #419
+🕐 Zaman: 2025-11-12 11:08:25.853 (t=115.3s)
+⚡ Akım: 47.00 A (Nominal: 90.00 A, Sapma: 43.00 A)
+📈 Eğim: 40.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #420
+🕐 Zaman: 2025-11-12 11:08:25.995 (t=115.5s)
+⚡ Akım: 44.00 A (Nominal: 90.00 A, Sapma: 46.00 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #421
+🕐 Zaman: 2025-11-12 11:08:26.097 (t=115.6s)
+⚡ Akım: 42.00 A (Nominal: 90.00 A, Sapma: 48.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #422
+🕐 Zaman: 2025-11-12 11:08:26.199 (t=115.7s)
+⚡ Akım: 40.00 A (Nominal: 90.00 A, Sapma: 50.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #423
+🕐 Zaman: 2025-11-12 11:08:26.301 (t=115.8s)
+⚡ Akım: 38.00 A (Nominal: 90.00 A, Sapma: 52.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #424
+🕐 Zaman: 2025-11-12 11:08:26.422 (t=115.9s)
+⚡ Akım: 37.00 A (Nominal: 90.00 A, Sapma: 53.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #425
+🕐 Zaman: 2025-11-12 11:08:26.524 (t=116.0s)
+⚡ Akım: 36.00 A (Nominal: 90.00 A, Sapma: 54.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #426
+🕐 Zaman: 2025-11-12 11:08:26.626 (t=116.1s)
+⚡ Akım: 35.00 A (Nominal: 90.00 A, Sapma: 55.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #427
+🕐 Zaman: 2025-11-12 11:08:26.729 (t=116.2s)
+⚡ Akım: 35.00 A (Nominal: 90.00 A, Sapma: 55.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #428
+🕐 Zaman: 2025-11-12 11:08:26.825 (t=116.3s)
+⚡ Akım: 34.00 A (Nominal: 90.00 A, Sapma: 56.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #429
+🕐 Zaman: 2025-11-12 11:08:26.947 (t=116.4s)
+⚡ Akım: 34.00 A (Nominal: 90.00 A, Sapma: 56.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #430
+🕐 Zaman: 2025-11-12 11:08:27.048 (t=116.5s)
+⚡ Akım: 33.00 A (Nominal: 90.00 A, Sapma: 57.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #431
+🕐 Zaman: 2025-11-12 11:08:27.094 (t=116.6s)
+⚡ Akım: 33.00 A (Nominal: 90.00 A, Sapma: 57.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #432
+🕐 Zaman: 2025-11-12 11:08:27.199 (t=116.7s)
+⚡ Akım: 33.00 A (Nominal: 90.00 A, Sapma: 57.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #433
+🕐 Zaman: 2025-11-12 11:08:27.303 (t=116.8s)
+⚡ Akım: 33.00 A (Nominal: 84.00 A, Sapma: 51.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #434
+🕐 Zaman: 2025-11-12 11:08:27.427 (t=116.9s)
+⚡ Akım: 33.00 A (Nominal: 73.50 A, Sapma: 40.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #435
+🕐 Zaman: 2025-11-12 11:08:27.525 (t=117.0s)
+⚡ Akım: 32.00 A (Nominal: 65.50 A, Sapma: 33.50 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #436
+🕐 Zaman: 2025-11-12 11:08:27.634 (t=117.1s)
+⚡ Akım: 32.00 A (Nominal: 59.00 A, Sapma: 27.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #437
+🕐 Zaman: 2025-11-12 11:08:27.738 (t=117.2s)
+⚡ Akım: 32.00 A (Nominal: 53.50 A, Sapma: 21.50 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #438
+🕐 Zaman: 2025-11-12 11:08:27.894 (t=117.4s)
+⚡ Akım: 32.00 A (Nominal: 49.00 A, Sapma: 17.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #439
+🕐 Zaman: 2025-11-12 11:08:27.999 (t=117.5s)
+⚡ Akım: 32.00 A (Nominal: 45.50 A, Sapma: 13.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #440
+🕐 Zaman: 2025-11-12 11:08:28.102 (t=117.6s)
+⚡ Akım: 32.00 A (Nominal: 43.00 A, Sapma: 11.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #441
+🕐 Zaman: 2025-11-12 11:08:28.200 (t=117.7s)
+⚡ Akım: 32.00 A (Nominal: 41.00 A, Sapma: 9.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #442
+🕐 Zaman: 2025-11-12 11:08:28.309 (t=117.8s)
+⚡ Akım: 32.00 A (Nominal: 39.00 A, Sapma: 7.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #443
+🕐 Zaman: 2025-11-12 11:08:31.143 (t=120.6s)
+⚡ Akım: 26.00 A (Nominal: 32.00 A, Sapma: 6.00 A)
+📈 Eğim: 60.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #444
+🕐 Zaman: 2025-11-12 11:08:31.249 (t=120.7s)
+⚡ Akım: 20.00 A (Nominal: 32.00 A, Sapma: 12.00 A)
+📈 Eğim: 60.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #445
+🕐 Zaman: 2025-11-12 11:08:31.394 (t=120.9s)
+⚡ Akım: 13.00 A (Nominal: 32.00 A, Sapma: 19.00 A)
+📈 Eğim: 70.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #446
+🕐 Zaman: 2025-11-12 11:08:31.500 (t=121.0s)
+⚡ Akım: 10.00 A (Nominal: 32.00 A, Sapma: 22.00 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #447
+🕐 Zaman: 2025-11-12 11:08:31.599 (t=121.1s)
+⚡ Akım: 8.00 A (Nominal: 32.00 A, Sapma: 24.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #448
+🕐 Zaman: 2025-11-12 11:08:31.711 (t=121.2s)
+⚡ Akım: 7.00 A (Nominal: 32.00 A, Sapma: 25.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #449
+🕐 Zaman: 2025-11-12 11:08:31.818 (t=121.3s)
+⚡ Akım: 5.00 A (Nominal: 32.00 A, Sapma: 27.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #450
+🕐 Zaman: 2025-11-12 11:08:31.945 (t=121.4s)
+⚡ Akım: 4.00 A (Nominal: 32.00 A, Sapma: 28.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #451
+🕐 Zaman: 2025-11-12 11:08:32.051 (t=121.5s)
+⚡ Akım: 3.00 A (Nominal: 32.00 A, Sapma: 29.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #452
+🕐 Zaman: 2025-11-12 11:08:32.195 (t=121.7s)
+⚡ Akım: 3.00 A (Nominal: 32.00 A, Sapma: 29.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #453
+🕐 Zaman: 2025-11-12 11:08:32.303 (t=121.8s)
+⚡ Akım: 2.00 A (Nominal: 32.00 A, Sapma: 30.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #454
+🕐 Zaman: 2025-11-12 11:08:32.429 (t=121.9s)
+⚡ Akım: 1.00 A (Nominal: 32.00 A, Sapma: 31.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #455
+🕐 Zaman: 2025-11-12 11:08:32.537 (t=122.0s)
+⚡ Akım: 1.00 A (Nominal: 32.00 A, Sapma: 31.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #456
+🕐 Zaman: 2025-11-12 11:08:32.645 (t=122.1s)
+⚡ Akım: 1.00 A (Nominal: 32.00 A, Sapma: 31.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #457
+🕐 Zaman: 2025-11-12 11:08:32.694 (t=122.2s)
+⚡ Akım: 1.00 A (Nominal: 32.00 A, Sapma: 31.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #458
+🕐 Zaman: 2025-11-12 11:08:32.820 (t=122.3s)
+⚡ Akım: 1.00 A (Nominal: 32.00 A, Sapma: 31.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #459
+🕐 Zaman: 2025-11-12 11:08:32.927 (t=122.4s)
+⚡ Akım: 1.00 A (Nominal: 32.00 A, Sapma: 31.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #460
+🕐 Zaman: 2025-11-12 11:08:33.034 (t=122.5s)
+⚡ Akım: 0.00 A (Nominal: 32.00 A, Sapma: 32.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #461
+🕐 Zaman: 2025-11-12 11:08:33.141 (t=122.6s)
+⚡ Akım: 0.00 A (Nominal: 32.00 A, Sapma: 32.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #462
+🕐 Zaman: 2025-11-12 11:08:33.267 (t=122.7s)
+⚡ Akım: 0.00 A (Nominal: 29.00 A, Sapma: 29.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #463
+🕐 Zaman: 2025-11-12 11:08:33.394 (t=122.9s)
+⚡ Akım: 0.00 A (Nominal: 23.00 A, Sapma: 23.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #464
+🕐 Zaman: 2025-11-12 11:08:33.500 (t=123.0s)
+⚡ Akım: 0.00 A (Nominal: 16.50 A, Sapma: 16.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #465
+🕐 Zaman: 2025-11-12 11:08:33.599 (t=123.1s)
+⚡ Akım: 0.00 A (Nominal: 11.50 A, Sapma: 11.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #466
+🕐 Zaman: 2025-11-12 11:08:33.711 (t=123.2s)
+⚡ Akım: 0.00 A (Nominal: 9.00 A, Sapma: 9.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #467
+🕐 Zaman: 2025-11-12 11:08:33.837 (t=123.3s)
+⚡ Akım: 0.00 A (Nominal: 7.50 A, Sapma: 7.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+────────────────────────────────────────────────────────────────────────────────
+⚠️  AKSİYON DEĞİŞİKLİĞİ #468
+────────────────────────────────────────────────────────────────────────────────
+🕐 Zaman: 2025-11-12 11:08:35.429 (t=124.9s)
+⚡ Akım: 0.00 A (Nominal: 0.00 A, Sapma: 0.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: STABLE (Seviye: 0)
+🎯 Aksiyon: SMOOTH_CURRENT
+   └─ Önceki: SAFE_STOP → Yeni: SMOOTH_CURRENT
+
+────────────────────────────────────────────────────────────────────────────────
+⚠️  AKSİYON DEĞİŞİKLİĞİ #469
+────────────────────────────────────────────────────────────────────────────────
+🕐 Zaman: 2025-11-12 11:08:37.108 (t=126.6s)
+⚡ Akım: 4.00 A (Nominal: 0.00 A, Sapma: 4.00 A)
+📈 Eğim: 40.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+   └─ Önceki: SMOOTH_CURRENT → Yeni: SAFE_STOP
+
+🔍 OLAY #470
+🕐 Zaman: 2025-11-12 11:08:37.216 (t=126.7s)
+⚡ Akım: 7.00 A (Nominal: 0.00 A, Sapma: 7.00 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #471
+🕐 Zaman: 2025-11-12 11:08:37.341 (t=126.8s)
+⚡ Akım: 10.00 A (Nominal: 0.00 A, Sapma: 10.00 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #472
+🕐 Zaman: 2025-11-12 11:08:37.447 (t=126.9s)
+⚡ Akım: 12.00 A (Nominal: 0.00 A, Sapma: 12.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #473
+🕐 Zaman: 2025-11-12 11:08:37.500 (t=127.0s)
+⚡ Akım: 13.00 A (Nominal: 0.00 A, Sapma: 13.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #474
+🕐 Zaman: 2025-11-12 11:08:37.608 (t=127.1s)
+⚡ Akım: 15.00 A (Nominal: 0.00 A, Sapma: 15.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #475
+🕐 Zaman: 2025-11-12 11:08:37.718 (t=127.2s)
+⚡ Akım: 16.00 A (Nominal: 0.00 A, Sapma: 16.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #476
+🕐 Zaman: 2025-11-12 11:08:37.841 (t=127.3s)
+⚡ Akım: 17.00 A (Nominal: 0.00 A, Sapma: 17.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #477
+🕐 Zaman: 2025-11-12 11:08:37.951 (t=127.4s)
+⚡ Akım: 17.00 A (Nominal: 0.00 A, Sapma: 17.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #478
+🕐 Zaman: 2025-11-12 11:08:38.095 (t=127.6s)
+⚡ Akım: 18.00 A (Nominal: 0.00 A, Sapma: 18.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #479
+🕐 Zaman: 2025-11-12 11:08:38.205 (t=127.7s)
+⚡ Akım: 19.00 A (Nominal: 0.00 A, Sapma: 19.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #480
+🕐 Zaman: 2025-11-12 11:08:38.338 (t=127.8s)
+⚡ Akım: 19.00 A (Nominal: 0.00 A, Sapma: 19.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #481
+🕐 Zaman: 2025-11-12 11:08:38.442 (t=127.9s)
+⚡ Akım: 19.00 A (Nominal: 0.00 A, Sapma: 19.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #482
+🕐 Zaman: 2025-11-12 11:08:38.552 (t=128.0s)
+⚡ Akım: 19.00 A (Nominal: 0.00 A, Sapma: 19.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #483
+🕐 Zaman: 2025-11-12 11:08:38.694 (t=128.2s)
+⚡ Akım: 19.00 A (Nominal: 0.00 A, Sapma: 19.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #484
+🕐 Zaman: 2025-11-12 11:08:38.826 (t=128.3s)
+⚡ Akım: 20.00 A (Nominal: 0.00 A, Sapma: 20.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #485
+🕐 Zaman: 2025-11-12 11:08:38.943 (t=128.4s)
+⚡ Akım: 20.00 A (Nominal: 0.00 A, Sapma: 20.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #486
+🕐 Zaman: 2025-11-12 11:08:39.050 (t=128.5s)
+⚡ Akım: 20.00 A (Nominal: 0.00 A, Sapma: 20.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #487
+🕐 Zaman: 2025-11-12 11:08:39.195 (t=128.7s)
+⚡ Akım: 20.00 A (Nominal: 0.00 A, Sapma: 20.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #488
+🕐 Zaman: 2025-11-12 11:08:39.305 (t=128.8s)
+⚡ Akım: 20.00 A (Nominal: 2.00 A, Sapma: 18.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #489
+🕐 Zaman: 2025-11-12 11:08:39.454 (t=128.9s)
+⚡ Akım: 20.00 A (Nominal: 5.50 A, Sapma: 14.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #490
+🕐 Zaman: 2025-11-12 11:08:39.595 (t=129.1s)
+⚡ Akım: 20.00 A (Nominal: 8.50 A, Sapma: 11.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #491
+🕐 Zaman: 2025-11-12 11:08:39.712 (t=129.2s)
+⚡ Akım: 20.00 A (Nominal: 11.00 A, Sapma: 9.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #492
+🕐 Zaman: 2025-11-12 11:08:39.826 (t=129.3s)
+⚡ Akım: 20.00 A (Nominal: 12.50 A, Sapma: 7.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #493
+🕐 Zaman: 2025-11-12 11:08:42.796 (t=132.3s)
+⚡ Akım: 30.00 A (Nominal: 19.00 A, Sapma: 11.00 A)
+📈 Eğim: 100.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #494
+🕐 Zaman: 2025-11-12 11:08:43.512 (t=133.0s)
+⚡ Akım: 34.00 A (Nominal: 19.00 A, Sapma: 15.00 A)
+📈 Eğim: 40.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #495
+🕐 Zaman: 2025-11-12 11:08:44.466 (t=133.9s)
+⚡ Akım: 35.00 A (Nominal: 19.00 A, Sapma: 16.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #496
+🕐 Zaman: 2025-11-12 11:08:45.100 (t=134.6s)
+⚡ Akım: 35.00 A (Nominal: 19.00 A, Sapma: 16.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #497
+🕐 Zaman: 2025-11-12 11:08:45.552 (t=135.0s)
+⚡ Akım: 35.00 A (Nominal: 19.50 A, Sapma: 15.50 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #498
+🕐 Zaman: 2025-11-12 11:08:45.694 (t=135.2s)
+⚡ Akım: 35.00 A (Nominal: 20.00 A, Sapma: 15.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #499
+🕐 Zaman: 2025-11-12 11:08:45.818 (t=135.3s)
+⚡ Akım: 35.00 A (Nominal: 20.00 A, Sapma: 15.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #500
+🕐 Zaman: 2025-11-12 11:08:45.995 (t=135.5s)
+⚡ Akım: 35.00 A (Nominal: 20.00 A, Sapma: 15.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #501
+🕐 Zaman: 2025-11-12 11:08:46.121 (t=135.6s)
+⚡ Akım: 35.00 A (Nominal: 20.00 A, Sapma: 15.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #502
+🕐 Zaman: 2025-11-12 11:08:46.271 (t=135.7s)
+⚡ Akım: 35.00 A (Nominal: 20.00 A, Sapma: 15.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #503
+🕐 Zaman: 2025-11-12 11:08:46.717 (t=136.2s)
+⚡ Akım: 35.00 A (Nominal: 20.00 A, Sapma: 15.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+────────────────────────────────────────────────────────────────────────────────
+⚠️  AKSİYON DEĞİŞİKLİĞİ #504
+────────────────────────────────────────────────────────────────────────────────
+🕐 Zaman: 2025-11-12 11:08:47.230 (t=136.7s)
+⚡ Akım: 35.00 A (Nominal: 20.00 A, Sapma: 15.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+   └─ Önceki: SAFE_STOP → Yeni: LIMIT_CURRENT
+
+🔍 OLAY #505
+🕐 Zaman: 2025-11-12 11:08:47.864 (t=137.3s)
+⚡ Akım: 35.00 A (Nominal: 20.00 A, Sapma: 15.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+
+🔍 OLAY #506
+🕐 Zaman: 2025-11-12 11:08:48.460 (t=137.9s)
+⚡ Akım: 35.00 A (Nominal: 20.00 A, Sapma: 15.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+
+🔍 OLAY #507
+🕐 Zaman: 2025-11-12 11:08:49.062 (t=138.5s)
+⚡ Akım: 35.00 A (Nominal: 20.00 A, Sapma: 15.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+
+────────────────────────────────────────────────────────────────────────────────
+⚠️  AKSİYON DEĞİŞİKLİĞİ #508
+────────────────────────────────────────────────────────────────────────────────
+🕐 Zaman: 2025-11-12 11:08:49.891 (t=139.4s)
+⚡ Akım: 9.00 A (Nominal: 20.00 A, Sapma: 11.00 A)
+📈 Eğim: 260.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+   └─ Önceki: LIMIT_CURRENT → Yeni: SAFE_STOP
+
+🔍 OLAY #509
+🕐 Zaman: 2025-11-12 11:08:50.521 (t=140.0s)
+⚡ Akım: 2.00 A (Nominal: 20.00 A, Sapma: 18.00 A)
+📈 Eğim: 70.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #510
+🕐 Zaman: 2025-11-12 11:08:50.658 (t=140.1s)
+⚡ Akım: 2.00 A (Nominal: 20.00 A, Sapma: 18.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #511
+🕐 Zaman: 2025-11-12 11:08:50.795 (t=140.3s)
+⚡ Akım: 2.00 A (Nominal: 20.00 A, Sapma: 18.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #512
+🕐 Zaman: 2025-11-12 11:08:50.931 (t=140.4s)
+⚡ Akım: 1.00 A (Nominal: 20.00 A, Sapma: 19.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #513
+🕐 Zaman: 2025-11-12 11:08:51.041 (t=140.5s)
+⚡ Akım: 1.00 A (Nominal: 20.00 A, Sapma: 19.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #514
+🕐 Zaman: 2025-11-12 11:08:51.146 (t=140.6s)
+⚡ Akım: 1.00 A (Nominal: 20.00 A, Sapma: 19.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #515
+🕐 Zaman: 2025-11-12 11:08:51.199 (t=140.7s)
+⚡ Akım: 1.00 A (Nominal: 20.00 A, Sapma: 19.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #516
+🕐 Zaman: 2025-11-12 11:08:51.575 (t=141.0s)
+⚡ Akım: 0.00 A (Nominal: 20.00 A, Sapma: 20.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #517
+🕐 Zaman: 2025-11-12 11:08:52.304 (t=141.8s)
+⚡ Akım: 0.00 A (Nominal: 20.00 A, Sapma: 20.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #518
+🕐 Zaman: 2025-11-12 11:08:52.780 (t=142.3s)
+⚡ Akım: 16.00 A (Nominal: 20.00 A, Sapma: 4.00 A)
+📈 Eğim: 160.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #519
+🕐 Zaman: 2025-11-12 11:08:53.396 (t=142.9s)
+⚡ Akım: 37.00 A (Nominal: 20.00 A, Sapma: 17.00 A)
+📈 Eğim: 210.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #520
+🕐 Zaman: 2025-11-12 11:08:54.049 (t=143.5s)
+⚡ Akım: 43.00 A (Nominal: 20.00 A, Sapma: 23.00 A)
+📈 Eğim: 60.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #521
+🕐 Zaman: 2025-11-12 11:08:54.617 (t=144.1s)
+⚡ Akım: 44.00 A (Nominal: 20.00 A, Sapma: 24.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #522
+🕐 Zaman: 2025-11-12 11:08:54.725 (t=144.2s)
+⚡ Akım: 45.00 A (Nominal: 20.00 A, Sapma: 25.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #523
+🕐 Zaman: 2025-11-12 11:08:54.845 (t=144.3s)
+⚡ Akım: 45.00 A (Nominal: 25.00 A, Sapma: 20.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #524
+🕐 Zaman: 2025-11-12 11:08:54.994 (t=144.5s)
+⚡ Akım: 45.00 A (Nominal: 32.00 A, Sapma: 13.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #525
+🕐 Zaman: 2025-11-12 11:08:55.126 (t=144.6s)
+⚡ Akım: 45.00 A (Nominal: 34.50 A, Sapma: 10.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #526
+🕐 Zaman: 2025-11-12 11:08:55.880 (t=145.4s)
+⚡ Akım: 61.00 A (Nominal: 35.00 A, Sapma: 26.00 A)
+📈 Eğim: 160.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #527
+🕐 Zaman: 2025-11-12 11:08:56.581 (t=146.1s)
+⚡ Akım: 84.00 A (Nominal: 35.00 A, Sapma: 49.00 A)
+📈 Eğim: 230.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #528
+🕐 Zaman: 2025-11-12 11:08:56.903 (t=146.4s)
+⚡ Akım: 87.00 A (Nominal: 35.00 A, Sapma: 52.00 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #529
+🕐 Zaman: 2025-11-12 11:08:57.029 (t=146.5s)
+⚡ Akım: 88.00 A (Nominal: 35.00 A, Sapma: 53.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #530
+🕐 Zaman: 2025-11-12 11:08:57.143 (t=146.6s)
+⚡ Akım: 88.00 A (Nominal: 35.00 A, Sapma: 53.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #531
+🕐 Zaman: 2025-11-12 11:08:57.254 (t=146.7s)
+⚡ Akım: 88.00 A (Nominal: 35.00 A, Sapma: 53.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #532
+🕐 Zaman: 2025-11-12 11:08:57.394 (t=146.9s)
+⚡ Akım: 89.00 A (Nominal: 35.00 A, Sapma: 54.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #533
+🕐 Zaman: 2025-11-12 11:08:57.499 (t=147.0s)
+⚡ Akım: 89.00 A (Nominal: 35.00 A, Sapma: 54.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #534
+🕐 Zaman: 2025-11-12 11:08:58.009 (t=147.5s)
+⚡ Akım: 90.00 A (Nominal: 35.00 A, Sapma: 55.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #535
+🕐 Zaman: 2025-11-12 11:08:58.451 (t=147.9s)
+⚡ Akım: 90.00 A (Nominal: 35.00 A, Sapma: 55.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #536
+🕐 Zaman: 2025-11-12 11:08:58.966 (t=148.4s)
+⚡ Akım: 90.00 A (Nominal: 35.00 A, Sapma: 55.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #537
+🕐 Zaman: 2025-11-12 11:08:59.634 (t=149.1s)
+⚡ Akım: 90.00 A (Nominal: 35.00 A, Sapma: 55.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #538
+🕐 Zaman: 2025-11-12 11:09:00.393 (t=149.9s)
+⚡ Akım: 90.00 A (Nominal: 36.00 A, Sapma: 54.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #539
+🕐 Zaman: 2025-11-12 11:09:01.047 (t=150.5s)
+⚡ Akım: 90.00 A (Nominal: 40.00 A, Sapma: 50.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #540
+🕐 Zaman: 2025-11-12 11:09:01.194 (t=150.7s)
+⚡ Akım: 90.00 A (Nominal: 43.50 A, Sapma: 46.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #541
+🕐 Zaman: 2025-11-12 11:09:01.352 (t=150.8s)
+⚡ Akım: 90.00 A (Nominal: 44.50 A, Sapma: 45.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #542
+🕐 Zaman: 2025-11-12 11:09:02.160 (t=151.6s)
+⚡ Akım: 90.00 A (Nominal: 45.00 A, Sapma: 45.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #543
+🕐 Zaman: 2025-11-12 11:09:02.646 (t=152.1s)
+⚡ Akım: 90.00 A (Nominal: 45.00 A, Sapma: 45.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #544
+🕐 Zaman: 2025-11-12 11:09:03.287 (t=152.8s)
+⚡ Akım: 90.00 A (Nominal: 45.00 A, Sapma: 45.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #545
+🕐 Zaman: 2025-11-12 11:09:03.878 (t=153.4s)
+⚡ Akım: 90.00 A (Nominal: 53.00 A, Sapma: 37.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+────────────────────────────────────────────────────────────────────────────────
+⚠️  AKSİYON DEĞİŞİKLİĞİ #546
+────────────────────────────────────────────────────────────────────────────────
+🕐 Zaman: 2025-11-12 11:09:04.809 (t=154.3s)
+⚡ Akım: 90.00 A (Nominal: 72.50 A, Sapma: 17.50 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: LIMIT_CURRENT
+   └─ Önceki: SAFE_STOP → Yeni: LIMIT_CURRENT
+
+────────────────────────────────────────────────────────────────────────────────
+⚠️  AKSİYON DEĞİŞİKLİĞİ #547
+────────────────────────────────────────────────────────────────────────────────
+🕐 Zaman: 2025-11-12 11:09:06.794 (t=156.3s)
+⚡ Akım: 81.00 A (Nominal: 88.00 A, Sapma: 7.00 A)
+📈 Eğim: 90.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+   └─ Önceki: LIMIT_CURRENT → Yeni: SAFE_STOP
+
+🔍 OLAY #548
+🕐 Zaman: 2025-11-12 11:09:06.922 (t=156.4s)
+⚡ Akım: 74.00 A (Nominal: 88.00 A, Sapma: 14.00 A)
+📈 Eğim: 70.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #549
+🕐 Zaman: 2025-11-12 11:09:07.029 (t=156.5s)
+⚡ Akım: 68.00 A (Nominal: 88.00 A, Sapma: 20.00 A)
+📈 Eğim: 60.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #550
+🕐 Zaman: 2025-11-12 11:09:07.133 (t=156.6s)
+⚡ Akım: 63.00 A (Nominal: 88.00 A, Sapma: 25.00 A)
+📈 Eğim: 50.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #551
+🕐 Zaman: 2025-11-12 11:09:07.250 (t=156.7s)
+⚡ Akım: 60.00 A (Nominal: 88.00 A, Sapma: 28.00 A)
+📈 Eğim: 30.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #552
+🕐 Zaman: 2025-11-12 11:09:07.394 (t=156.9s)
+⚡ Akım: 54.00 A (Nominal: 88.00 A, Sapma: 34.00 A)
+📈 Eğim: 60.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #553
+🕐 Zaman: 2025-11-12 11:09:07.504 (t=157.0s)
+⚡ Akım: 53.00 A (Nominal: 88.00 A, Sapma: 35.00 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #554
+🕐 Zaman: 2025-11-12 11:09:07.613 (t=157.1s)
+⚡ Akım: 51.00 A (Nominal: 88.00 A, Sapma: 37.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #555
+🕐 Zaman: 2025-11-12 11:09:08.105 (t=157.6s)
+⚡ Akım: 47.00 A (Nominal: 88.00 A, Sapma: 41.00 A)
+📈 Eğim: 40.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #556
+🕐 Zaman: 2025-11-12 11:09:08.980 (t=158.5s)
+⚡ Akım: 45.00 A (Nominal: 88.00 A, Sapma: 43.00 A)
+📈 Eğim: 20.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #557
+🕐 Zaman: 2025-11-12 11:09:09.928 (t=159.4s)
+⚡ Akım: 61.00 A (Nominal: 88.00 A, Sapma: 27.00 A)
+📈 Eğim: 160.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #558
+🕐 Zaman: 2025-11-12 11:09:10.737 (t=160.2s)
+⚡ Akım: 85.00 A (Nominal: 88.00 A, Sapma: 3.00 A)
+📈 Eğim: 240.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #559
+🕐 Zaman: 2025-11-12 11:09:11.571 (t=161.0s)
+⚡ Akım: 89.00 A (Nominal: 88.00 A, Sapma: 1.00 A)
+📈 Eğim: 40.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #560
+🕐 Zaman: 2025-11-12 11:09:12.435 (t=161.9s)
+⚡ Akım: 90.00 A (Nominal: 88.50 A, Sapma: 1.50 A)
+📈 Eğim: 10.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #561
+🕐 Zaman: 2025-11-12 11:09:13.332 (t=162.8s)
+⚡ Akım: 90.00 A (Nominal: 89.00 A, Sapma: 1.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: HIGH (Seviye: 2)
+🎯 Aksiyon: SAFE_STOP
+
+🔍 OLAY #562
+🕐 Zaman: 2025-11-12 11:09:13.871 (t=163.3s)
+⚡ Akım: 90.00 A (Nominal: 89.00 A, Sapma: 1.00 A)
+📈 Eğim: 0.00 A/s 📍 (Tahminsel)
+🚦 Risk: MODERATE (Seviye: 1)
+🎯 Aksiyon: SAFE_STOP
+
+────────────────────────────────────────────────────────────────────────────────
+⚠️  AKSİYON DEĞİŞİKLİĞİ #563
+────────────────────────────────────────────────────────────────────────────────
+🕐 Zaman: 2025-11-12 11:09:17.165 (t=166.6s)
+⚡ Akım: 90.00 A (Nominal: 90.00 A, Sapma: 0.00 A)
+📈 Eğim: 0.00 A/s 
+🚦 Risk: STABLE (Seviye: 0)
+🎯 Aksiyon: SMOOTH_CURRENT
+   └─ Önceki: SAFE_STOP → Yeni: SMOOTH_CURRENT
