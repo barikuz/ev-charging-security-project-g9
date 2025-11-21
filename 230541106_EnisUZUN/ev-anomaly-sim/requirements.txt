@@ -1,0 +1,4 @@
+matplotlib==3.8.2
+python-can==4.4.2
+ocpp==0.20.0
+websockets==12.0
