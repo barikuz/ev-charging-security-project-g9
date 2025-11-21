@@ -1,0 +1,52 @@
+# Anomaly Injection Configuration
+anomalies:
+  enabled: true
+  injection_rate: 0.1  # 0% to 100% - probability of injecting anomaly
+  intensity: 0.5      # 0 to 1 - severity of anomalies
+  duration: 60.0      # seconds
+
+# Anomaly types and their probabilities
+types:
+  can_injection:
+    enabled: true
+    probability: 0.2
+    severity: high
+  can_fuzzing:
+    enabled: true
+    probability: 0.15
+    severity: medium
+  message_delay:
+    enabled: true
+    probability: 0.1
+    severity: low
+  spoofing:
+    enabled: true
+    probability: 0.1
+    severity: high
+  dos_attack:
+    enabled: false
+    probability: 0.05
+    severity: high
+  replay_attack:
+    enabled: true
+    probability: 0.1
+    severity: medium
+  timing_attack:
+    enabled: true
+    probability: 0.15
+    severity: medium
+
+# Attack scenarios
+scenarios:
+  can_injection_attack:
+    enabled: true
+    duration: 30
+  dos_attack:
+    enabled: false
+    duration: 60
+  replay_attack:
+    enabled: true
+    duration: 45
+  spoofing_attack:
+    enabled: true
+    duration: 30

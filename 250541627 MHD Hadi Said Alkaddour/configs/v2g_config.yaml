@@ -1,0 +1,33 @@
+# V2G Configuration
+v2g:
+  protocol_version: "2020"  # ISO 15118-2 or later
+  security_level: "TLS"
+  authentication_type: "EIM"  # EIM or PNC
+
+# Power limits (AC)
+power_ac:
+  max_power: 16000  # Watts
+  max_current: 32   # Amps
+  voltage_range:
+    min: 120
+    max: 240
+
+# Power limits (DC)
+power_dc:
+  max_power: 350000  # Watts
+  max_current: 200   # Amps
+  voltage_range:
+    min: 200
+    max: 920
+
+# Session configuration
+session:
+  timeout: 3600  # 1 hour
+  max_duration: 12000  # 20 minutes max charge
+  enable_bidirectional: false
+
+# Communication
+communication:
+  protocol: "TCP"
+  port: 15118
+  timeout: 30

@@ -1,0 +1,41 @@
+# Main Simulator Configuration
+simulator:
+  name: "EV Charging Simulator"
+  log_level: "INFO"
+  log_file: "logs/simulator.log"
+
+# Protocol configurations
+protocols:
+  can:
+    enabled: true
+    config_file: "configs/can_bus_config.yaml"
+  ocpp:
+    enabled: true
+    config_file: "configs/ocpp_config.yaml"
+  v2g:
+    enabled: true
+    config_file: "configs/v2g_config.yaml"
+  anomalies:
+    enabled: true
+    config_file: "configs/anomalies_config.yaml"
+
+# Simulation parameters
+simulation:
+  duration: 300  # seconds
+  heartbeat_interval: 2
+  message_generation_rate: 10  # messages per second
+  
+# Charging session simulation
+charging_session:
+  initial_soc: 20  # %
+  target_soc: 80  # %
+  charging_power: 10000  # Watts
+  charging_efficiency: 0.95
+  
+# Data collection
+data_collection:
+  enabled: true
+  log_directory: "logs/"
+  save_raw_messages: true
+  save_statistics: true
+  save_interval: 5  # seconds

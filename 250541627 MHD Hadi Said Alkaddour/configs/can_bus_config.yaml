@@ -1,0 +1,25 @@
+# CAN Bus Configuration
+can_bus:
+  channel: vcan0
+  bustype: virtual
+  bitrate: 500000  # 500 kbps standard
+  sample_point: 0.75
+  sjw: 1
+
+# Message types to simulate
+messages:
+  battery_status:
+    interval: 1.0
+    enabled: true
+  charging_state:
+    interval: 2.0
+    enabled: true
+  error_status:
+    interval: 5.0
+    enabled: false
+
+# CAN ID mapping
+can_ids:
+  battery_status: 0x100
+  charging_state: 0x101
+  error_status: 0x102
