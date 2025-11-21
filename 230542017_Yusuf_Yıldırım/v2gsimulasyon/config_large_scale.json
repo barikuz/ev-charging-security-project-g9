@@ -1,0 +1,13 @@
+{
+    "T_max": 200,
+    "dt": 1,
+    "base_load_kw": 1000.0,
+    "n_stations": 50,
+    "attack_time_s": 100,
+    "initial_discharge_kw": -15.0,
+    "attack_charge_kw": 30.0,
+    "ramp_rate_kw_per_s": 5.0,
+    "jitter_window_s": 0,
+    "noise_std_kw": 1.0,
+    "seed": 123
+}

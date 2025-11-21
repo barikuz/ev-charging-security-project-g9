@@ -1,0 +1,42 @@
+======================================================================
+V2G BOTNET ATTACK SIMULATION REPORT
+======================================================================
+Generated: 2025-11-12 01:37:28
+
+CONFIGURATION
+----------------------------------------------------------------------
+  Simulation duration:        100 seconds
+  Time step:                  1 seconds
+  Number of stations:         10
+  Attack time:                60 seconds
+  Base grid load:             500.0 kW
+  Initial discharge power:    -10.0 kW
+  Attack charge power:        20.0 kW
+  Ramp rate:                  10.0 kW/s
+  Command jitter window:      0 seconds
+  Noise std deviation:        0.0 kW
+
+ATTACK IMPACT METRICS
+----------------------------------------------------------------------
+  Baseline load (pre-attack):      450.0 kW
+  Expected post-attack load:       600.0 kW
+  Peak load observed:              600.0 kW
+  Peak time:                          61 seconds
+  Load swing:                      150.0 kW
+  Swing percentage:                 33.3 %
+
+STATION STATISTICS
+----------------------------------------------------------------------
+ID     Mean (kW)    Std (kW)     Min (kW)     Max (kW)     Final (kW)  
+----------------------------------------------------------------------
+1      -5.94        4.91         -10.00       0.00         0.00        
+2      -5.94        4.91         -10.00       0.00         0.00        
+3      -5.94        4.91         -10.00       0.00         0.00        
+4      -5.94        4.91         -10.00       0.00         0.00        
+5      -5.94        4.91         -10.00       0.00         0.00        
+6      8.02         9.75         0.00         20.00        20.00       
+7      8.02         9.75         0.00         20.00        20.00       
+8      8.02         9.75         0.00         20.00        20.00       
+9      8.02         9.75         0.00         20.00        20.00       
+10     8.02         9.75         0.00         20.00        20.00       
+======================================================================
