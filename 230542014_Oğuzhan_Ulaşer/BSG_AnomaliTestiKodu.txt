@@ -1,0 +1,71 @@
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from datetime import datetime, timedelta
+
+# === Test Parametreleri ===
+test_name = "Şarj kablosu bağlı olmasına rağmen enerji aktarılmıyor."
+n_samples = 20  # test ölçüm sayısı
+start_time = datetime.now()
+
+# === Simülasyon (CP ve PP mevcut ama akım sıfır) ===
+timestamps = [start_time + timedelta(seconds=i) for i in range(n_samples)]
+
+# CP ve PP sinyalleri nominal (bozulmamış)
+cp_voltage = np.random.normal(11.0, 0.1, n_samples)
+pp_voltage = np.random.normal(4.8, 0.05, n_samples)
+
+# Gerilim var ama akım akmıyor
+ac_voltage = np.full(n_samples, 230.0)
+ac_current = np.zeros(n_samples)
+
+# Bazı kısa temas anlarını simüle et (eğer yeterli uzunluk varsa)
+for i in range(min(5, n_samples // 2), min(8, n_samples)):
+    ac_current[i] = np.random.uniform(0.1, 0.3)
+
+# === DataFrame oluştur ===
+df_test = pd.DataFrame({
+    "timestamp": [t.isoformat(timespec='seconds') for t in timestamps],
+    "CP_V": np.round(cp_voltage, 2),
+    "PP_V": np.round(pp_voltage, 2),
+    "AC_V": ac_voltage,
+    "AC_I": np.round(ac_current, 2)
+})
+
+# === Anomali Algılama ===
+def detect_anomaly(df):
+    anomaly_detected = (
+        (df["CP_V"] > 1.0) &
+        (df["PP_V"] > 1.0) &
+        (df["AC_V"] > 200) &
+        (df["AC_I"] < 0.5)
+    ).mean() > 0.8
+    return anomaly_detected
+
+is_anomaly = detect_anomaly(df_test)
+
+# === Sonuç Raporu ===
+print("=== TEST RAPORU ===")
+print(f"Anomali tipi: {test_name}")
+print(f"Ölçüm sayısı: {n_samples}")
+print(f"Anomali tespit edildi mi? {'✅ EVET' if is_anomaly else '❌ HAYIR'}")
+
+# === Grafik ===
+plt.figure(figsize=(8, 4))
+
+plt.subplot(2, 1, 1)
+plt.plot(df_test["timestamp"], df_test["CP_V"], label="CP_V")
+plt.plot(df_test["timestamp"], df_test["PP_V"], label="PP_V")
+plt.ylabel("Volt (V)")
+plt.title("CP & PP Sinyalleri")
+plt.legend()
+
+plt.subplot(2, 1, 2)
+plt.plot(df_test["timestamp"], df_test["AC_I"], 'r-o', label="AC_I")
+plt.ylabel("Akım (A)")
+plt.title("Akım Ölçümü (Anomali Testi)")
+plt.xlabel("Zaman")
+plt.legend()
+plt.tight_layout()
+plt.show()
