@@ -1,5 +1,11 @@
 # ⚡ EV Charging Anomaly Simulator
 
+[English](#english) | [Türkçe](#turkce)
+
+---
+
+## <a name="english"></a>English
+
 A complete, runnable simulation of **"Repeated Current Fluctuation During Charging"** anomaly in Electric Vehicle charging stations with **🧠 MemoryBank** - a persistent memory system for event logging and anomaly learning.
 
 ## 🎯 Overview
@@ -270,4 +276,372 @@ This is a **simulation** for testing and demonstration purposes. It mimics the b
 
 ---
 
+## <a name="turkce"></a>🇹🇷 Türkçe Dokümantasyon
+
+### 📋 Genel Bakış
+
+Bu proje, Elektrikli Araç (EV) şarj istasyonlarında **"Şarj Sırasında Tekrarlanan Akım Dalgalanması"** anomalisini simüle eden eksiksiz, çalıştırılabilir bir sistemdir. **🧠 MemoryBank** kalıcı hafıza sistemi ile olay kaydı ve anomali öğrenme özelliklerine sahiptir.
+
+### 🎯 Sistem Bileşenleri
+
+Bu proje bir OCPP 1.6 şarj altyapısını simüle eder:
+
+- **CSMS (Merkezi Sistem)** - Şarj komutlarını yöneten WebSocket sunucusu
+- **Charge Point (Şarj İstasyonu)** - OCPP mesajlarını CAN bus'a köprüleyen OCPP istemcisi
+- **Sanal Şarj Modülü** - Güç elektroniğini simüle eden CAN cihazı
+- **Canlı Grafik** - Şarj akımının gerçek zamanlı görselleştirmesi
+- **🧠 MemoryBank** - Olay, anomali ve desen öğrenme için SQLite tabanlı kalıcı hafıza sistemi
+
+### 🏗️ Mimari
+
+```
+┌─────────────┐        OCPP 1.6         ┌──────────────┐
+│    CSMS     │◄─────WebSocket──────────►│ Charge Point │
+│  (Sunucu)   │   ws://127.0.0.1:9000    │  (İstemci)   │
+└─────────────┘                          └───────┬──────┘
+                                                 │
+                                          CAN Bus│(Sanal)
+                                                 │
+                    ┌────────────────────────────┼────────────┐
+                    │                            │            │
+              ┌─────▼──────┐                ┌───▼────────┐   │
+              │   Şarj     │                │   Akım     │   │
+              │  Modülü    │───────0x300───►│  Grafiği   │   │
+              │ (CAN Node) │                │  (İzleme)  │   │
+              └────────────┘                └────────────┘   │
+                                                              │
+                    Sanal CAN Bus (interface="virtual", channel=0)
+```
+
+### 📋 Gereksinimler
+
+- **İşletim Sistemi**: macOS (M2 üzerinde test edildi)
+- **Python**: 3.11
+- **Bağımlılıklar**:
+  - matplotlib==3.8.2
+  - python-can==4.4.2
+  - ocpp==0.20.0
+  - websockets==12.0
+  - tabulate==0.9.0 (MemoryBank görüntüleyici için)
+
+### 🚀 Hızlı Başlangıç
+
+#### 1. Sanal Ortam Oluşturun
+
+```bash
+cd 230541106_EnisUZUN
+python3.11 -m venv venv
+source venv/bin/activate
+```
+
+#### 2. Bağımlılıkları Yükleyin
+
+```bash
+pip install -r requirements.txt
+```
+
+#### 3. Simülasyonu Çalıştırın
+
+```bash
+chmod +x run_all.sh
+./run_all.sh
+```
+
+Bu komut 4 Terminal sekmesi açacaktır:
+
+1. **Şarj Modülü** - CAN cihaz simülatörü
+2. **CSMS Sunucusu** - OCPP sunucusu
+3. **Charge Point** - OCPP istemcisi
+4. **Akım Grafiği** - Canlı grafik
+
+### 📁 Proje Dosyaları
+
+#### Ana Bileşenler
+
+| Dosya | Açıklama |
+|------|----------|
+| `charger_module.py` | Akım ölçümlerini (0x300) yayınlayan ve kontrol komutlarına (0x200, 0x201, 0x210) yanıt veren sanal CAN cihazı |
+| `csms.py` | SetChargingProfile ve RemoteStart/Stop döngüsü ile anomaliyi düzenleyen OCPP 1.6 WebSocket sunucusu (🧠 MemoryBank etkin) |
+| `cp.py` | OCPP mesajlarını CAN komutlarına çeviren ve MeterValues raporlayan OCPP istemcisi (🧠 MemoryBank etkin) |
+| `plot_current.py` | Şarj akımının gerçek zamanlı matplotlib görselleştirmesi (🧠 geçmiş anomalileri gösterir) |
+| `memory_bank.py` | Olaylar, anomaliler, oturumlar ve desenler için SQLite tabanlı kalıcı hafıza sistemi |
+| `memory_viewer.py` | MemoryBank verilerini görüntülemek ve analiz etmek için interaktif araç |
+| `run_all.sh` | Tüm bileşenleri ayrı Terminal sekmelerinde başlatan başlatıcı script |
+
+#### Yapılandırma Dosyaları
+
+| Dosya | Açıklama |
+|------|----------|
+| `requirements.txt` | Python paket bağımlılıkları |
+| `README.md` | Bu dosya |
+| `MEMORYBANK.md` | MemoryBank detaylı kılavuz |
+
+### 🔌 CAN Mesaj Protokolü
+
+| CAN ID | Yön | Amaç | Veri Formatı |
+|--------|-----|------|-------------|
+| 0x200 | CP → Şarj Cihazı | Şarjı başlat | Boş |
+| 0x201 | CP → Şarj Cihazı | Şarjı durdur | Boş |
+| 0x210 | CP → Şarj Cihazı | Akım limitini ayarla | [limit_düşük, limit_yüksek] (little-endian) |
+| 0x300 | Şarj Cihazı → Tümü | Akım ölçümü | [akım_düşük, akım_yüksek] (little-endian) |
+
+### 🎭 Anomali Senaryosu
+
+CSMS bu döngüyü sürekli tekrarlar:
+
+1. **SetChargingProfile(0A)** → Akımı 0A'e sınırla
+2. *2 saniye bekle*
+3. **SetChargingProfile(100A)** → Limiti 100A'e yükselt
+4. *1 saniye bekle*
+5. **RemoteStartTransaction** → Şarjı başlat
+6. *2 saniye bekle*
+7. **RemoteStopTransaction** → Şarjı durdur
+8. *3 saniye bekle*
+9. **Tekrarla**
+
+Bu, tekrarlayan bir akım dalgalanma deseni oluşturur: **0A → 100A → 0A → 100A**
+
+### 📊 Beklenen Çıktı
+
+Doğru çalıştığında görecekleriniz:
+
+1. **Şarj Modülü**: Yukarı/aşağı rampalanan akım değerleri
+2. **CSMS**: Döngüler halinde OCPP komutları gönderme (🧠 MemoryBank'e kaydediyor)
+3. **Charge Point**: OCPP alıyor, CAN gönderiyor, MeterValues raporluyor (🧠 olayları logluyor)
+4. **Grafik**: 0A ↔ 100A dalgalanmalarını gösteren canlı grafik, anomali göstergesi ve istatistikler
+
+### 🧠 MemoryBank Özellikleri
+
+MemoryBank sistemi kalıcı hafıza ve öğrenme yetenekleri sağlar:
+
+#### MemoryBank Neyi Kaydeder
+
+- **Olaylar**: Tüm OCPP mesajları, CAN iletişimi, sistem olayları
+- **Anomaliler**: Şiddet, desenler ve sapmalarla tespit edilen anomaliler
+- **Oturumlar**: Şarj oturumu meta verileri (başlangıç/bitiş zamanı, enerji, istatistikler)
+- **Metrikler**: Zaman içinde akım, voltaj, güç ölçümleri
+- **Desenler**: Anomali tespiti için öğrenilen davranış desenleri
+
+#### MemoryBank Görüntüleyiciyi Kullanma
+
+Toplanan verileri görüntüleyin ve analiz edin:
+
+```bash
+# İnteraktif menü
+python3 memory_viewer.py
+
+# Hızlı özet
+python3 memory_viewer.py --summary
+
+# Son olayları görüntüle
+python3 memory_viewer.py --events 50
+
+# Anomalileri görüntüle
+python3 memory_viewer.py --anomalies 20
+
+# Oturumları görüntüle
+python3 memory_viewer.py --sessions 10
+
+# Verileri JSON'a aktar
+python3 memory_viewer.py --export data_export.json
+
+# İstatistikleri göster
+python3 memory_viewer.py --stats
+```
+
+#### Veritabanı Konumu
+
+Tüm veriler şurada saklanır: `ev_charging_memory.db` (SQLite veritabanı)
+
+Bu veritabanını herhangi bir SQLite görüntüleyici ile görüntüleyebilir veya sağlanan `memory_viewer.py` aracını kullanabilirsiniz.
+
+#### Python API Kullanımı
+
+```python
+from memory_bank import MemoryBank
+
+# MemoryBank'i başlat
+memory = MemoryBank()
+
+# Olay kaydet
+memory.log_event(
+    "OCPP_MESSAGE",
+    "CSMS",
+    "İşlem başlatıldı",
+    {"transaction_id": 12345}
+)
+
+# Anomali kaydet
+memory.record_anomaly(
+    "CURRENT_FLUCTUATION",
+    "HIGH",
+    "Hızlı akım değişimi tespit edildi",
+    current_value=150.0,
+    expected_value=50.0
+)
+
+# İstatistikleri al
+stats = memory.get_metric_statistics("current")
+print(f"Ortalama akım: {stats['avg']:.2f} A")
+
+# Özet rapor
+summary = memory.get_dashboard_summary()
+print(f"Toplam anomali: {summary['total_anomalies']}")
+```
+
+### 🔒 Teknik Notlar
+
+- **Sanal CAN Bus**: python-can'ın sanal bus'ını kullanır (kernel modülü gerekmez)
+- **socketcan/vcan yok**: CAN donanımı olmadan macOS ile uyumlu
+- **Thread-safe**: CAN bus işlemleri process'ler arası thread-safe
+- **Asyncio**: OCPP bileşenleri eşzamanlı işlemler için asyncio kullanır
+- **Gerçek zamanlı**: Tüm bileşenler 1 saniyelik aralıklarla güncellenir
+- **🧠 Kalıcı Hafıza**: Olay geçmişi ve öğrenme için SQLite veritabanı
+
+### 🛠️ Manuel Test
+
+Bileşenleri ayrı ayrı çalıştırmak için:
+
+```bash
+# Terminal 1: Şarj modülünü başlat
+source venv/bin/activate
+python3 charger_module.py
+
+# Terminal 2: CSMS sunucusunu başlat
+source venv/bin/activate
+python3 csms.py
+
+# Terminal 3: Charge point'i başlat
+source venv/bin/activate
+python3 cp.py
+
+# Terminal 4: Grafiği başlat
+source venv/bin/activate
+python3 plot_current.py
+```
+
+### 🐛 Sorun Giderme
+
+#### Sorun: "No module named 'can'"
+
+**Çözüm**: Sanal ortamın etkinleştirildiğinden ve bağımlılıkların yüklendiğinden emin olun:
+
+```bash
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+#### Sorun: Bileşenler iletişim kuramıyor
+
+**Çözüm**: Tüm bileşenlerin aynı CAN bus yapılandırmasını kullandığından emin olun:
+
+- `interface="virtual"`
+- `channel=0`
+- `extended_id` yok veya `is_extended_id=False`
+
+#### Sorun: Grafik veri göstermiyor
+
+**Çözüm**:
+
+1. charger_module.py'nin çalıştığını kontrol edin
+2. CAN bus'ın çalıştığını doğrulayın: `python3 -c "import can; bus = can.interface.Bus(interface='virtual', channel=0); print('OK')"`
+
+#### Sorun: WebSocket bağlantısı reddedildi
+
+**Çözüm**: Charge Point'i başlatmadan önce CSMS'in çalıştığından emin olun
+
+#### Sorun: MemoryBank veritabanı hatası
+
+**Çözüm**: Veritabanını yedekleyin ve yeniden oluşturun:
+
+```bash
+cp ev_charging_memory.db ev_charging_memory.db.backup
+rm ev_charging_memory.db
+python3 csms.py  # Yeni veritabanı otomatik oluşturulur
+```
+
+### 📈 Kullanım Senaryoları
+
+#### 1. Güvenlik Testi ve Anomali Analizi
+
+```bash
+# Simülasyonu çalıştır
+./run_all.sh
+
+# Kritik anomalileri incele
+python3 memory_viewer.py --anomalies 20
+```
+
+#### 2. Performans ve İstatistik Analizi
+
+```python
+from memory_bank import MemoryBank
+
+mb = MemoryBank()
+stats = mb.get_metric_statistics("current")
+print(f"Maksimum akım: {stats['max']:.2f} A")
+print(f"Ortalama akım: {stats['avg']:.2f} A")
+```
+
+#### 3. Öğrenilen Desenleri İnceleme
+
+```bash
+python3 memory_viewer.py
+# Menüden: "5. Show Learned Patterns"
+```
+
+#### 4. Veri Dışa Aktarma ve Raporlama
+
+```bash
+# Tüm verileri JSON'a aktar
+python3 memory_viewer.py --export full_report.json
+
+# Eski verileri temizle (7 günden eski)
+python3 memory_viewer.py
+# Menüden: "9. Clean Old Data"
+```
+
+### 🎓 Eğitim Amaçları
+
+Bu proje şunları öğrenmek için kullanılabilir:
+
+- OCPP protokolü ve EV şarj iletişimi
+- CAN bus protokolü ve mesajlaşma
+- Anomali tespit algoritmaları
+- Gerçek zamanlı veri görselleştirme
+- SQLite veritabanı yönetimi
+- Python asyncio programlama
+- WebSocket iletişimi
+
+### 🔐 Güvenlik Uyarısı
+
+⚠️ **ÖNEMLİ**: Bu bir simülasyon/eğitim projesidir!
+
+- Gerçek üretim ortamında KULLANMAYIN
+- Sadece test ve öğrenme amaçlıdır
+- Güvenlik açıklarını kasıtlı olarak simüle eder
+- İzole test ortamında çalıştırın
+
+### 📚 Ek Kaynaklar
+
+- **MEMORYBANK.md** - MemoryBank detaylı API dokümantasyonu
+- **OCPP 1.6 Spesifikasyonu** - [openchargealliance.org](https://www.openchargealliance.org/protocols/ocpp-16/)
+- **Python-CAN Dokümantasyonu** - [python-can.readthedocs.io](https://python-can.readthedocs.io/)
+
+### 🤝 Katkıda Bulunma
+
+Bu eksiksiz, bağımsız bir simülasyondur. İhtiyaçlarınıza göre değiştirebilirsiniz.
+
+### 📝 Lisans
+
+Bu bir simülasyon/eğitim projesidir. Öğrenme ve test amaçları için özgürce kullanılabilir.
+
+### ⚠️ Feragatname
+
+Bu, test ve gösterim amaçlı bir **simülasyondur**. Gerçek EV şarj altyapısının davranışını taklit eder ancak uygun adaptasyon ve güvenlik önlemleri olmadan üretim ortamlarında kullanılmamalıdır.
+
+---
+
 **Made with ⚡ for EV charging anomaly research**
+
+**⚡ ile EV şarj anomali araştırması için yapıldı**
