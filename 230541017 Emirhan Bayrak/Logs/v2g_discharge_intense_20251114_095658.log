@@ -1,0 +1,174 @@
+2025-11-14 09:56:58,416 - __main__ - INFO - ================================================================================
+2025-11-14 09:56:58,416 - __main__ - INFO - V2G DISCHARGE - INTENSE ATTACK TEST
+2025-11-14 09:56:58,416 - __main__ - INFO - Objective: Aggressive battery depletion via V2G/OCPP protocol exploitation
+2025-11-14 09:56:58,417 - __main__ - INFO - ================================================================================
+2025-11-14 09:56:58,417 - __main__ - INFO - 
+2025-11-14 09:56:58,417 - __main__ - INFO - [INIT] Initializing intense V2G attack simulator...
+2025-11-14 09:56:58,417 - src.simulator.main - INFO - Initializing simulator components...
+2025-11-14 09:56:58,418 - src.simulator.main - INFO - CAN bus simulator initialized
+2025-11-14 09:56:58,418 - src.simulator.main - INFO - OCPP server and client initialized
+2025-11-14 09:56:58,418 - src.simulator.main - INFO - V2G communicator initialized
+2025-11-14 09:56:58,419 - src.simulator.main - INFO - Anomaly injector initialized
+2025-11-14 09:56:58,419 - __main__ - INFO - [OK] Simulator initialized
+2025-11-14 09:56:58,419 - __main__ - INFO -   - Attack Intensity: CRITICAL (95%)
+2025-11-14 09:56:58,419 - __main__ - INFO -   - Anomaly Injection Rate: 70%
+2025-11-14 09:56:58,419 - __main__ - INFO -   - Protocols: CAN, OCPP, V2G
+2025-11-14 09:56:58,419 - __main__ - INFO - 
+2025-11-14 09:56:58,420 - __main__ - INFO - [START] Starting attack simulation...
+2025-11-14 09:56:58,420 - src.simulator.main - INFO - Starting EV Charging Simulator: V2G Intense Discharge Attack Test
+2025-11-14 09:56:58,420 - src.can_bus.simulator - INFO - CAN bus simulator started on vcan0
+2025-11-14 09:56:58,420 - src.ocpp.protocol - INFO - OCPP 1.6 server starting on port 8000
+2025-11-14 09:56:58,420 - src.ocpp.protocol - INFO - Connecting to OCPP server at ws://localhost:8000
+2025-11-14 09:56:58,421 - src.ocpp.protocol - INFO - BootNotification sent
+2025-11-14 09:56:58,421 - __main__ - INFO - [OK] Attack simulation started
+2025-11-14 09:56:58,421 - __main__ - INFO - 
+2025-11-14 09:56:58,421 - __main__ - INFO - [PHASE 1] Establishing V2G Connection for Exploitation
+2025-11-14 09:56:58,421 - __main__ - INFO - ------------------------------------------------------------
+2025-11-14 09:57:00,435 - __main__ - INFO - [OK] OCPP authentication spoofed
+2025-11-14 09:57:00,436 - __main__ - INFO - [OK] V2G session hijacked
+2025-11-14 09:57:00,436 - __main__ - INFO - [EXPLOIT] V2G bidirectional capability activated
+2025-11-14 09:57:00,436 - __main__ - INFO - 
+2025-11-14 09:57:00,436 - __main__ - INFO - [PHASE 2] INTENSE V2G DISCHARGE ATTACK
+2025-11-14 09:57:00,437 - __main__ - INFO - ------------------------------------------------------------
+2025-11-14 09:57:00,437 - __main__ - WARNING - [ATTACK-1] PHASE 1 DISCHARGE: 8kW drain at 30% SOC
+2025-11-14 09:57:00,437 - __main__ - WARNING - [ANOMALY] SOC: 30% | Charge:   10920W | DISCHARGE:    8000W | Net:    2920W | Voltage:  360.0V | ATTACK ACTIVE!
+2025-11-14 09:57:00,551 - __main__ - WARNING - [ANOMALY] SOC: 30% | Charge:   10903W | DISCHARGE:    8000W | Net:    2903W | Voltage:  360.0V | ATTACK ACTIVE!
+2025-11-14 09:57:00,656 - __main__ - WARNING - [ANOMALY] SOC: 30% | Charge:   10886W | DISCHARGE:    8000W | Net:    2886W | Voltage:  360.0V | ATTACK ACTIVE!
+2025-11-14 09:57:05,522 - __main__ - WARNING - [ANOMALY] SOC: 40% | Charge:   10065W | DISCHARGE:    8000W | Net:    2065W | Voltage:  360.0V | ATTACK ACTIVE!
+2025-11-14 09:57:05,626 - __main__ - WARNING - [ANOMALY] SOC: 40% | Charge:   10046W | DISCHARGE:    8000W | Net:    2046W | Voltage:  360.0V | ATTACK ACTIVE!
+2025-11-14 09:57:11,765 - __main__ - WARNING - [ATTACK-2] PHASE 2 DISCHARGE: 10kW MAXIMUM drain at 50% SOC
+2025-11-14 09:57:11,765 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1008W!
+2025-11-14 09:57:11,765 - __main__ - WARNING - [ANOMALY] SOC: 50% | Charge:    8992W | DISCHARGE:   10000W | Net:   -1008W | Voltage:  350.0V | ATTACK ACTIVE!
+2025-11-14 09:57:11,873 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1014W!
+2025-11-14 09:57:11,873 - __main__ - WARNING - [ANOMALY] SOC: 50% | Charge:    8985W | DISCHARGE:   10000W | Net:   -1015W | Voltage:  350.0V | ATTACK ACTIVE!
+2025-11-14 09:57:11,977 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1021W!
+2025-11-14 09:57:11,977 - __main__ - WARNING - [ANOMALY] SOC: 50% | Charge:    8979W | DISCHARGE:   10000W | Net:   -1021W | Voltage:  350.0V | ATTACK ACTIVE!
+2025-11-14 09:57:12,080 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1027W!
+2025-11-14 09:57:12,080 - __main__ - WARNING - [ANOMALY] SOC: 50% | Charge:    8972W | DISCHARGE:   10000W | Net:   -1028W | Voltage:  350.0V | ATTACK ACTIVE!
+2025-11-14 09:57:12,197 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1033W!
+2025-11-14 09:57:12,197 - __main__ - WARNING - [ANOMALY] SOC: 50% | Charge:    8966W | DISCHARGE:   10000W | Net:   -1034W | Voltage:  350.0V | ATTACK ACTIVE!
+2025-11-14 09:57:12,311 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1040W!
+2025-11-14 09:57:12,311 - __main__ - WARNING - [ANOMALY] SOC: 50% | Charge:    8960W | DISCHARGE:   10000W | Net:   -1040W | Voltage:  350.0V | ATTACK ACTIVE!
+2025-11-14 09:57:12,421 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1046W!
+2025-11-14 09:57:12,421 - __main__ - WARNING - [ANOMALY] SOC: 50% | Charge:    8954W | DISCHARGE:   10000W | Net:   -1046W | Voltage:  350.0V | ATTACK ACTIVE!
+2025-11-14 09:57:12,534 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1052W!
+2025-11-14 09:57:12,534 - __main__ - WARNING - [ANOMALY] SOC: 50% | Charge:    8947W | DISCHARGE:   10000W | Net:   -1053W | Voltage:  350.0V | ATTACK ACTIVE!
+2025-11-14 09:57:12,641 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1058W!
+2025-11-14 09:57:12,642 - __main__ - WARNING - [ANOMALY] SOC: 50% | Charge:    8941W | DISCHARGE:   10000W | Net:   -1059W | Voltage:  350.0V | ATTACK ACTIVE!
+2025-11-14 09:57:12,745 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1065W!
+2025-11-14 09:57:12,853 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1071W!
+2025-11-14 09:57:12,965 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1077W!
+2025-11-14 09:57:13,066 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1083W!
+2025-11-14 09:57:13,167 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1089W!
+2025-11-14 09:57:13,281 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1095W!
+2025-11-14 09:57:13,396 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1101W!
+2025-11-14 09:57:13,500 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1107W!
+2025-11-14 09:57:13,614 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1113W!
+2025-11-14 09:57:13,721 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1119W!
+2025-11-14 09:57:26,068 - __main__ - WARNING - [ATTACK-2] PHASE 2 DISCHARGE: 10kW MAXIMUM drain at 55% SOC
+2025-11-14 09:57:26,068 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1630W!
+2025-11-14 09:57:26,171 - __main__ - WARNING - [ATTACK-2] PHASE 2 DISCHARGE: 10kW MAXIMUM drain at 55% SOC
+2025-11-14 09:57:26,171 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1634W!
+2025-11-14 09:57:26,282 - __main__ - WARNING - [ATTACK-2] PHASE 2 DISCHARGE: 10kW MAXIMUM drain at 55% SOC
+2025-11-14 09:57:26,282 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1637W!
+2025-11-14 09:57:26,389 - __main__ - WARNING - [ATTACK-2] PHASE 2 DISCHARGE: 10kW MAXIMUM drain at 55% SOC
+2025-11-14 09:57:26,389 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1640W!
+2025-11-14 09:57:26,498 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1643W!
+2025-11-14 09:57:26,613 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1646W!
+2025-11-14 09:57:26,715 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1649W!
+2025-11-14 09:57:26,817 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1653W!
+2025-11-14 09:57:26,923 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1656W!
+2025-11-14 09:57:27,035 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1659W!
+2025-11-14 09:57:27,144 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1662W!
+2025-11-14 09:57:27,252 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1665W!
+2025-11-14 09:57:27,361 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1668W!
+2025-11-14 09:57:27,471 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1671W!
+2025-11-14 09:57:27,576 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1674W!
+2025-11-14 09:57:27,679 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1677W!
+2025-11-14 09:57:27,784 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1680W!
+2025-11-14 09:57:27,884 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1683W!
+2025-11-14 09:57:27,993 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1686W!
+2025-11-14 09:57:28,104 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1689W!
+2025-11-14 09:57:28,211 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1692W!
+2025-11-14 09:57:28,319 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1694W!
+2025-11-14 09:57:28,425 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1697W!
+2025-11-14 09:57:28,536 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1700W!
+2025-11-14 09:57:28,651 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1703W!
+2025-11-14 09:57:28,755 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1706W!
+2025-11-14 09:57:28,869 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1709W!
+2025-11-14 09:57:28,982 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1711W!
+2025-11-14 09:57:29,091 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1714W!
+2025-11-14 09:57:29,204 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1717W!
+2025-11-14 09:57:29,321 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1720W!
+2025-11-14 09:57:29,434 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1722W!
+2025-11-14 09:57:29,538 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1725W!
+2025-11-14 09:57:29,648 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1728W!
+2025-11-14 09:57:29,749 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1730W!
+2025-11-14 09:57:29,860 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1733W!
+2025-11-14 09:57:29,961 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1736W!
+2025-11-14 09:57:30,076 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1738W!
+2025-11-14 09:57:30,183 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1741W!
+2025-11-14 09:57:30,296 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1744W!
+2025-11-14 09:57:30,401 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1746W!
+2025-11-14 09:57:30,514 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1749W!
+2025-11-14 09:57:30,622 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1751W!
+2025-11-14 09:57:30,735 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1754W!
+2025-11-14 09:57:30,839 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1756W!
+2025-11-14 09:57:30,953 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1759W!
+2025-11-14 09:57:31,065 - __main__ - CRITICAL - [CRITICAL] DISCHARGE > CHARGING: Net flow is NEGATIVE by 1761W!
+2025-11-14 09:58:00,487 - __main__ - WARNING - 
+2025-11-14 09:58:00,488 - __main__ - WARNING - [ATTACK COMPLETE] V2G discharge attack simulation finished
+2025-11-14 09:58:00,488 - __main__ - WARNING - Battery charging continued despite massive discharge attacks
+2025-11-14 09:58:00,488 - __main__ - INFO - 
+2025-11-14 09:58:00,488 - __main__ - INFO - [PHASE 3] Terminating Attack Session
+2025-11-14 09:58:00,488 - __main__ - INFO - ------------------------------------------------------------
+2025-11-14 09:58:01,495 - __main__ - INFO - [OK] V2G attack session closed
+2025-11-14 09:58:01,495 - __main__ - INFO - [OK] OCPP connection terminated
+2025-11-14 09:58:01,496 - __main__ - INFO - 
+2025-11-14 09:58:01,496 - __main__ - INFO - [STOP] Shutting down simulator...
+2025-11-14 09:58:01,496 - src.simulator.main - INFO - Stopping EV Charging Simulator
+2025-11-14 09:58:01,496 - src.can_bus.simulator - INFO - CAN bus simulator stopped
+2025-11-14 09:58:01,496 - src.ocpp.protocol - INFO - OCPP server stopped
+2025-11-14 09:58:01,497 - src.ocpp.protocol - INFO - Disconnected from OCPP server
+2025-11-14 09:58:01,497 - __main__ - INFO - [OK] Simulator shut down
+2025-11-14 09:58:01,497 - __main__ - INFO - 
+2025-11-14 09:58:01,497 - __main__ - INFO - ================================================================================
+2025-11-14 09:58:01,497 - __main__ - INFO - [SUMMARY] INTENSE V2G DISCHARGE ATTACK - TEST RESULTS
+2025-11-14 09:58:01,498 - __main__ - INFO - ================================================================================
+2025-11-14 09:58:01,498 - __main__ - INFO - Test Duration:                  61.1 seconds
+2025-11-14 09:58:01,498 - __main__ - INFO - Start SOC:                      30%
+2025-11-14 09:58:01,498 - __main__ - INFO - End SOC:                        90%
+2025-11-14 09:58:01,498 - __main__ - INFO - 
+2025-11-14 09:58:01,499 - __main__ - INFO - Attack Statistics:
+2025-11-14 09:58:01,499 - __main__ - INFO -   - Total Discharge Incidents:  6
+2025-11-14 09:58:01,499 - __main__ - INFO -   - Maximum Discharge Power:    10000W
+2025-11-14 09:58:01,499 - __main__ - INFO -   - Total Discharge Energy:     58000W
+2025-11-14 09:58:01,499 - __main__ - INFO -   - Power Anomalies Detected:   449
+2025-11-14 09:58:01,499 - __main__ - INFO -   - Voltage Anomalies Detected: 0
+2025-11-14 09:58:01,500 - __main__ - INFO -   - SOC Drop During Attack:     -28.0% (expected ~60%)
+2025-11-14 09:58:01,500 - __main__ - INFO -   - Voltage Drop:               -50.0V (min voltage observed)
+2025-11-14 09:58:01,500 - __main__ - INFO - 
+2025-11-14 09:58:01,500 - __main__ - INFO - Protocol Traffic:
+2025-11-14 09:58:01,500 - __main__ - INFO -   - OCPP Messages:              554
+2025-11-14 09:58:01,501 - __main__ - INFO -   - V2G Messages:               554
+2025-11-14 09:58:01,501 - __main__ - INFO -   - CAN Messages:               554
+2025-11-14 09:58:01,501 - __main__ - INFO -   - Anomaly Injections:         554
+2025-11-14 09:58:01,501 - __main__ - INFO - 
+2025-11-14 09:58:01,502 - __main__ - INFO - [RISK ASSESSMENT] CRITICAL VULNERABILITIES IDENTIFIED:
+2025-11-14 09:58:01,502 - __main__ - INFO -   *** Severity: CRITICAL ***
+2025-11-14 09:58:01,502 - __main__ - INFO -   - V2G protocol can be exploited to discharge at 10kW while charging
+2025-11-14 09:58:01,502 - __main__ - INFO -   - OCPP authentication bypass enables unauthorized discharge commands
+2025-11-14 09:58:01,502 - __main__ - INFO -   - Battery voltage drops to dangerous levels during attack
+2025-11-14 09:58:01,503 - __main__ - INFO -   - Simultaneous charge/discharge creates power oscillations
+2025-11-14 09:58:01,503 - __main__ - INFO -   - No effective rate-limiting on V2G discharge commands
+2025-11-14 09:58:01,503 - __main__ - INFO -   - Attack vector: Compromised V2G controller or malicious charger
+2025-11-14 09:58:01,503 - __main__ - INFO -   - Impact: Complete battery depletion, vehicle immobilization, fire hazard
+2025-11-14 09:58:01,503 - __main__ - INFO - ================================================================================
+2025-11-14 09:58:01,504 - __main__ - INFO - 
+2025-11-14 09:58:01,504 - __main__ - INFO - [GRAPHS] Generating intense attack visualization graphs...
+2025-11-14 09:58:03,569 - __main__ - INFO - [OK] Intense test graph saved to: logs\v2g_discharge_intense_20251114_095658.png
+2025-11-14 09:58:03,590 - __main__ - INFO - [OK] Intense test report saved to: logs\v2g_discharge_intense_20251114_095658.json
+2025-11-14 09:58:03,591 - __main__ - INFO - 
+2025-11-14 09:58:03,591 - __main__ - INFO - [SUCCESS] Intense V2G Discharge Attack Test completed!
+2025-11-14 09:58:03,591 - __main__ - INFO - [LOGS] Full logs saved to: logs\v2g_discharge_intense_20251114_095658.log
+2025-11-14 09:58:03,591 - __main__ - INFO - ================================================================================

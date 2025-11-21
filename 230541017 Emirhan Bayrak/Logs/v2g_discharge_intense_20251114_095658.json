@@ -1,0 +1,3675 @@
+{
+  "test_name": "V2G Discharge - INTENSE ATTACK",
+  "attack_intensity": "CRITICAL",
+  "start_soc": 30,
+  "target_soc": 90,
+  "start_time": "2025-11-14T09:57:00.436609",
+  "end_time": "2025-11-14T09:58:01.497532",
+  "anomaly_type": "v2g_aggressive_discharge",
+  "severity": "CRITICAL",
+  "protocols_involved": [
+    "OCPP",
+    "V2G",
+    "CAN"
+  ],
+  "messages": {
+    "ocpp": 554,
+    "v2g": 554,
+    "can": 554,
+    "anomalies": 554
+  },
+  "discharge_incidents": [
+    {
+      "timestamp": 0.00089,
+      "type": "discharge",
+      "soc": 30,
+      "power": 8000,
+      "voltage": 380,
+      "description": "Aggressive discharge phase 1"
+    },
+    {
+      "timestamp": 11.328924,
+      "type": "discharge",
+      "soc": 50,
+      "power": 10000,
+      "voltage": 350,
+      "description": "Ultra-high power discharge phase 2"
+    },
+    {
+      "timestamp": 25.632093,
+      "type": "discharge",
+      "soc": 55,
+      "power": 10000,
+      "voltage": 350,
+      "description": "Ultra-high power discharge phase 2"
+    },
+    {
+      "timestamp": 25.735315,
+      "type": "discharge",
+      "soc": 55,
+      "power": 10000,
+      "voltage": 350,
+      "description": "Ultra-high power discharge phase 2"
+    },
+    {
+      "timestamp": 25.845964,
+      "type": "discharge",
+      "soc": 55,
+      "power": 10000,
+      "voltage": 350,
+      "description": "Ultra-high power discharge phase 2"
+    },
+    {
+      "timestamp": 25.952743,
+      "type": "discharge",
+      "soc": 55,
+      "power": 10000,
+      "voltage": 350,
+      "description": "Ultra-high power discharge phase 2"
+    }
+  ],
+  "power_anomalies": [
+    {
+      "timestamp": 11.328936,
+      "type": "power_anomaly",
+      "soc": 50,
+      "power": -1008.4014065251213,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 11.436781,
+      "type": "power_anomaly",
+      "soc": 50,
+      "power": -1014.8115395584882,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 11.540468,
+      "type": "power_anomaly",
+      "soc": 50,
+      "power": -1021.1927569818836,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 11.643971,
+      "type": "power_anomaly",
+      "soc": 50,
+      "power": -1027.5451068892762,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 11.760594,
+      "type": "power_anomaly",
+      "soc": 50,
+      "power": -1033.868638413791,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 11.874959,
+      "type": "power_anomaly",
+      "soc": 50,
+      "power": -1040.163401711041,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 11.984775,
+      "type": "power_anomaly",
+      "soc": 50,
+      "power": -1046.4294479425753,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 12.097608,
+      "type": "power_anomaly",
+      "soc": 50,
+      "power": -1052.666829259455,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 12.205076,
+      "type": "power_anomaly",
+      "soc": 50,
+      "power": -1058.8755987859422,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 12.309028,
+      "type": "power_anomaly",
+      "soc": 50,
+      "power": -1065.055810603335,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 12.416926,
+      "type": "power_anomaly",
+      "soc": 50,
+      "power": -1071.2075197339072,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 12.528445,
+      "type": "power_anomaly",
+      "soc": 50,
+      "power": -1077.3307821249855,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 12.629807,
+      "type": "power_anomaly",
+      "soc": 50,
+      "power": -1083.425654633149,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 12.730663,
+      "type": "power_anomaly",
+      "soc": 50,
+      "power": -1089.4921950085554,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 12.84495,
+      "type": "power_anomaly",
+      "soc": 50,
+      "power": -1095.5304618793925,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 12.959916,
+      "type": "power_anomaly",
+      "soc": 50,
+      "power": -1101.5405147364545,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 13.064197,
+      "type": "power_anomaly",
+      "soc": 50,
+      "power": -1107.5224139178554,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 13.177505,
+      "type": "power_anomaly",
+      "soc": 50,
+      "power": -1113.4762205938605,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 13.284921,
+      "type": "power_anomaly",
+      "soc": 50,
+      "power": -1119.4019967518288,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 13.39612,
+      "type": "power_anomaly",
+      "soc": 51,
+      "power": -1125.2998051813283,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 13.502337,
+      "type": "power_anomaly",
+      "soc": 51,
+      "power": -1131.1697094593237,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 13.615534,
+      "type": "power_anomaly",
+      "soc": 51,
+      "power": -1137.0117739355355,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 13.72875,
+      "type": "power_anomaly",
+      "soc": 51,
+      "power": -1142.826063717901,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 13.834676,
+      "type": "power_anomaly",
+      "soc": 51,
+      "power": -1148.6126446581675,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 13.945138,
+      "type": "power_anomaly",
+      "soc": 51,
+      "power": -1154.371583337619,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 14.04994,
+      "type": "power_anomaly",
+      "soc": 51,
+      "power": -1160.102947052921,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 14.161552,
+      "type": "power_anomaly",
+      "soc": 51,
+      "power": -1165.8068038021102,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 14.276349,
+      "type": "power_anomaly",
+      "soc": 51,
+      "power": -1171.483222270679,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 14.384149,
+      "type": "power_anomaly",
+      "soc": 51,
+      "power": -1177.1322718178217,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 14.496912,
+      "type": "power_anomaly",
+      "soc": 51,
+      "power": -1182.7540224627883,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 14.602169,
+      "type": "power_anomaly",
+      "soc": 51,
+      "power": -1188.3485448713564,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 14.714564,
+      "type": "power_anomaly",
+      "soc": 51,
+      "power": -1193.9159103424608,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 14.819518,
+      "type": "power_anomaly",
+      "soc": 51,
+      "power": -1199.4561907949155,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 14.928448,
+      "type": "power_anomaly",
+      "soc": 51,
+      "power": -1204.9694587542836,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 15.028773,
+      "type": "power_anomaly",
+      "soc": 51,
+      "power": -1210.4557873398608,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 15.129891,
+      "type": "power_anomaly",
+      "soc": 51,
+      "power": -1215.9152502517882,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 15.234083,
+      "type": "power_anomaly",
+      "soc": 51,
+      "power": -1221.3479217582953,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 15.341612,
+      "type": "power_anomaly",
+      "soc": 51,
+      "power": -1226.7538766830621,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 15.447862,
+      "type": "power_anomaly",
+      "soc": 51,
+      "power": -1232.133190392702,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 15.560321,
+      "type": "power_anomaly",
+      "soc": 51,
+      "power": -1237.4859387843844,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 15.667708,
+      "type": "power_anomaly",
+      "soc": 51,
+      "power": -1242.8121982735593,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 15.778305,
+      "type": "power_anomaly",
+      "soc": 52,
+      "power": -1248.1120457818233,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 15.886389,
+      "type": "power_anomaly",
+      "soc": 52,
+      "power": -1253.3855587249036,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 15.995038,
+      "type": "power_anomaly",
+      "soc": 52,
+      "power": -1258.6328150007612,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 16.103783,
+      "type": "power_anomaly",
+      "soc": 52,
+      "power": -1263.8538929778188,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 16.2158,
+      "type": "power_anomaly",
+      "soc": 52,
+      "power": -1269.0488714833118,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 16.325419,
+      "type": "power_anomaly",
+      "soc": 52,
+      "power": -1274.2178297917635,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 16.43414,
+      "type": "power_anomaly",
+      "soc": 52,
+      "power": -1279.3608476135742,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 16.54856,
+      "type": "power_anomaly",
+      "soc": 52,
+      "power": -1284.478005083727,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 16.648972,
+      "type": "power_anomaly",
+      "soc": 52,
+      "power": -1289.569382750642,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 16.755722,
+      "type": "power_anomaly",
+      "soc": 52,
+      "power": -1294.6350615651081,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 16.859926,
+      "type": "power_anomaly",
+      "soc": 52,
+      "power": -1299.6751228693738,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 16.970565,
+      "type": "power_anomaly",
+      "soc": 52,
+      "power": -1304.689648386322,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 17.084291,
+      "type": "power_anomaly",
+      "soc": 52,
+      "power": -1309.678720208798,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 17.196341,
+      "type": "power_anomaly",
+      "soc": 52,
+      "power": -1314.642420789016,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 17.304336,
+      "type": "power_anomaly",
+      "soc": 52,
+      "power": -1319.5808329281208,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 17.409501,
+      "type": "power_anomaly",
+      "soc": 52,
+      "power": -1324.4940397658484,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 17.51713,
+      "type": "power_anomaly",
+      "soc": 52,
+      "power": -1329.3821247702872,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 17.624732,
+      "type": "power_anomaly",
+      "soc": 52,
+      "power": -1334.2451717277945,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 17.733379,
+      "type": "power_anomaly",
+      "soc": 52,
+      "power": -1339.0832647329826,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 17.848163,
+      "type": "power_anomaly",
+      "soc": 52,
+      "power": -1343.8964881788543,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 17.960279,
+      "type": "power_anomaly",
+      "soc": 52,
+      "power": -1348.684926747037,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 18.071626,
+      "type": "power_anomaly",
+      "soc": 52,
+      "power": -1353.4486653981276,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 18.177515,
+      "type": "power_anomaly",
+      "soc": 52,
+      "power": -1358.1877893621604,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 18.27918,
+      "type": "power_anomaly",
+      "soc": 52,
+      "power": -1362.9023841291728,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 18.389008,
+      "type": "power_anomaly",
+      "soc": 52,
+      "power": -1367.5925354399023,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 18.501702,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1372.258329276572,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 18.607649,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1376.8998518537992,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 18.713245,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1381.5171896096163,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 18.817627,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1386.1104291965858,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 18.928798,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1390.6796574730433,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 19.035191,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1395.2249614944285,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 19.146725,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1399.7464285047354,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 19.249903,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1404.2441459280708,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 19.358596,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1408.7182013603033,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 19.461496,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1413.168682560834,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 19.576702,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1417.595677444453,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 19.679885,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1421.9992740733305,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 19.781075,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1426.3795606490712,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 19.885506,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1430.7366255048928,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 19.997851,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1435.0705570979171,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 20.109456,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1439.3814440015303,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 20.212383,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1443.6693748978723,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 20.313343,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1447.9344385704062,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 20.417675,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1452.1767238965967,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 20.530457,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1456.3963198406927,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 20.642727,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1460.593315446573,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 20.750121,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1464.7677998307408,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 20.86072,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1468.9198621753658,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 20.964907,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1473.049591721452,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 21.074782,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1477.157077762091,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 21.184025,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1481.2424096357936,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 21.293844,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1485.305676719945,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 21.394686,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1489.3469684243173,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 21.500347,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1493.3663741847085,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 21.613538,
+      "type": "power_anomaly",
+      "soc": 53,
+      "power": -1497.3639834566347,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 21.72169,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1501.339885709147,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 21.83082,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1505.2941704187142,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 21.944016,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1509.2269270632041,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 22.048552,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1513.1382451159534,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 22.161152,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1517.0282140399122,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 22.272373,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1520.896923281889,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 22.377451,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1524.7444622668772,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 22.491018,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1528.5709203924616,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 22.606121,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1532.3763870233179,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 22.720751,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1536.160951485781,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 22.82229,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1539.9247030625065,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 22.929983,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1543.667730987223,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 23.036351,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1547.3901244395347,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 23.150649,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1551.0919725398417,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 23.25862,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1554.773364344317,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 23.371304,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1558.4343888399599,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 23.473807,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1562.0751349397488,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 23.574836,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1565.6956914778475,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 23.675719,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1569.2961472048974,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 23.780198,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1572.8765907834004,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 23.884662,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1576.4371107831503,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 23.995348,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1579.9777956767539,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 24.101491,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1583.4987338352312,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 24.215543,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1587.0000135236824,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 24.322772,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1590.4817228970114,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 24.432036,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1593.9439499957552,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 24.544081,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1597.3867827419544,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 24.648992,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1600.810308935108,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 24.760761,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1604.2146162482022,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 24.868627,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1607.599792223782,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 24.982935,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1610.9659242701327,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 25.087667,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1614.313099657491,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 25.200677,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1617.6414055143487,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 25.308527,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1620.9509288237969,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 25.408778,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1624.2417564199732,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 25.518981,
+      "type": "power_anomaly",
+      "soc": 54,
+      "power": -1627.5139749845312,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 25.632103,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1630.767671043206,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 25.735333,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1634.0029309624297,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 25.845974,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1637.2198409460107,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 25.952754,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1640.4184870318732,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 26.061659,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1643.5989550888698,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 26.177063,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1646.7613308136406,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 26.278709,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1649.9056997275347,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 26.381202,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1653.0321471736079,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 26.486361,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1656.1407583136497,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 26.598363,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1659.2316181252972,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 26.707747,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1662.3048113991954,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 26.815963,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1665.3604227361993,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 26.925212,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1668.398536544666,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 27.03457,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1671.4192370377732,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 27.139423,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1674.4226082308978,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 27.242848,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1677.4087339390699,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 27.347445,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1680.3776977744437,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 27.447955,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1683.3295831438645,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 27.556728,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1686.2644732464505,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 27.667468,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1689.1824510712504,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 27.774669,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1692.0835993949458,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 27.883089,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1694.968000779596,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 27.98851,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1697.8357375704454,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 28.099791,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1700.6868918937853,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 28.214327,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1703.5215456548303,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 28.318638,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1706.3397805356944,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 28.43252,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1709.1416779933697,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 28.5461,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1711.9273192577857,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 28.654775,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1714.6967853298884,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 28.7676,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1717.4501569797867,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 28.884817,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1720.1875147449318,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 28.99779,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1722.9089389283454,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 29.10204,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1725.6145095968968,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 29.211991,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1728.3043065796173,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 29.31282,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1730.9784094660608,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 29.423526,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1733.636897604707,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 29.524768,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1736.2798501014058,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 29.640341,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1738.9073458178664,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 29.747336,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1741.5194633701904,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 29.859665,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1744.1162811274335,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 29.96444,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1746.6978772102193,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 30.078309,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1749.2643294893896,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 30.186151,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1751.8157155846966,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 30.299168,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1754.3521128635111,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 30.403156,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1756.8735984396244,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 30.516643,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1759.3802491720162,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 30.628459,
+      "type": "power_anomaly",
+      "soc": 55,
+      "power": -1761.8721416637145,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 30.736883,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1764.349352260666,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 30.841728,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1766.811957050655,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 30.949779,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1769.260031862248,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 31.057831,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1771.6936522637825,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 31.169549,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1774.112893562382,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 31.277541,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1776.51783080301,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 31.381724,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1778.908538767566,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 31.484065,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1781.2850919739922,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 31.598884,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1783.6475646754443,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 31.705991,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1785.9960308594655,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 31.816842,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1788.3305642472078,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 31.92609,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1790.6512382926903,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 32.03513,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1792.9581261820604,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 32.147056,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1795.251300832937,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 32.261623,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1797.5308348937197,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 32.363109,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1799.79680074299,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 32.477939,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1802.0492704888893,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 32.587045,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1804.2883159685662,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 32.698395,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1806.5140087476266,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 32.802317,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1808.7264201196285,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 32.914406,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1810.9256211055936,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 33.025028,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1813.1116824535438,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 33.133067,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1815.284674638082,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 33.246121,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1817.4446678599807,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 33.355597,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1819.591732045811,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 33.459851,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1821.7259368475852,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 33.574107,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1823.8473516424292,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 33.680126,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1825.956045532289,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 33.78117,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1828.0520873436453,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 33.894668,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1830.1355456272704,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 33.998237,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1832.206488657991,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 34.109071,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1834.264984434487,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 34.216553,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1836.3111006791096,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 34.328775,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1838.3449048377233,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 34.432876,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1840.3664640795723,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 34.542711,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1842.375845297156,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 34.652854,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1844.3731151061475,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 34.761877,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1846.3583398453166,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 34.869828,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1848.331585576484,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 34.984013,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1850.2929180844885,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 35.097737,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1852.2424028771757,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 35.202656,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1854.1801051854163,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 35.312716,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1856.1060899631339,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 35.419532,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1858.0204218873478,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 35.531469,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1859.923165358262,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 35.646557,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1861.8143844993328,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 35.751885,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1863.694143157385,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 35.860687,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1865.5625049027376,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 35.964982,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1867.419533029345,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 36.079682,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1869.2652905549603,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 36.187173,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1871.0998402213027,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 36.300511,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1872.9232444942681,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 36.413397,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1874.7355655641304,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 36.517865,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1876.5368653457708,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 36.630335,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1878.3272054789186,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 36.743388,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1880.1066473284209,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 36.849544,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1881.8752519845075,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 36.961018,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1883.6330802630891,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 37.070668,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1885.3801927060558,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 37.171517,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1887.116649581607,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 37.286141,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1888.8425108845704,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 37.395392,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1890.557836336774,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 37.50505,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1892.2626853873862,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 37.616196,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1893.9571172133037,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 37.729117,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1895.641190719547,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 37.83602,
+      "type": "power_anomaly",
+      "soc": 56,
+      "power": -1897.3149645396534,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 37.938387,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1898.9784970360888,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 38.043644,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1900.6318463007,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 38.148622,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1902.2750701551304,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 38.256842,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1903.908226151284,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 38.368067,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1905.5313715717975,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 38.482583,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1907.1445634305037,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 38.586996,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1908.7478584729306,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 38.699522,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1910.341313176803,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 38.812832,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1911.9249837525413,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 38.91758,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1913.4989261437986,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 39.031256,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1915.0631960279807,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 39.135235,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1916.617848816797,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 39.243477,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1918.1629396568096,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 39.357512,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1919.6985234300046,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 39.463582,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1921.22465475435,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 39.578148,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1922.7413879843907,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 39.68597,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1924.2487772118357,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 39.799544,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1925.746876266162,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 39.904713,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1927.2357387152197,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 40.019576,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1928.7154178658548,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 40.129737,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1930.185966764535,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 40.230756,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1931.647438197986,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 40.343307,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1933.0998846938355,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 40.45121,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1934.5433585212604,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 40.555305,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1935.9779116916561,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 40.666499,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1937.4035959592993,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 40.774117,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1938.8204628220137,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 40.876561,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1940.2285635218668,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 40.991591,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1941.627949045851,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 41.099177,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1943.0186701265875,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 41.212597,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1944.4007772430095,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 41.315465,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1945.774320621098,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 41.429733,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1947.1393502345763,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 41.533415,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1948.495915805648,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 41.637431,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1949.8440668057146,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 41.74413,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1951.1838524561163,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 41.845421,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1952.5153217288616,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 41.947631,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1953.838523347391,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 42.057083,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1955.1535057873152,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 42.163146,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1956.4603172771685,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 42.266152,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1957.7590057991847,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 42.373586,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1959.0496190900521,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 42.477808,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1960.332204641687,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 42.589572,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1961.6068097020188,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 42.697929,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1962.8734812757602,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 42.803598,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1964.132266125197,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 42.913403,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1965.3832107709813,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 43.028705,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1966.6263614929194,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 43.133483,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1967.8617643307762,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 43.246674,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1969.0894650850778,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 43.352531,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1970.3095093179081,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 43.462274,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1971.52194235373,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 43.575971,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1972.7268092801924,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 43.684523,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1973.9241549489489,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 43.798491,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1975.1140239764773,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 43.901991,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1976.2964607449067,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 44.015007,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1977.471509402837,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 44.127642,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1978.6392138661759,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 44.23726,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1979.799617818967,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 44.342063,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1980.9527647142213,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 44.450275,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1982.0986977747625,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 44.561171,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1983.2374599940676,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 44.667335,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1984.3690941371015,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 44.778662,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1985.4936427411685,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 44.892123,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1986.6111481167572,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 45.000828,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1987.7216523483958,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 45.109759,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1988.8251972954895,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 45.217691,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1989.921824593188,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 45.327797,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1991.0115756532414,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 45.429251,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1992.0944916648423,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 45.532791,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1993.1706135954955,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 45.636923,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1994.239982191878,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 45.74958,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1995.3026379807006,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 45.864237,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1996.3586212695654,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 45.976088,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1997.4079721478356,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 46.078859,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1998.450730487495,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 46.181299,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -1999.4869359440254,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 46.282105,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2000.516627957264,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 46.383318,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2001.5398457522742,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 46.488132,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2002.556628340214,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 46.600463,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2003.567014519208,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 46.7133,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2004.5710428752218,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 46.817284,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2005.5687517829256,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 46.927537,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2006.5601794065742,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 47.028617,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2007.5453637008704,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 47.134482,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2008.5243424118407,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 47.249632,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2009.4971530777184,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 47.357477,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2010.4638330298003,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 47.462324,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2011.424419393331,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 47.573462,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2012.3789490883746,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 47.683549,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2013.3274588306886,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 47.800099,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2014.2699851325924,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 47.908335,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2015.2065643038477,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 48.010877,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2016.1372324525273,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 48.119712,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2017.0620254858895,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 48.227012,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2017.980979111253,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 48.32828,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2018.894128836865,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 48.438286,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2019.8015099727754,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 48.545739,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2020.7031576317095,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 48.657608,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2021.5991067299392,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 48.763404,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2022.489391988147,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 48.876031,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2023.374047932307,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 48.984818,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2024.2531088945416,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 49.090007,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2025.1266090139989,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 49.201773,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2025.994582237723,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 49.310901,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2026.8570623215028,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 49.425325,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2027.7140828307593,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 49.535094,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2028.5656771413996,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 49.645898,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2029.411878440682,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 49.756436,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2030.2527197280706,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 49.86082,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2031.08823381612,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 49.971797,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2031.9184533313055,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 50.079955,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2032.743410714911,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 50.180872,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2033.563138223868,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 50.285019,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2034.3776679316143,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 50.397935,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2035.1870317289586,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 50.50259,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2035.991261324929,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 50.615072,
+      "type": "power_anomaly",
+      "soc": 57,
+      "power": -2036.790388247624,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 50.716338,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2037.5844438450677,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 50.825756,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2038.3734592860537,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 50.928748,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2039.1574655610038,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 51.029653,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2039.9364934828,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 51.131776,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2040.7105736876447,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 51.244164,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2041.4797366358898,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 51.348848,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2042.2440126128931,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 51.462082,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2043.0034317298423,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 51.566593,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2043.7580239246117,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 51.676703,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2044.507818962582,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 51.789524,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2045.2528464374764,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 51.900213,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2045.9931357722135,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 52.008297,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2046.7287162197117,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 52.122623,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2047.4596168637345,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 52.231184,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2048.1858666197104,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 52.338261,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2048.9074942355664,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 52.44824,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2049.62452829254,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 52.548571,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2050.3369972060063,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 52.655164,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2051.0449292263047,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 52.755553,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2051.7483524395366,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 52.86053,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2052.447294768399,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 52.964182,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2053.141783972991,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 53.078798,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2053.8318476516197,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 53.188537,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2054.517513241619,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 53.29898,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2055.19880802014,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 53.410783,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2055.8757591049753,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 53.520595,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2056.548393455343,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 53.630162,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2057.2167378726963,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 53.731469,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2057.8808190015225,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 53.837919,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2058.5406633301245,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 53.951711,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2059.1962971914318,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 54.062994,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2059.847746763774,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 54.171649,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2060.4950380716846,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 54.279878,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2061.1381969866743,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 54.381403,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2061.777249228021,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 54.486688,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2062.412220363545,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 54.599159,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2063.043135810389,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 54.707996,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2063.6700208358034,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 54.808582,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2064.2929005579053,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 54.912481,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2064.911799946458,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 55.01787,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2065.5267438236406,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 55.130454,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2066.137756864805,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 55.243826,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2066.7448635992496,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 55.350682,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2067.348088410976,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 55.456945,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2067.947455539448,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 55.570689,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2068.5429890803425,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 55.676616,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2069.134712986308,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 55.786789,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2069.722651067723,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 55.899008,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2070.30682699342,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 56.012035,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2070.8872642914585,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 56.123444,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2071.4639863498514,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 56.22961,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2072.0370164173064,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 56.338459,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2072.606377603971,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 56.44032,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2073.1720928821587,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 56.544569,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2073.734185087086,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 56.65275,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2074.2926769176074,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 56.760463,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2074.8475909369236,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 56.872722,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2075.3989495733294,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 56.978614,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2075.946775120916,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 57.087794,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2076.4910897403042,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 57.200534,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2077.031915459347,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 57.312687,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2077.5692741738594,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 57.41657,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2078.103187648305,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 57.526641,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2078.6336775165328,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 57.635941,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2079.1607652824596,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 57.747136,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2079.6844723207823,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 57.860504,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2080.2048198776756,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 57.965379,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2080.7218290714936,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 58.076251,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2081.235520893454,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 58.185037,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2081.745916208336,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 58.29849,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2082.2530357551723,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 58.403632,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2082.756900147927,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 58.516029,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2083.257529876183,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 58.627703,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2083.7549453058236,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 58.736686,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2084.249166679707,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 58.846431,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2084.740214118342,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 58.953035,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2085.228107620562,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 59.062645,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2085.712867064194,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 59.167207,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2086.194512206721,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 59.280023,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2086.673062685948,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 59.394994,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2087.1485380206686,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 59.501682,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2087.6209576113106,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 59.615128,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2088.090340740604,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 59.719724,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2088.556706574226,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 59.832748,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2089.0200741614544,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    },
+    {
+      "timestamp": 59.944543,
+      "type": "power_anomaly",
+      "soc": 58,
+      "power": -2089.480462435811,
+      "voltage": 350.0,
+      "description": "CRITICAL: Discharge exceeds charging!"
+    }
+  ],
+  "voltage_anomalies": [],
+  "soc_anomalies": [],
+  "attack_statistics": {
+    "total_discharge_power": 58000,
+    "max_discharge_power": 10000,
+    "discharge_duration": 0,
+    "soc_loss": -28,
+    "voltage_drop": -50.0
+  },
+  "test_duration": 61.060923
+}

@@ -1,0 +1,100 @@
+2025-11-14 10:04:35,813 - __main__ - INFO - ================================================================================
+2025-11-14 10:04:35,814 - __main__ - INFO - V2G DISCHARGE - CONSTANT 6kW TEST
+2025-11-14 10:04:35,814 - __main__ - INFO - Objective: Test sustained 6kW discharge throughout entire charging session
+2025-11-14 10:04:35,814 - __main__ - INFO - ================================================================================
+2025-11-14 10:04:35,814 - __main__ - INFO - 
+2025-11-14 10:04:35,815 - __main__ - INFO - [INIT] Initializing constant discharge V2G test simulator...
+2025-11-14 10:04:35,815 - src.simulator.main - INFO - Initializing simulator components...
+2025-11-14 10:04:35,815 - src.simulator.main - INFO - CAN bus simulator initialized
+2025-11-14 10:04:35,815 - src.simulator.main - INFO - OCPP server and client initialized
+2025-11-14 10:04:35,816 - src.simulator.main - INFO - V2G communicator initialized
+2025-11-14 10:04:35,816 - src.simulator.main - INFO - Anomaly injector initialized
+2025-11-14 10:04:35,816 - __main__ - INFO - [OK] Simulator initialized
+2025-11-14 10:04:35,816 - __main__ - INFO -   - Discharge Power: Constant 6kW
+2025-11-14 10:04:35,817 - __main__ - INFO -   - Anomaly Injection Rate: 80%
+2025-11-14 10:04:35,817 - __main__ - INFO -   - Protocols: CAN, OCPP, V2G
+2025-11-14 10:04:35,817 - __main__ - INFO - 
+2025-11-14 10:04:35,817 - __main__ - INFO - [START] Starting constant discharge simulation...
+2025-11-14 10:04:35,817 - src.simulator.main - INFO - Starting EV Charging Simulator: V2G Constant 6kW Discharge Test
+2025-11-14 10:04:35,817 - src.can_bus.simulator - INFO - CAN bus simulator started on vcan0
+2025-11-14 10:04:35,818 - src.ocpp.protocol - INFO - OCPP 1.6 server starting on port 8000
+2025-11-14 10:04:35,818 - src.ocpp.protocol - INFO - Connecting to OCPP server at ws://localhost:8000
+2025-11-14 10:04:35,818 - src.ocpp.protocol - INFO - BootNotification sent
+2025-11-14 10:04:35,818 - __main__ - INFO - [OK] Constant discharge simulation started
+2025-11-14 10:04:35,818 - __main__ - INFO - 
+2025-11-14 10:04:35,819 - __main__ - INFO - [PHASE 1] Establishing V2G Connection
+2025-11-14 10:04:35,819 - __main__ - INFO - ------------------------------------------------------------
+2025-11-14 10:04:37,823 - __main__ - INFO - [OK] OCPP authentication established
+2025-11-14 10:04:37,823 - __main__ - INFO - [OK] V2G session established
+2025-11-14 10:04:37,824 - __main__ - INFO - [ATTACK] 6kW constant discharge activated
+2025-11-14 10:04:37,824 - __main__ - INFO - 
+2025-11-14 10:04:37,824 - __main__ - INFO - [PHASE 2] CHARGING WITH CONSTANT 6kW DISCHARGE
+2025-11-14 10:04:37,824 - __main__ - INFO - ------------------------------------------------------------
+2025-11-14 10:04:37,825 - __main__ - INFO - [SUSTAINED] SOC: 20% | Charge:   11520W | Discharge:    6000W | Net:    5520W | Voltage:  380.0V | Efficiency:  47.9%
+2025-11-14 10:04:37,948 - __main__ - INFO - [SUSTAINED] SOC: 20% | Charge:   11505W | Discharge:    6000W | Net:    5505W | Voltage:  380.0V | Efficiency:  47.8%
+2025-11-14 10:04:38,053 - __main__ - INFO - [SUSTAINED] SOC: 20% | Charge:   11489W | Discharge:    6000W | Net:    5489W | Voltage:  380.0V | Efficiency:  47.8%
+2025-11-14 10:04:38,157 - __main__ - INFO - [SUSTAINED] SOC: 20% | Charge:   11474W | Discharge:    6000W | Net:    5474W | Voltage:  380.0V | Efficiency:  47.7%
+2025-11-14 10:04:41,488 - __main__ - INFO - [SUSTAINED] SOC: 30% | Charge:   10904W | Discharge:    6000W | Net:    4904W | Voltage:  380.0V | Efficiency:  45.0%
+2025-11-14 10:04:45,499 - __main__ - INFO - [SUSTAINED] SOC: 40% | Charge:   10070W | Discharge:    6000W | Net:    4070W | Voltage:  380.0V | Efficiency:  40.4%
+2025-11-14 10:04:50,296 - __main__ - INFO - [SUSTAINED] SOC: 50% | Charge:    8987W | Discharge:    6000W | Net:    2987W | Voltage:  380.0V | Efficiency:  33.2%
+2025-11-14 10:04:56,779 - __main__ - INFO - [SUSTAINED] SOC: 60% | Charge:    7673W | Discharge:    6000W | Net:    1673W | Voltage:  380.0V | Efficiency:  21.8%
+2025-11-14 10:05:07,869 - __main__ - INFO - [SUSTAINED] SOC: 70% | Charge:    6120W | Discharge:    6000W | Net:     120W | Voltage:  380.0V | Efficiency:   2.0%
+2025-11-14 10:06:37,884 - __main__ - INFO - 
+2025-11-14 10:06:37,885 - __main__ - INFO - [CHARGING COMPLETE] Session finished with constant discharge
+2025-11-14 10:06:37,885 - __main__ - INFO - 
+2025-11-14 10:06:37,885 - __main__ - INFO - [PHASE 3] Terminating Session
+2025-11-14 10:06:37,886 - __main__ - INFO - ------------------------------------------------------------
+2025-11-14 10:06:38,888 - __main__ - INFO - [OK] V2G session closed
+2025-11-14 10:06:38,888 - __main__ - INFO - [OK] OCPP connection terminated
+2025-11-14 10:06:38,888 - __main__ - INFO - 
+2025-11-14 10:06:38,889 - __main__ - INFO - [STOP] Shutting down simulator...
+2025-11-14 10:06:38,889 - src.simulator.main - INFO - Stopping EV Charging Simulator
+2025-11-14 10:06:38,889 - src.can_bus.simulator - INFO - CAN bus simulator stopped
+2025-11-14 10:06:38,889 - src.ocpp.protocol - INFO - OCPP server stopped
+2025-11-14 10:06:38,889 - src.ocpp.protocol - INFO - Disconnected from OCPP server
+2025-11-14 10:06:38,890 - __main__ - INFO - [OK] Simulator shut down
+2025-11-14 10:06:38,890 - __main__ - INFO - 
+2025-11-14 10:06:38,890 - __main__ - INFO - ================================================================================
+2025-11-14 10:06:38,890 - __main__ - INFO - [SUMMARY] CONSTANT 6kW DISCHARGE TEST - RESULTS
+2025-11-14 10:06:38,890 - __main__ - INFO - ================================================================================
+2025-11-14 10:06:38,891 - __main__ - INFO - Test Duration:                  121.1 seconds
+2025-11-14 10:06:38,891 - __main__ - INFO - Start SOC:                      20%
+2025-11-14 10:06:38,891 - __main__ - INFO - End SOC:                        90%
+2025-11-14 10:06:38,891 - __main__ - INFO - 
+2025-11-14 10:06:38,891 - __main__ - INFO - Discharge Statistics:
+2025-11-14 10:06:38,891 - __main__ - INFO -   - Constant Discharge Power:   6000W (6kW)
+2025-11-14 10:06:38,892 - __main__ - INFO -   - Total Discharge Duration:   111.6 seconds
+2025-11-14 10:06:38,892 - __main__ - INFO -   - Total Discharge Energy:     6690000W
+2025-11-14 10:06:38,892 - __main__ - INFO -   - Power Anomalies Detected:   1115
+2025-11-14 10:06:38,892 - __main__ - INFO -   - Voltage Anomalies Detected: 0
+2025-11-14 10:06:38,892 - __main__ - INFO - 
+2025-11-14 10:06:38,893 - __main__ - INFO - Efficiency Impact:
+2025-11-14 10:06:38,893 - __main__ - INFO -   - Average Net Power:          -141W
+2025-11-14 10:06:38,893 - __main__ - INFO -   - Charging Efficiency:        -2.4%
+2025-11-14 10:06:38,893 - __main__ - INFO -   - Discharge Impact:           102.4% loss
+2025-11-14 10:06:38,893 - __main__ - INFO -   - Voltage Drop:               20.0V (from 400V)
+2025-11-14 10:06:38,894 - __main__ - INFO - 
+2025-11-14 10:06:38,894 - __main__ - INFO - Protocol Traffic:
+2025-11-14 10:06:38,894 - __main__ - INFO -   - OCPP Messages:              1115
+2025-11-14 10:06:38,894 - __main__ - INFO -   - V2G Messages:               1115
+2025-11-14 10:06:38,894 - __main__ - INFO -   - CAN Messages:               1115
+2025-11-14 10:06:38,895 - __main__ - INFO -   - Anomaly Injections:         1115
+2025-11-14 10:06:38,895 - __main__ - INFO - 
+2025-11-14 10:06:38,895 - __main__ - INFO - [RISK ASSESSMENT] SUSTAINED DISCHARGE VULNERABILITY:
+2025-11-14 10:06:38,895 - __main__ - INFO -   *** Severity: HIGH ***
+2025-11-14 10:06:38,895 - __main__ - INFO -   - 6kW constant discharge reduces charging efficiency
+2025-11-14 10:06:38,895 - __main__ - INFO -   - Charging still proceeds but at significantly reduced rate
+2025-11-14 10:06:38,896 - __main__ - INFO -   - Potential for extended charging times or incomplete charging
+2025-11-14 10:06:38,896 - __main__ - INFO -   - Voltage degradation from sustained power draw
+2025-11-14 10:06:38,896 - __main__ - INFO -   - Battery stress from simultaneous charge/discharge cycles
+2025-11-14 10:06:38,896 - __main__ - INFO -   - Attack vector: Compromised V2G controller maintaining constant discharge
+2025-11-14 10:06:38,896 - __main__ - INFO -   - Impact: Delayed charging, reduced battery health, vehicle unavailability
+2025-11-14 10:06:38,897 - __main__ - INFO - ================================================================================
+2025-11-14 10:06:38,897 - __main__ - INFO - 
+2025-11-14 10:06:38,897 - __main__ - INFO - [GRAPHS] Generating constant discharge visualization graphs...
+2025-11-14 10:06:40,032 - __main__ - INFO - [OK] Constant discharge test graph saved to: logs\v2g_discharge_constant_20251114_100435.png
+2025-11-14 10:06:40,064 - __main__ - INFO - [OK] Constant discharge test report saved to: logs\v2g_discharge_constant_20251114_100435.json
+2025-11-14 10:06:40,065 - __main__ - INFO - 
+2025-11-14 10:06:40,065 - __main__ - INFO - [SUCCESS] Constant 6kW Discharge Test completed!
+2025-11-14 10:06:40,065 - __main__ - INFO - [LOGS] Full logs saved to: logs\v2g_discharge_constant_20251114_100435.log
+2025-11-14 10:06:40,065 - __main__ - INFO - ================================================================================
