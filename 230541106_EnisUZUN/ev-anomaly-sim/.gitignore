@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Machine Learning Models
+*.pkl
+anomaly_model.pkl
+scaler.pkl
+
+# Data files
+*.csv
+training_data.csv
+
+# Logs
+logs/
+*.log
+
+# Backup files
+*.backup
+*.bak
+*.bak2
+cp.py.backup
+cp.py.bak2
+
+# Empty files
+ai_solution_comparison.py
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.swp
+*~
