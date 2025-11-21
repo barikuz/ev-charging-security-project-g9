@@ -2,13 +2,13 @@
 ⚡ EV CHARGING ANOMALY SIMULATOR - PROJECT COMPLETE ⚡
 ===============================================================================
 
-PROJECT LOCATION: /Users/enisuzun/Desktop/ev-anomaly-sim
+PROJECT LOCATION: /Users/enisuzun/Desktop/230541106_EnisUZUN
 
 ===============================================================================
 📁 PROJECT STRUCTURE
 ===============================================================================
 
-ev-anomaly-sim/
+230541106_EnisUZUN/
 ├── 🔌 Core Components
 │   ├── charger_module.py       → Virtual CAN charger device
 │   ├── csms.py                 → OCPP 1.6 WebSocket server  
@@ -49,7 +49,7 @@ ev-anomaly-sim/
 ===============================================================================
 
 SIMPLE METHOD (Recommended):
-  cd /Users/enisuzun/Desktop/ev-anomaly-sim
+  cd /Users/enisuzun/Desktop/230541106_EnisUZUN
   ./run_all.sh
 
 This opens 4 Terminal tabs automatically:
@@ -60,7 +60,7 @@ This opens 4 Terminal tabs automatically:
 
 MANUAL METHOD:
   # Terminal 1
-  cd /Users/enisuzun/Desktop/ev-anomaly-sim
+  cd /Users/enisuzun/Desktop/230541106_EnisUZUN
   source venv/bin/activate
   python3 charger_module.py
 
@@ -159,8 +159,8 @@ QUICK TESTS:
 ===============================================================================
 
 ISSUE: Virtual environment not found
-FIX:  cd /Users/enisuzun/Desktop/ev-anomaly-sim
-      python3.11 -m venv venv
+FIX:  cd /Users/enisuzun/Desktop/230541106_EnisUZUN
+  python3.11 -m venv venv
       source venv/bin/activate
       pip install -r requirements.txt
 

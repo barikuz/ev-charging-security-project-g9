@@ -2,7 +2,7 @@
 ✅ EV CHARGING ANOMALY SIMULATOR - INSTALLATION CHECKLIST ✅
 ===============================================================================
 
-PROJECT: ev-anomaly-sim
+PROJECT: 230541106_EnisUZUN
 DATE: November 9, 2025
 STATUS: COMPLETE AND VERIFIED
 
@@ -179,7 +179,7 @@ ANOMALY PATTERN:
 ===============================================================================
 
 QUICK START:
-  1. cd /Users/enisuzun/Desktop/ev-anomaly-sim
+  1. cd /Users/enisuzun/Desktop/230541106_EnisUZUN
   2. ./run_all.sh
   3. Watch the 4 Terminal tabs + matplotlib window
   4. Observe the anomaly pattern in the graph
@@ -226,7 +226,7 @@ The EV Charging Anomaly Simulator is complete, tested, and ready to use.
 
 To start the simulation immediately:
 
-  cd /Users/enisuzun/Desktop/ev-anomaly-sim
+  cd /Users/enisuzun/Desktop/230541106_EnisUZUN
   ./run_all.sh
 
 Expected result:

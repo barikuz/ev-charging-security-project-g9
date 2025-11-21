@@ -4,7 +4,7 @@
 
 ```bash
 # 1. Navigate to project
-cd /Users/enisuzun/Desktop/ev-anomaly-sim
+cd /Users/enisuzun/Desktop/230541106_EnisUZUN
 
 # 2. Create Python 3.11 virtual environment (already done!)
 # python3.11 -m venv venv
@@ -25,7 +25,7 @@ python3 test_environment.py
 ## Quick Run (After Initial Setup)
 
 ```bash
-cd /Users/enisuzun/Desktop/ev-anomaly-sim
+cd /Users/enisuzun/Desktop/230541106_EnisUZUN
 ./run_all.sh
 ```
 

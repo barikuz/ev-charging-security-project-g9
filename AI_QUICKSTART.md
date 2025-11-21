@@ -8,7 +8,7 @@
 ./run_all.sh
 
 # YENİ bir terminal aç ve veri topla
-cd /Users/enisuzun/Desktop/ev-anomaly-sim
+cd /Users/enisuzun/Desktop/230541106_EnisUZUN
 source venv/bin/activate
 python data_collector.py
 ```

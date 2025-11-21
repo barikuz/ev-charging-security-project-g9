@@ -10,7 +10,7 @@ STEP 1: Navigate to the Project Directory
 
 Open Terminal and type:
 
-    cd /Users/enisuzun/Desktop/ev-anomaly-sim
+  cd /Users/enisuzun/Desktop/230541106_EnisUZUN
 
 Press Enter.
 
@@ -134,9 +134,9 @@ Want to make sure everything is set up correctly?
 
 Run this test first:
 
-    cd /Users/enisuzun/Desktop/ev-anomaly-sim
-    source venv/bin/activate
-    python3 test_environment.py
+  cd /Users/enisuzun/Desktop/230541106_EnisUZUN
+  source venv/bin/activate
+  python3 test_environment.py
 
 You should see:
   ✅ Python version OK
@@ -166,13 +166,13 @@ Read the documentation:
 │  TO RUN THE SIMULATION:                                         │
 │  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │
 │                                                                 │
-│    cd /Users/enisuzun/Desktop/ev-anomaly-sim                    │
+│    cd /Users/enisuzun/Desktop/230541106_EnisUZUN                    │
 │    ./run_all.sh                                                 │
 │                                                                 │
 │  TO TEST FIRST:                                                 │
 │  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │
 │                                                                 │
-│    cd /Users/enisuzun/Desktop/ev-anomaly-sim                    │
+│    cd /Users/enisuzun/Desktop/230541106_EnisUZUN                    │
 │    source venv/bin/activate                                     │
 │    python3 test_environment.py                                  │
 │                                                                 │
@@ -191,7 +191,7 @@ Your EV Charging Anomaly Simulator is installed and ready to run.
 
 Just type:
 
-    cd /Users/enisuzun/Desktop/ev-anomaly-sim
+    cd /Users/enisuzun/Desktop/230541106_EnisUZUN                    
     ./run_all.sh
 
 And watch the magic happen! ⚡🔋📊

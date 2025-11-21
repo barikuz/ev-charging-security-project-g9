@@ -46,7 +46,7 @@ This project simulates an OCPP 1.6 charging infrastructure with:
 ### 1. Create Virtual Environment
 
 ```bash
-cd ev-anomaly-sim
+cd 230541106_EnisUZUN
 python3.11 -m venv venv
 source venv/bin/activate
 ```

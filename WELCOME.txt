@@ -31,7 +31,7 @@
     🚀 QUICK START
     ═══════════════════════════════════════════════════════════════════════
 
-        cd /Users/enisuzun/Desktop/ev-anomaly-sim
+        cd /Users/enisuzun/Desktop/230541106_EnisUZUN
         ./run_all.sh
 
 

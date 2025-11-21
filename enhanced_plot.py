@@ -17,7 +17,7 @@ DATA_FILE = "/tmp/ev_current.json"
 PREDICTIONS_FILE = "/tmp/ev_predictions.json"
 
 # Log files
-LOG_DIR = "/Users/enisuzun/Desktop/ev-anomaly-sim/logs"
+LOG_DIR = "/Users/enisuzun/Desktop/230541106_EnisUZUN/logs"
 os.makedirs(LOG_DIR, exist_ok=True)
 SESSION_ID = datetime.now().strftime("%Y%m%d_%H%M%S")
 DETAIL_LOG_FILE = f"{LOG_DIR}/ev_session_{SESSION_ID}.log"

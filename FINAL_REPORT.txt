@@ -206,7 +206,7 @@ For Verification:
 
 SIMPLE METHOD:
 
-  cd /Users/enisuzun/Desktop/ev-anomaly-sim
+  cd /Users/enisuzun/Desktop/230541106_EnisUZUN
   ./run_all.sh
 
 That's it! The system will automatically:
@@ -300,7 +300,7 @@ is functioning as specified.
 
 To start using it right now:
 
-  cd /Users/enisuzun/Desktop/ev-anomaly-sim
+  cd /Users/enisuzun/Desktop/230541106_EnisUZUN
   ./run_all.sh
 
 Enjoy exploring the simulation! ⚡🔋📊
