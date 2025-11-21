@@ -1,0 +1,10 @@
+[t=0060s] RemoteStopTransaction -> stations [1] target=0.0 kW
+[t=0060s] RemoteStopTransaction -> stations [2] target=0.0 kW
+[t=0060s] RemoteStopTransaction -> stations [3] target=0.0 kW
+[t=0060s] RemoteStopTransaction -> stations [4] target=0.0 kW
+[t=0060s] RemoteStopTransaction -> stations [5] target=0.0 kW
+[t=0060s] RemoteStartTransaction -> stations [6] target=20.0 kW
+[t=0060s] RemoteStartTransaction -> stations [7] target=20.0 kW
+[t=0060s] RemoteStartTransaction -> stations [8] target=20.0 kW
+[t=0060s] RemoteStartTransaction -> stations [9] target=20.0 kW
+[t=0060s] RemoteStartTransaction -> stations [10] target=20.0 kW
