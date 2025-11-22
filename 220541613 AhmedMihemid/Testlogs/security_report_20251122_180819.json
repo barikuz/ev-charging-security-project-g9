@@ -1,0 +1,115 @@
+{
+    "events": [
+        {
+            "timestamp": "2025-11-22T15:08:29.097043+00:00",
+            "energy": 1010.73,
+            "status": "KABUL ED\u0130LD\u0130"
+        },
+        {
+            "timestamp": "2025-11-22T15:08:39.097043+00:00",
+            "energy": 1021.31,
+            "status": "KABUL ED\u0130LD\u0130"
+        },
+        {
+            "timestamp": "2025-11-22T15:08:49.097043+00:00",
+            "energy": 1031.52,
+            "status": "KABUL ED\u0130LD\u0130"
+        },
+        {
+            "timestamp": "2025-11-22T15:08:59.097043+00:00",
+            "energy": 1041.09,
+            "status": "KABUL ED\u0130LD\u0130"
+        },
+        {
+            "timestamp": "2025-11-22T15:09:09.097043+00:00",
+            "energy": 1051.04,
+            "status": "KABUL ED\u0130LD\u0130"
+        },
+        {
+            "timestamp": "2025-11-22T15:09:19.097043+00:00",
+            "energy": 1060.81,
+            "status": "KABUL ED\u0130LD\u0130"
+        },
+        {
+            "timestamp": "2025-11-22T15:09:29.097043+00:00",
+            "energy": 1070.89,
+            "status": "KABUL ED\u0130LD\u0130"
+        },
+        {
+            "timestamp": "2025-11-22T15:09:09.097043+00:00",
+            "energy": 1051.04,
+            "status": "REDDED\u0130LD\u0130"
+        },
+        {
+            "timestamp": "2025-11-22T15:09:49.097043+00:00",
+            "energy": 1080.25,
+            "status": "KABUL ED\u0130LD\u0130"
+        },
+        {
+            "timestamp": "2025-11-22T15:09:59.097043+00:00",
+            "energy": 1089.27,
+            "status": "KABUL ED\u0130LD\u0130"
+        },
+        {
+            "timestamp": "2025-11-22T15:10:09.097043+00:00",
+            "energy": 1099.13,
+            "status": "KABUL ED\u0130LD\u0130"
+        },
+        {
+            "timestamp": "2025-11-22T15:08:21.564996+00:00",
+            "energy": 1051.04,
+            "status": "REDDED\u0130LD\u0130"
+        },
+        {
+            "timestamp": "2025-11-22T15:10:29.097043+00:00",
+            "energy": 1109.99,
+            "status": "KABUL ED\u0130LD\u0130"
+        },
+        {
+            "timestamp": "2025-11-22T15:10:39.097043+00:00",
+            "energy": 1119.92,
+            "status": "KABUL ED\u0130LD\u0130"
+        },
+        {
+            "timestamp": "2025-11-22T15:10:49.097043+00:00",
+            "energy": 1130.77,
+            "status": "KABUL ED\u0130LD\u0130"
+        },
+        {
+            "timestamp": "2025-11-22T15:10:59.097043+00:00",
+            "energy": 1140.62,
+            "status": "KABUL ED\u0130LD\u0130"
+        },
+        {
+            "timestamp": "2025-11-22T15:11:09.097043+00:00",
+            "energy": 1151.39,
+            "status": "KABUL ED\u0130LD\u0130"
+        },
+        {
+            "timestamp": "2025-11-22T15:11:19.097043+00:00",
+            "energy": 1160.97,
+            "status": "KABUL ED\u0130LD\u0130"
+        },
+        {
+            "timestamp": "2025-11-22T15:11:29.097043+00:00",
+            "energy": 1171.0,
+            "status": "KABUL ED\u0130LD\u0130"
+        }
+    ],
+    "attacks": [
+        {
+            "type": "Tekrar Sald\u0131r\u0131s\u0131",
+            "reason": "\u0130mza tekrar kullan\u0131ld\u0131",
+            "blocked": true,
+            "time": "2025-11-22T15:08:20.741745+00:00"
+        },
+        {
+            "type": "Tekrar Sald\u0131r\u0131s\u0131",
+            "reason": "\u0130mza tekrar kullan\u0131ld\u0131",
+            "blocked": true,
+            "time": "2025-11-22T15:08:21.565017+00:00"
+        }
+    ],
+    "total_attacks": 2,
+    "blocked": 2
+}
