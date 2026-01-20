@@ -11,11 +11,12 @@ import matplotlib.animation as animation
 from collections import deque
 import time
 import json
+import os
 from datetime import datetime, timedelta
 from memory_bank import MemoryBank
 
 # Shared data file
-DATA_FILE = "/tmp/ev_current.json"
+DATA_FILE = os.path.join(os.path.dirname(__file__), "ev_current.json")
 
 # Initialize MemoryBank
 memory = MemoryBank("ev_charging_memory.db")

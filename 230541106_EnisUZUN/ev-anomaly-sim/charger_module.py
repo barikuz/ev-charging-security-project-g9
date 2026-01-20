@@ -59,8 +59,9 @@ def tx_loop():
     Also write to shared file for direct plotting
     """
     print("📡 Charger Module: Publishing current readings on CAN ID 0x300...")
-    DATA_FILE = "/tmp/ev_current.json"
+    import os
     import json
+    DATA_FILE = os.path.join(os.path.dirname(__file__), "ev_current.json")
     
     while True:
         # Smooth ramping: move 20% towards target each iteration

@@ -2,6 +2,7 @@
 Complete EV Charging Simulation with Logging and Graphs
 Simulates a complete charging session from 10% to 100% SOC with visualization
 """
+# Normal Şarj Senaryosu
 
 import asyncio
 import logging
@@ -10,6 +11,9 @@ from datetime import datetime
 from pathlib import Path
 import sys
 import os
+
+# Add parent directory to path to import src module
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 # Set UTF-8 encoding for output
 os.environ['PYTHONIOENCODING'] = 'utf-8'

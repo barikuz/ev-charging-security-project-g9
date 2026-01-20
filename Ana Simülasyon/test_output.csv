@@ -1,0 +1,2 @@
+session_id,event,message_id,ts_epoch,ts_iso
+BOOT,BootNotification,0d72d6a3,1768888992.3632326,2026-01-20T06:03:12.363236+00:00

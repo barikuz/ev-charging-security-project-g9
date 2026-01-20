@@ -4,10 +4,18 @@ All-in-One EV Charging Anomaly Simulator
 Single process: charger + anomaly logic + file writer
 NO CAN bus isolation issues!
 """
+
+
+# 230541106 Enis Uzun
+# cd "c:\Users\Emirhan\Desktop\EV\230541106_EnisUZUN\ev-anomaly-sim"; C:/Users/Emirhan/Desktop/EV/venv/Scripts/python all_in_one.py 
+# cd "c:\Users\Emirhan\Desktop\EV\230541106_EnisUZUN\ev-anomaly-sim"; C:/Users/Emirhan/Desktop/EV/venv/Scripts/python plot_current.py 
+
+
 import time
 import json
 import threading
 import random
+import os
 
 # Charger state
 state = {
@@ -17,7 +25,7 @@ state = {
     "current": 0.0
 }
 
-DATA_FILE = "/tmp/ev_current.json"
+DATA_FILE = os.path.join(os.path.dirname(__file__), "ev_current.json")
 
 def tx_loop():
     """

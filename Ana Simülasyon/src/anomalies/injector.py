@@ -27,6 +27,7 @@ class AnomalyType(Enum):
     TIMING_ATTACK = "timing_attack"
     INVALID_STATE = "invalid_state"
     POWER_ANOMALY = "power_anomaly"
+    THERMAL_RUNAWAY = "thermal_runaway"
 
 
 class AttackSeverity(Enum):
@@ -241,4 +242,14 @@ class AttackScenarios:
         )
         scenario.add_anomaly("SPOOFING", "can", AttackSeverity.HIGH, 0)
         scenario.add_anomaly("SPOOFING", "ocpp", AttackSeverity.HIGH, 1)
+        return scenario
+        
+    @staticmethod
+    def thermal_attack() -> AttackScenario:
+        """Thermal runaway attack (High Resistance Connector)"""
+        scenario = AttackScenario(
+            "Thermal Runaway Attack",
+            "Simulates high resistance contact causing rapid heating"
+        )
+        scenario.add_anomaly("THERMAL_RUNAWAY", "physical", AttackSeverity.HIGH, 5)
         return scenario
